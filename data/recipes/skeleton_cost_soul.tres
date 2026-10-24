@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="FLUID_COST" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/fluid_cost.gd" id="1_fcost"]
+[ext_resource type="Resource" path="res://data/fluids/soul.tres" id="2_soul"]
+
+[resource]
+script = ExtResource("1_fcost")
+fluid = ExtResource("2_soul")
+amount = 5.0

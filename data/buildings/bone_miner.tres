@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="MINER_DATA" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/miner_data.gd" id="1_miner"]
+[ext_resource type="Resource" path="res://data/items/bone.tres" id="2_bone"]
+
+[resource]
+script = ExtResource("1_miner")
+id = "bone_miner"
+building_name = "Добытчик костей"
+cost_gold = 10
+size_tiles = Vector2i(3, 3)
+description = "Извлекает древние кости из захоронений."
+mined_item = ExtResource("2_bone")
+extraction_interval_sec = 2.0
+allowed_zone_tag = "cemetery"

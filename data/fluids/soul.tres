@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="FLUID_DATA" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/fluid_data.gd" id="1_fluid"]
+
+[resource]
+script = ExtResource("1_fluid")
+id = "soul"
+display_name = "Души (Эфир)"
+description = "Жидкий эктоплазменный эфир душ."
+color = Color(0.18, 0.83, 0.75, 1.0)
+viscosity = 1.0

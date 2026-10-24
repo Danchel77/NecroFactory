@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="PUMP_DATA" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/pump_data.gd" id="1_pump"]
+[ext_resource type="Resource" path="res://data/fluids/soul.tres" id="2_soul"]
+
+[resource]
+script = ExtResource("1_pump")
+id = "soul_pump"
+building_name = "Насос душ"
+cost_gold = 10
+size_tiles = Vector2i(1, 1)
+description = "Откачивает эктоплазменный эфир из колодца душ."
+pumped_fluid = ExtResource("2_soul")
+pump_rate_sec = 1.0
+allowed_zone_tag = "soul_well"

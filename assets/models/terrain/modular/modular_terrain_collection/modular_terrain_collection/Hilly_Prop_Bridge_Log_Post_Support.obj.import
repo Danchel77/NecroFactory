@@ -1,0 +1,25 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://c5kfo43q2htub"
+path="res://.godot/imported/Hilly_Prop_Bridge_Log_Post_Support.obj-bf0a37b82661e62e9fbe88f83cfe98bd.mesh"
+
+[deps]
+
+files=["res://.godot/imported/Hilly_Prop_Bridge_Log_Post_Support.obj-bf0a37b82661e62e9fbe88f83cfe98bd.mesh"]
+
+source_file="res://assets/models/terrain/modular/modular_terrain_collection/modular_terrain_collection/Hilly_Prop_Bridge_Log_Post_Support.obj"
+dest_files=["res://.godot/imported/Hilly_Prop_Bridge_Log_Post_Support.obj-bf0a37b82661e62e9fbe88f83cfe98bd.mesh", "res://.godot/imported/Hilly_Prop_Bridge_Log_Post_Support.obj-bf0a37b82661e62e9fbe88f83cfe98bd.mesh"]
+
+[params]
+
+generate_tangents=true
+generate_lods=true
+generate_shadow_mesh=true
+generate_lightmap_uv2=false
+generate_lightmap_uv2_texel_size=0.2
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+force_disable_mesh_compression=false

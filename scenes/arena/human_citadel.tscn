@@ -1,0 +1,38 @@
+[gd_scene format=3 uid="uid://d0bl0nnjr0e1j"]
+
+[ext_resource type="Script" path="res://scripts/arena/human_citadel_3d.gd" id="1_fvbqb"]
+[ext_resource type="PackedScene" path="res://assets/models/kaykit/medieval/addons/kaykit_medieval_hexagon_pack/Assets/gltf/buildings/blue/building_castle_blue.gltf" id="2_nleio"]
+[ext_resource type="PackedScene" path="res://assets/models/kaykit/medieval/addons/kaykit_medieval_hexagon_pack/Assets/gltf/buildings/blue/building_tower_A_blue.gltf" id="3_ttvcg"]
+[ext_resource type="PackedScene" path="res://assets/models/kaykit/medieval/addons/kaykit_medieval_hexagon_pack/Assets/gltf/buildings/blue/building_tower_B_blue.gltf" id="4_bdg1g"]
+[ext_resource type="PackedScene" path="res://assets/models/kaykit/medieval/addons/kaykit_medieval_hexagon_pack/Assets/gltf/buildings/blue/building_home_A_blue.gltf" id="5_wclsb"]
+[ext_resource type="PackedScene" path="res://assets/models/kaykit/medieval/addons/kaykit_medieval_hexagon_pack/Assets/gltf/buildings/blue/building_home_B_blue.gltf" id="6_0ip4w"]
+[ext_resource type="PackedScene" path="res://assets/models/kaykit/medieval/addons/kaykit_medieval_hexagon_pack/Assets/gltf/decoration/props/barrel.gltf" id="7_3flwf"]
+[ext_resource type="PackedScene" path="res://assets/models/kaykit/medieval/addons/kaykit_medieval_hexagon_pack/Assets/gltf/decoration/props/crate_A_big.gltf" id="8_0oh4q"]
+[ext_resource type="PackedScene" path="res://assets/models/kaykit/medieval/addons/kaykit_medieval_hexagon_pack/Assets/gltf/decoration/props/target.gltf" id="9_40n5l"]
+
+[node name="HumanCitadel" type="Node3D"]
+script = ExtResource("1_fvbqb")
+
+[node name="Castle" type="Node3D" parent="." instance=ExtResource("2_nleio")]
+transform = Transform3D(-1.7, 0, -1.4861872e-07, 0, 1.7, 0, 1.4861872e-07, 0, -1.7, 0, 0, 0)
+
+[node name="Tower_Left" type="Node3D" parent="." instance=ExtResource("3_ttvcg")]
+transform = Transform3D(-1.3, 0, -1.13649605e-07, 0, 1.3, 0, 1.13649605e-07, 0, -1.3, -3.7, 0, 2.8)
+
+[node name="Tower_Right" type="Node3D" parent="." instance=ExtResource("4_bdg1g")]
+transform = Transform3D(-1.3, 0, -1.13649605e-07, 0, 1.3, 0, 1.13649605e-07, 0, -1.3, 3.7, 0, 2.8)
+
+[node name="House_Left" type="Node3D" parent="." instance=ExtResource("5_wclsb")]
+transform = Transform3D(-5.0268095e-08, 0, 1.15, 0, 1.15, 0, -1.15, 0, -5.0268095e-08, -5, 0, 0.8)
+
+[node name="House_Right" type="Node3D" parent="." instance=ExtResource("6_0ip4w")]
+transform = Transform3D(-5.0268095e-08, 0, -1.15, 0, 1.15, 0, 1.15, 0, -5.0268095e-08, 5, 0, 0.8)
+
+[node name="Barrel" type="Node3D" parent="." instance=ExtResource("7_3flwf")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.1, 0, 1.4)
+
+[node name="Crate" type="Node3D" parent="." instance=ExtResource("8_0oh4q")]
+transform = Transform3D(0.9659258, 0, 0.25881904, 0, 1, 0, -0.25881904, 0, 0.9659258, -4.1, 0, 0.9)
+
+[node name="Target" type="Node3D" parent="." instance=ExtResource("9_40n5l")]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, -3, 0, 3.6)

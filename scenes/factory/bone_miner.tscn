@@ -1,0 +1,56 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://scripts/factory/bone_miner_3d.gd" id="1_r2yu5"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_rpyv5"]
+albedo_color = Color(0.2, 0.2, 0.22, 1)
+metallic = 0.4
+roughness = 0.7
+
+[sub_resource type="BoxMesh" id="BoxMesh_7417s"]
+material = SubResource("StandardMaterial3D_rpyv5")
+size = Vector3(1.4, 0.3, 1.4)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_m8p5d"]
+albedo_color = Color(0.38, 0.28, 0.16, 1)
+metallic = 0.8
+roughness = 0.35
+
+[sub_resource type="BoxMesh" id="BoxMesh_s2sqj"]
+material = SubResource("StandardMaterial3D_m8p5d")
+size = Vector3(0.8, 0.7, 0.8)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_y3bah"]
+albedo_color = Color(0.4, 0.4, 0.45, 1)
+metallic = 0.6
+roughness = 0.5
+
+[sub_resource type="BoxMesh" id="BoxMesh_arlmf"]
+material = SubResource("StandardMaterial3D_y3bah")
+size = Vector3(0.3, 0.5, 0.3)
+
+[sub_resource type="BoxMesh" id="BoxMesh_rxtoe"]
+material = SubResource("StandardMaterial3D_y3bah")
+size = Vector3(0.18, 0.4, 0.18)
+
+[node name="BoneMiner" type="Node3D" unique_id=147369234]
+script = ExtResource("1_r2yu5")
+
+[node name="BaseFrame" type="MeshInstance3D" parent="." unique_id=948771279]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.15, 0)
+mesh = SubResource("BoxMesh_7417s")
+
+[node name="MotorHousing" type="MeshInstance3D" parent="." unique_id=227170411]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.6, 0)
+mesh = SubResource("BoxMesh_s2sqj")
+
+[node name="DrillHead" type="Node3D" parent="." unique_id=153148886]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.3, 0)
+
+[node name="DrillBit1" type="MeshInstance3D" parent="DrillHead" unique_id=1239749597]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.2, 0)
+mesh = SubResource("BoxMesh_arlmf")
+
+[node name="DrillBit2" type="MeshInstance3D" parent="DrillHead" unique_id=1891218920]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.4, 0)
+mesh = SubResource("BoxMesh_rxtoe")

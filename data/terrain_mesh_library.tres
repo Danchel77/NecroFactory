@@ -1,0 +1,190 @@
+[gd_resource type="MeshLibrary" format=3]
+
+[ext_resource type="ArrayMesh" path="res://assets/models/terrain/modular/modular_terrain_collection/modular_terrain_collection/Hilly_Prop_Rock_1.obj" id="1_m57on"]
+[ext_resource type="ArrayMesh" path="res://assets/models/terrain/modular/modular_terrain_collection/modular_terrain_collection/Hilly_Prop_Stepping_Stones_1.obj" id="2_mk88m"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_0tage"]
+albedo_color = Color(0.33, 0.56, 0.22, 1)
+roughness = 0.85
+
+[sub_resource type="BoxMesh" id="BoxMesh_qxf2t"]
+material = SubResource("StandardMaterial3D_0tage")
+size = Vector3(0.5, 0.25, 0.5)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_ps7bb"]
+size = Vector3(0.5, 0.25, 0.5)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_orkvx"]
+albedo_color = Color(0.38, 0.62, 0.25, 1)
+roughness = 0.85
+
+[sub_resource type="BoxMesh" id="BoxMesh_jrktb"]
+material = SubResource("StandardMaterial3D_orkvx")
+size = Vector3(0.5, 0.25, 0.5)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_3emst"]
+size = Vector3(0.5, 0.25, 0.5)
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_ujss2"]
+points = PackedVector3Array(0.4, 0.14997064, 0.04440096, 0.32856795, 0.24141543, 0.053249836, 0.36248532, 0.14997064, 0.26664063, 0.4, 0, 0.04440096, 0.28745595, 0.14997064, -0.26671886, 0.23166111, 0.24141543, -0.214722, 0.21807948, 0.3, 0.06687552, 0.30177173, 0.24141543, 0.2117463, 0.1321848, 0.24141543, 0.3122162, 0.13747063, 0.14997064, 0.39992175, 0.36248532, 0, 0.26664063, 0.28745595, 0, -0.26671886, 0.13747063, 0.14997064, -0.4, 0.1145654, 0.24141543, -0.31879404, 0.07925314, 0.3, -0.19310884, 0.14532596, 0.3, -0.13429913, 0.2079483, 0.3, 0.12678155, 0.124035835, 0.3, 0.1765075, -0.15912294, 0.24141543, 0.19710264, -0.20001468, 0.14997064, 0.26664063, 0.13747063, 0, 0.39992175, 0.13747063, 0, -0.4, -0.087544054, 0.14997064, -0.4, -0.068529755, 0.24141543, -0.31879404, -0.039164037, 0.3, -0.19310884, -0.09591326, 0.3, 0.089585006, -0.2743833, 0.24141543, 0.026390016, -0.35, 0.14997064, 0.04440096, -0.20001468, 0, 0.26664063, -0.087544054, 0, -0.4, -0.27504402, 0.14997064, -0.26671886, -0.21653289, 0.24141543, -0.21354736, -0.12608652, 0.3, -0.13124508, -0.157361, 0.3, -0.0014878511, -0.35, 0, 0.04440096, -0.27504402, 0, -0.26671886)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_fboj6"]
+albedo_color = Color(0.24, 0.36, 0.18, 1)
+roughness = 0.88
+
+[sub_resource type="BoxMesh" id="BoxMesh_psw8y"]
+material = SubResource("StandardMaterial3D_fboj6")
+size = Vector3(0.5, 0.25, 0.5)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_yug62"]
+size = Vector3(0.5, 0.25, 0.5)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ckht3"]
+albedo_color = Color(0.76, 0.62, 0.38, 1)
+roughness = 0.95
+
+[sub_resource type="BoxMesh" id="BoxMesh_v137i"]
+material = SubResource("StandardMaterial3D_ckht3")
+size = Vector3(0.5, 0.25, 0.5)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_lmwh2"]
+size = Vector3(0.5, 0.25, 0.5)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_jpq58"]
+transparency = 1
+albedo_color = Color(0.08, 0.48, 0.58, 0.85)
+metallic = 0.35
+roughness = 0.15
+
+[sub_resource type="BoxMesh" id="BoxMesh_yn1rs"]
+material = SubResource("StandardMaterial3D_jpq58")
+size = Vector3(0.5, 0.25, 0.5)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_g8hfx"]
+size = Vector3(0.5, 0.25, 0.5)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_1d1ej"]
+albedo_color = Color(0.36, 0.25, 0.16, 1)
+roughness = 0.9
+
+[sub_resource type="BoxMesh" id="BoxMesh_7qmxn"]
+material = SubResource("StandardMaterial3D_1d1ej")
+size = Vector3(0.5, 0.25, 0.5)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_6p6vr"]
+size = Vector3(0.5, 0.25, 0.5)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_rva6p"]
+albedo_color = Color(0.44, 0.4, 0.36, 1)
+roughness = 0.8
+
+[sub_resource type="BoxMesh" id="BoxMesh_lh4wr"]
+material = SubResource("StandardMaterial3D_rva6p")
+size = Vector3(0.5, 0.25, 0.5)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_ceo5j"]
+size = Vector3(0.5, 0.25, 0.5)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_1hc6h"]
+albedo_color = Color(0.36, 0.34, 0.32, 1)
+roughness = 0.75
+
+[sub_resource type="BoxMesh" id="BoxMesh_svvdn"]
+material = SubResource("StandardMaterial3D_1hc6h")
+size = Vector3(0.5, 0.25, 0.5)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_5xa0p"]
+size = Vector3(0.5, 0.25, 0.5)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_aqull"]
+albedo_color = Color(0.48, 0.32, 0.18, 1)
+roughness = 0.8
+
+[sub_resource type="BoxMesh" id="BoxMesh_mbb4j"]
+material = SubResource("StandardMaterial3D_aqull")
+size = Vector3(0.5, 0.25, 0.5)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_poo4k"]
+size = Vector3(0.5, 0.25, 0.5)
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_bmigr"]
+points = PackedVector3Array(-0.07501957, 0, -0.175, -0.2, 0, -0.10000734, -0.07501957, 0.19997798, -0.175, 0.14996086, 0, -0.075009786, -0.15003915, 0, 0.074975535, -0.2, 0.19997798, -0.10000734, -0.1743148, 0.23747675, -0.09358359, -0.07372747, 0.23747675, -0.15393011, 0.14996086, 0.19997798, -0.075009786, 0.19996087, 0, 0.074975535, -0.15003915, 0.19997798, 0.074975535, -0.07501957, 0, 0.17496575, -0.1280736, 0.23747675, 0.07299335, 0.13480817, 0.23747675, -0.061244614, 0.1789742, 0.23747675, 0.07123141, 0.19996087, 0.19997798, 0.074975535, 0.09996088, 0, 0.2, -0.07501957, 0.19997798, 0.17496575, -0.06468284, 0.23747675, 0.15752985, 0.09201254, 0.23747675, 0.17988451, 0.09996088, 0.19997798, 0.2)
+
+[resource]
+item/0/name = "Block_Grass_Light"
+item/0/mesh = SubResource("BoxMesh_qxf2t")
+item/0/mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+item/0/mesh_cast_shadow = 1
+item/0/shapes = [SubResource("BoxShape3D_ps7bb"), Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)]
+item/0/navigation_mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+item/0/navigation_layers = 1
+item/1/name = "Block_Grass_Dark"
+item/1/mesh = SubResource("BoxMesh_jrktb")
+item/1/mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+item/1/mesh_cast_shadow = 1
+item/1/shapes = [SubResource("BoxShape3D_3emst"), Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)]
+item/1/navigation_mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+item/1/navigation_layers = 1
+item/2/name = "Block_Blight_Grass"
+item/2/mesh = SubResource("BoxMesh_psw8y")
+item/2/mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+item/2/mesh_cast_shadow = 1
+item/2/shapes = [SubResource("BoxShape3D_yug62"), Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)]
+item/2/navigation_mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+item/2/navigation_layers = 1
+item/3/name = "Block_Sand_Bank"
+item/3/mesh = SubResource("BoxMesh_v137i")
+item/3/mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+item/3/mesh_cast_shadow = 1
+item/3/shapes = [SubResource("BoxShape3D_lmwh2"), Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)]
+item/3/navigation_mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+item/3/navigation_layers = 1
+item/4/name = "Block_River_Water"
+item/4/mesh = SubResource("BoxMesh_yn1rs")
+item/4/mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+item/4/mesh_cast_shadow = 1
+item/4/shapes = [SubResource("BoxShape3D_g8hfx"), Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)]
+item/4/navigation_mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+item/4/navigation_layers = 1
+item/5/name = "Block_River_Bed"
+item/5/mesh = SubResource("BoxMesh_7qmxn")
+item/5/mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+item/5/mesh_cast_shadow = 1
+item/5/shapes = [SubResource("BoxShape3D_6p6vr"), Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)]
+item/5/navigation_mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+item/5/navigation_layers = 1
+item/6/name = "Block_Cliff_Rock"
+item/6/mesh = SubResource("BoxMesh_lh4wr")
+item/6/mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+item/6/mesh_cast_shadow = 1
+item/6/shapes = [SubResource("BoxShape3D_ceo5j"), Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)]
+item/6/navigation_mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+item/6/navigation_layers = 1
+item/7/name = "Block_Stone_Road"
+item/7/mesh = SubResource("BoxMesh_svvdn")
+item/7/mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+item/7/mesh_cast_shadow = 1
+item/7/shapes = [SubResource("BoxShape3D_5xa0p"), Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)]
+item/7/navigation_mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+item/7/navigation_layers = 1
+item/8/name = "Block_Bridge_Wood"
+item/8/mesh = SubResource("BoxMesh_mbb4j")
+item/8/mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+item/8/mesh_cast_shadow = 1
+item/8/shapes = [SubResource("BoxShape3D_poo4k"), Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)]
+item/8/navigation_mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+item/8/navigation_layers = 1
+item/9/name = "Prop_Stepping_Stones"
+item/9/mesh = ExtResource("2_mk88m")
+item/9/mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+item/9/mesh_cast_shadow = 1
+item/9/shapes = [SubResource("ConvexPolygonShape3D_bmigr"), Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)]
+item/9/navigation_mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+item/9/navigation_layers = 1
+item/10/name = "Prop_River_Rock"
+item/10/mesh = ExtResource("1_m57on")
+item/10/mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+item/10/mesh_cast_shadow = 1
+item/10/shapes = [SubResource("ConvexPolygonShape3D_ujss2"), Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)]
+item/10/navigation_mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+item/10/navigation_layers = 1

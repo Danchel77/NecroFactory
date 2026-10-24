@@ -1,0 +1,121 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://scripts/factory/skeleton_assembler_3d.gd" id="1_w7yo5"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_7ayfd"]
+albedo_color = Color(0.08, 0.08, 0.12, 1)
+metallic = 0.2
+roughness = 0.7
+
+[sub_resource type="BoxMesh" id="BoxMesh_5c5l5"]
+material = SubResource("StandardMaterial3D_7ayfd")
+size = Vector3(2, 0.3, 2)
+
+[sub_resource type="BoxMesh" id="BoxMesh_4nbok"]
+material = SubResource("StandardMaterial3D_7ayfd")
+size = Vector3(1.4, 0.6, 1.4)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_dspjx"]
+albedo_color = Color(0.38, 0.28, 0.16, 1)
+metallic = 0.8
+roughness = 0.35
+
+[sub_resource type="BoxMesh" id="BoxMesh_deqai"]
+material = SubResource("StandardMaterial3D_dspjx")
+size = Vector3(0.4, 0.4, 0.6)
+
+[sub_resource type="BoxMesh" id="BoxMesh_dhesw"]
+material = SubResource("StandardMaterial3D_dspjx")
+size = Vector3(0.35, 0.35, 0.35)
+
+[sub_resource type="BoxMesh" id="BoxMesh_uf4rd"]
+material = SubResource("StandardMaterial3D_7ayfd")
+size = Vector3(1, 0.3, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_0mmu8"]
+albedo_color = Color(0.1, 0.8, 0.7, 1)
+emission_enabled = true
+emission = Color(0.1, 0.9, 0.8, 1)
+emission_energy_multiplier = 2.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_ww61f"]
+material = SubResource("StandardMaterial3D_0mmu8")
+size = Vector3(0.7, 0.04, 0.7)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_xj1a8"]
+albedo_color = Color(0.9, 0.88, 0.8, 1)
+metallic = 0.1
+roughness = 0.4
+
+[sub_resource type="BoxMesh" id="BoxMesh_gsx17"]
+material = SubResource("StandardMaterial3D_xj1a8")
+size = Vector3(0.16, 0.16, 0.16)
+
+[sub_resource type="BoxMesh" id="BoxMesh_hmpk8"]
+material = SubResource("StandardMaterial3D_xj1a8")
+size = Vector3(0.16, 0.16, 0.16)
+
+[sub_resource type="BoxMesh" id="BoxMesh_ly0u3"]
+material = SubResource("StandardMaterial3D_xj1a8")
+size = Vector3(0.16, 0.16, 0.16)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_4nkss"]
+albedo_color = Color(0, 0.95, 0.9, 1)
+emission_enabled = true
+emission = Color(0, 0.95, 0.9, 1)
+emission_energy_multiplier = 2.2
+
+[sub_resource type="BoxMesh" id="BoxMesh_8topp"]
+material = SubResource("StandardMaterial3D_4nkss")
+size = Vector3(0.16, 0.16, 0.16)
+
+[sub_resource type="BoxMesh" id="BoxMesh_rn7pg"]
+material = SubResource("StandardMaterial3D_4nkss")
+size = Vector3(0.16, 0.16, 0.16)
+
+[node name="SkeletonAssembler" type="Node3D" unique_id=1709487012]
+script = ExtResource("1_w7yo5")
+
+[node name="BasePlinth" type="MeshInstance3D" parent="." unique_id=1090863722]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.15, 0)
+mesh = SubResource("BoxMesh_5c5l5")
+
+[node name="MiddleDais" type="MeshInstance3D" parent="." unique_id=443511883]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.55, 0)
+mesh = SubResource("BoxMesh_4nbok")
+
+[node name="BoneHopper" type="MeshInstance3D" parent="." unique_id=980992873]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.8, 0.45, 0)
+mesh = SubResource("BoxMesh_deqai")
+
+[node name="SoulNozzle" type="MeshInstance3D" parent="." unique_id=1540253089]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.8, 0.3, 0)
+mesh = SubResource("BoxMesh_dhesw")
+
+[node name="TopTable" type="MeshInstance3D" parent="." unique_id=1550986354]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.95, 0)
+mesh = SubResource("BoxMesh_uf4rd")
+
+[node name="RunePlate" type="MeshInstance3D" parent="." unique_id=929058844]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.12, 0)
+mesh = SubResource("BoxMesh_ww61f")
+
+[node name="BonePip1" type="MeshInstance3D" parent="." unique_id=364221337]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.35, 1.35, -0.3)
+mesh = SubResource("BoxMesh_gsx17")
+
+[node name="BonePip2" type="MeshInstance3D" parent="." unique_id=2141441563]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.15, 1.35, -0.3)
+mesh = SubResource("BoxMesh_hmpk8")
+
+[node name="BonePip3" type="MeshInstance3D" parent="." unique_id=2060028301]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.05, 1.35, -0.3)
+mesh = SubResource("BoxMesh_ly0u3")
+
+[node name="SoulPip1" type="MeshInstance3D" parent="." unique_id=1190012105]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.2, 1.35, 0.3)
+mesh = SubResource("BoxMesh_8topp")
+
+[node name="SoulPip2" type="MeshInstance3D" parent="." unique_id=765591016]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.05, 1.35, 0.3)
+mesh = SubResource("BoxMesh_rn7pg")

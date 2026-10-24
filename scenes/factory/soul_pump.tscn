@@ -1,0 +1,54 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://scripts/factory/soul_pump_3d.gd" id="1_owv5q"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_be3lq"]
+albedo_color = Color(0.38, 0.28, 0.16, 1)
+metallic = 0.8
+roughness = 0.35
+
+[sub_resource type="BoxMesh" id="BoxMesh_tw78y"]
+material = SubResource("StandardMaterial3D_be3lq")
+size = Vector3(0.95, 0.45, 0.95)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_tiwxo"]
+albedo_color = Color(0.2, 0.2, 0.22, 1)
+metallic = 0.4
+roughness = 0.7
+
+[sub_resource type="BoxMesh" id="BoxMesh_sspil"]
+material = SubResource("StandardMaterial3D_tiwxo")
+size = Vector3(0.5, 0.55, 0.5)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_y82yj"]
+albedo_color = Color(0, 0.95, 0.9, 1)
+emission_enabled = true
+emission = Color(0, 0.95, 0.9, 1)
+emission_energy_multiplier = 2.2
+
+[sub_resource type="BoxMesh" id="BoxMesh_ddtos"]
+material = SubResource("StandardMaterial3D_y82yj")
+size = Vector3(0.38, 0.24, 0.38)
+
+[sub_resource type="BoxMesh" id="BoxMesh_hwo5h"]
+material = SubResource("StandardMaterial3D_be3lq")
+size = Vector3(0.08, 0.5, 0.5)
+
+[node name="SoulPump" type="Node3D" unique_id=347329292]
+script = ExtResource("1_owv5q")
+
+[node name="PumpBase" type="MeshInstance3D" parent="." unique_id=411208755]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.22, 0)
+mesh = SubResource("BoxMesh_tw78y")
+
+[node name="PumpCylinder" type="MeshInstance3D" parent="." unique_id=213615712]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0)
+mesh = SubResource("BoxMesh_sspil")
+
+[node name="PumpPiston" type="MeshInstance3D" parent="." unique_id=471810811]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.75, 0)
+mesh = SubResource("BoxMesh_ddtos")
+
+[node name="PumpWheel" type="MeshInstance3D" parent="." unique_id=2079782349]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5, 0.35, 0)
+mesh = SubResource("BoxMesh_hwo5h")

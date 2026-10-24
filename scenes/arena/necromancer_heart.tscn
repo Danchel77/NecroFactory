@@ -1,0 +1,63 @@
+[gd_scene format=3 uid="uid://c54h8k88q71x8"]
+
+[ext_resource type="Script" path="res://scripts/arena/necromancer_heart_3d.gd" id="1_0lu1q"]
+[ext_resource type="PackedScene" path="res://assets/models/kaykit/halloween/addons/kaykit_halloween_bits/Assets/gltf/shrine.gltf" id="2_bjaef"]
+[ext_resource type="PackedScene" path="res://assets/models/kaykit/halloween/addons/kaykit_halloween_bits/Assets/gltf/fence.gltf" id="3_53bpf"]
+[ext_resource type="PackedScene" path="res://assets/models/kaykit/halloween/addons/kaykit_halloween_bits/Assets/gltf/post_skull.gltf" id="4_l5oek"]
+[ext_resource type="PackedScene" path="res://assets/models/kaykit/halloween/addons/kaykit_halloween_bits/Assets/gltf/gravestone.gltf" id="5_ix7dn"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_i7xey"]
+albedo_color = Color(0.08, 0.08, 0.12, 1)
+metallic = 0.2
+roughness = 0.7
+
+[sub_resource type="BoxMesh" id="BoxMesh_7gbck"]
+material = SubResource("StandardMaterial3D_i7xey")
+size = Vector3(2.2, 0.25, 2.2)
+
+[sub_resource type="BoxMesh" id="BoxMesh_i4jyw"]
+material = SubResource("StandardMaterial3D_i7xey")
+size = Vector3(1.6, 0.25, 1.6)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_csymi"]
+albedo_color = Color(0.75, 0.1, 0.85, 1)
+emission_enabled = true
+emission = Color(0.85, 0.1, 0.95, 1)
+emission_energy_multiplier = 2.8
+
+[sub_resource type="BoxMesh" id="BoxMesh_gawmo"]
+material = SubResource("StandardMaterial3D_csymi")
+size = Vector3(0.42, 0.9, 0.42)
+
+[node name="NecromancerHeart" type="Node3D"]
+script = ExtResource("1_0lu1q")
+
+[node name="DaisBase" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.12, 0)
+mesh = SubResource("BoxMesh_7gbck")
+
+[node name="DaisStep" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.35, 0)
+mesh = SubResource("BoxMesh_i4jyw")
+
+[node name="HeartCrystal" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.45, 0)
+mesh = SubResource("BoxMesh_gawmo")
+
+[node name="Shrine" type="Node3D" parent="." instance=ExtResource("2_bjaef")]
+transform = Transform3D(1.1, 0, 0, 0, 1.1, 0, 0, 0, 1.1, 0, 0.48, 0)
+
+[node name="Fence_Left" type="Node3D" parent="." instance=ExtResource("3_53bpf")]
+transform = Transform3D(0.9, 0, 0, 0, 0.9, 0, 0, 0, 0.9, -1.4, 0, 0)
+
+[node name="Fence_Right" type="Node3D" parent="." instance=ExtResource("3_53bpf")]
+transform = Transform3D(0.9, 0, 0, 0, 0.9, 0, 0, 0, 0.9, 1.4, 0, 0)
+
+[node name="Post_Skull_Left" type="Node3D" parent="." instance=ExtResource("4_l5oek")]
+transform = Transform3D(0.9, 0, 0, 0, 0.9, 0, 0, 0, 0.9, -0.9, 0, -0.6)
+
+[node name="Post_Skull_Right" type="Node3D" parent="." instance=ExtResource("4_l5oek")]
+transform = Transform3D(0.9, 0, 0, 0, 0.9, 0, 0, 0, 0.9, 0.9, 0, -0.6)
+
+[node name="Gravestone" type="Node3D" parent="." instance=ExtResource("5_ix7dn")]
+transform = Transform3D(0.815677, 0, 0.38035643, 0, 0.9, 0, -0.38035643, 0, 0.815677, -1.9, 0, -0.4)

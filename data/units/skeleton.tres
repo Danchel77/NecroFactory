@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="UNIT_DATA" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/unit_data.gd" id="1_unit"]
+
+[resource]
+script = ExtResource("1_unit")
+id = "skeleton"
+unit_name = "Скелет-воин"
+max_hp = 120
+damage = 25
+attack_range = 30.0
+attack_cooldown_sec = 0.9
+move_speed = 50.0
+is_enemy = false

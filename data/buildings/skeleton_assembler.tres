@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="ASSEMBLER_DATA" load_steps=5 format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/assembler_data.gd" id="1_asm"]
+[ext_resource type="Resource" path="res://data/recipes/skeleton_cost_bone.tres" id="2_cost_b"]
+[ext_resource type="Resource" path="res://data/recipes/skeleton_cost_soul.tres" id="3_cost_s"]
+[ext_resource type="Resource" path="res://data/units/skeleton.tres" id="4_unit_sk"]
+
+[resource]
+script = ExtResource("1_asm")
+id = "skeleton_assembler"
+building_name = "Алтарь Скелетов"
+cost_gold = 20
+size_tiles = Vector2i(2, 2)
+description = "Фабрика 2x2. Соединяет 5 костей и 5 душ для призыва Скелета-воина."
+craft_duration_sec = 3.0
+required_items = Array[Resource]([ExtResource("2_cost_b")])
+required_fluids = Array[Resource]([ExtResource("3_cost_s")])
+produced_unit = ExtResource("4_unit_sk")

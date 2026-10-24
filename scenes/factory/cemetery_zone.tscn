@@ -1,0 +1,42 @@
+[gd_scene format=3 uid="uid://dpskff3v1b8l1"]
+
+[ext_resource type="Script" path="res://scripts/factory/cemetery_zone_3d.gd" id="1_rqs3q"]
+[ext_resource type="ArrayMesh" path="res://assets/models/terrain/modular/modular_terrain_collection/modular_terrain_collection/Cave_Prop_Entrance_1.obj" id="2_srs37"]
+[ext_resource type="ArrayMesh" path="res://assets/models/terrain/modular/modular_terrain_collection/modular_terrain_collection/Cave_Prop_Minecart_1.obj" id="3_l3bwl"]
+[ext_resource type="ArrayMesh" path="res://assets/models/terrain/modular/modular_terrain_collection/modular_terrain_collection/Cave_Prop_Support_Wall_Pillar_1.obj" id="4_3q15k"]
+[ext_resource type="ArrayMesh" path="res://assets/models/terrain/modular/modular_terrain_collection/modular_terrain_collection/Cliff_Prop_Rock_1.obj" id="5_1tjs6"]
+[ext_resource type="PackedScene" path="res://assets/models/kaykit/halloween/addons/kaykit_halloween_bits/Assets/gltf/grave_A.gltf" id="6_ryjcp"]
+[ext_resource type="PackedScene" path="res://assets/models/kaykit/halloween/addons/kaykit_halloween_bits/Assets/gltf/candle_triple.gltf" id="7_7hbe0"]
+[ext_resource type="PackedScene" path="res://assets/models/kaykit/halloween/addons/kaykit_halloween_bits/Assets/gltf/skull.gltf" id="8_6ubhs"]
+[ext_resource type="PackedScene" path="res://assets/models/kaykit/halloween/addons/kaykit_halloween_bits/Assets/gltf/bone_A.gltf" id="9_5q5uu"]
+
+[node name="CemeteryZone" type="Node3D"]
+script = ExtResource("1_rqs3q")
+
+[node name="Mine_Entrance" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.8601096, 0, 0.6022552, 0, 1.05, 0, -0.6022552, 0, 0.8601096, -0.8, 0, -0.7)
+mesh = ExtResource("2_srs37")
+
+[node name="Mine_Cart" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.7277422, 0, 0.6106482, 0, 0.95, 0, -0.6106482, 0, 0.7277422, -0.2, 0, 0.3)
+mesh = ExtResource("3_l3bwl")
+
+[node name="Mine_Pillar" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.9659258, 0, 0.25881904, 0, 1, 0, -0.25881904, 0, 0.9659258, -1.1, 0, 0.1)
+mesh = ExtResource("4_3q15k")
+
+[node name="Quarry_Rock" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.7250462, 0, 0.33809462, 0, 0.8, 0, -0.33809462, 0, 0.7250462, -0.9, 0, 1)
+mesh = ExtResource("5_1tjs6")
+
+[node name="Grave_Headstone" type="Node3D" parent="." instance=ExtResource("6_ryjcp")]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 0, -0.7)
+
+[node name="Grave_Candles" type="Node3D" parent="." instance=ExtResource("7_7hbe0")]
+transform = Transform3D(0.4698463, 0, 0.17101006, 0, 0.5, 0, -0.17101006, 0, 0.4698463, 0.6, 0, -0.7)
+
+[node name="Grave_Skull" type="Node3D" parent="." instance=ExtResource("8_6ubhs")]
+transform = Transform3D(0.36861843, 0, 0.2581094, 0, 0.45, 0, -0.2581094, 0, 0.36861843, 0.3, 0.05, 0.5)
+
+[node name="Grave_Bone" type="Node3D" parent="." instance=ExtResource("9_5q5uu")]
+transform = Transform3D(0.4829629, 0, 0.12940952, 0, 0.5, 0, -0.12940952, 0, 0.4829629, 0.6, 0.05, 0.4)

@@ -1,0 +1,50 @@
+[gd_scene format=3 uid="uid://cp4miwbhtprdi"]
+
+[ext_resource type="Script" path="res://scripts/main/game_world.gd" id="1_world"]
+[ext_resource type="Script" uid="uid://c4nxmbhxcjhtu" path="res://scripts/factory/factory_grid.gd" id="2_grid"]
+[ext_resource type="PackedScene" path="res://scenes/factory/cemetery_zone.tscn" id="3_cem"]
+[ext_resource type="PackedScene" path="res://scenes/factory/soul_well.tscn" id="4_well"]
+[ext_resource type="Script" uid="uid://6v828j6nfs54" path="res://scripts/factory/conveyor_manager.gd" id="5_mgr"]
+[ext_resource type="Script" uid="uid://c4n8ik4swmh01" path="res://scripts/factory/pipe_network.gd" id="6_pnet"]
+
+[node name="GameWorld" type="Node2D" unique_id=1513155149]
+script = ExtResource("1_world")
+
+[node name="BattlefieldBG" type="ColorRect" parent="." unique_id=124935632]
+offset_right = 720.0
+offset_bottom = 440.0
+color = Color(0.12, 0.16, 0.11, 1)
+
+[node name="Divider" type="ColorRect" parent="." unique_id=1101559601]
+offset_top = 440.0
+offset_right = 720.0
+offset_bottom = 460.0
+color = Color(0.08, 0.08, 0.12, 1)
+
+[node name="Factory" type="Node2D" parent="." unique_id=1484486914]
+
+[node name="FactoryFloor" type="TextureRect" parent="Factory" unique_id=1205508950]
+modulate = Color(0.85, 0.9, 0.95, 1)
+offset_top = 460.0
+offset_right = 720.0
+offset_bottom = 1280.0
+stretch_mode = 1
+
+[node name="FactoryGrid" type="Node2D" parent="Factory" unique_id=459535846]
+script = ExtResource("2_grid")
+
+[node name="CemeteryZone" parent="Factory" unique_id=1408574758 instance=ExtResource("3_cem")]
+
+[node name="SoulWell" parent="Factory" unique_id=1272715482 instance=ExtResource("4_well")]
+
+[node name="ConveyorManager" type="Node2D" parent="Factory" unique_id=1995836379]
+script = ExtResource("5_mgr")
+
+[node name="Belts" type="Node2D" parent="Factory" unique_id=1762854700]
+
+[node name="Buildings" type="Node2D" parent="Factory" unique_id=1261053505]
+
+[node name="PipeNetwork" type="Node2D" parent="Factory" unique_id=1091469598]
+script = ExtResource("6_pnet")
+
+[node name="Pipes" type="Node2D" parent="Factory" unique_id=1692068229]

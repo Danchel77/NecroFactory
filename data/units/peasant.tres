@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="UNIT_DATA" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/unit_data.gd" id="1_unit"]
+
+[resource]
+script = ExtResource("1_unit")
+id = "peasant"
+unit_name = "Ополченец с вилами"
+max_hp = 80
+damage = 12
+attack_range = 28.0
+attack_cooldown_sec = 1.1
+move_speed = 40.0
+is_enemy = true

@@ -1,0 +1,827 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://scripts/test/test_arena_3d.gd" id="1_j1ips"]
+[ext_resource type="MeshLibrary" path="res://data/terrain_mesh_library.tres" id="2_bni4t"]
+[ext_resource type="ArrayMesh" path="res://assets/models/terrain/modular/modular_terrain_collection/modular_terrain_collection/Mountain_2.obj" id="3_nvwjr"]
+[ext_resource type="ArrayMesh" path="res://assets/models/terrain/modular/modular_terrain_collection/modular_terrain_collection/Mountain_1.obj" id="4_mphdf"]
+[ext_resource type="ArrayMesh" path="res://assets/models/terrain/modular/modular_terrain_collection/modular_terrain_collection/Mountain_3.obj" id="5_jcfnw"]
+[ext_resource type="ArrayMesh" path="res://assets/models/terrain/modular/modular_terrain_collection/modular_terrain_collection/Mountain_4.obj" id="6_6eaxj"]
+[ext_resource type="ArrayMesh" path="res://assets/models/terrain/modular/modular_terrain_collection/modular_terrain_collection/Hilly_Prop_Tree_Pine_1.obj" id="7_wlkae"]
+[ext_resource type="ArrayMesh" path="res://assets/models/terrain/modular/modular_terrain_collection/modular_terrain_collection/Hilly_Prop_Tree_Pine_2.obj" id="8_o70w0"]
+[ext_resource type="ArrayMesh" path="res://assets/models/terrain/modular/modular_terrain_collection/modular_terrain_collection/Hilly_Prop_Tree_Pine_3.obj" id="9_juoe4"]
+[ext_resource type="ArrayMesh" path="res://assets/models/terrain/modular/modular_terrain_collection/modular_terrain_collection/Hilly_Prop_Tree_Cedar_1.obj" id="10_wgvlg"]
+[ext_resource type="ArrayMesh" path="res://assets/models/terrain/modular/modular_terrain_collection/modular_terrain_collection/Hilly_Prop_Tree_Cedar_2.obj" id="11_b0ltj"]
+[ext_resource type="ArrayMesh" path="res://assets/models/terrain/modular/modular_terrain_collection/modular_terrain_collection/Cliff_Prop_Rock_1.obj" id="12_45cw2"]
+[ext_resource type="ArrayMesh" path="res://assets/models/terrain/modular/modular_terrain_collection/modular_terrain_collection/Cliff_Prop_Rock_2.obj" id="13_cdnpe"]
+[ext_resource type="ArrayMesh" path="res://assets/models/terrain/modular/modular_terrain_collection/modular_terrain_collection/Cliff_Terrain_Side_Top.obj" id="14_khcav"]
+[ext_resource type="ArrayMesh" path="res://assets/models/terrain/modular/modular_terrain_collection/modular_terrain_collection/Cliff_Terrain_Waterfall_Top.obj" id="15_hdf37"]
+[ext_resource type="ArrayMesh" path="res://assets/models/terrain/modular/modular_terrain_collection/modular_terrain_collection/Hilly_Prop_Rock_1.obj" id="16_3ceap"]
+[ext_resource type="ArrayMesh" path="res://assets/models/terrain/modular/modular_terrain_collection/modular_terrain_collection/Cliff_Terrain_Side_Mid.obj" id="17_kgquu"]
+[ext_resource type="ArrayMesh" path="res://assets/models/terrain/modular/modular_terrain_collection/modular_terrain_collection/Cave_Prop_Entrance_1.obj" id="18_0hiv2"]
+[ext_resource type="ArrayMesh" path="res://assets/models/terrain/modular/modular_terrain_collection/modular_terrain_collection/Cave_Prop_Minecart_1.obj" id="19_3n1py"]
+[ext_resource type="ArrayMesh" path="res://assets/models/terrain/modular/modular_terrain_collection/modular_terrain_collection/Cave_Prop_Support_Wall_Pillar_1.obj" id="20_kfjq7"]
+[ext_resource type="ArrayMesh" path="res://assets/models/terrain/modular/modular_terrain_collection/modular_terrain_collection/Hilly_Prop_Tree_Oak_1.obj" id="21_n1hmg"]
+[ext_resource type="ArrayMesh" path="res://assets/models/terrain/modular/modular_terrain_collection/modular_terrain_collection/Hilly_Prop_Tree_Oak_2.obj" id="22_tdyrw"]
+[ext_resource type="ArrayMesh" path="res://assets/models/terrain/modular/modular_terrain_collection/modular_terrain_collection/Hilly_Prop_Bush_1.obj" id="23_wbuhk"]
+[ext_resource type="ArrayMesh" path="res://assets/models/terrain/modular/modular_terrain_collection/modular_terrain_collection/Hilly_Prop_Rock_2.obj" id="24_b2ggk"]
+[ext_resource type="ArrayMesh" path="res://assets/models/terrain/modular/modular_terrain_collection/modular_terrain_collection/Hilly_Prop_Tree_Oak_3.obj" id="25_dehvb"]
+[ext_resource type="ArrayMesh" path="res://assets/models/terrain/modular/modular_terrain_collection/modular_terrain_collection/Hilly_Prop_Bush_2.obj" id="26_7qhwi"]
+[ext_resource type="PackedScene" path="res://assets/models/kaykit/medieval/addons/kaykit_medieval_hexagon_pack/Assets/gltf/decoration/nature/waterlily_A.gltf" id="27_prcur"]
+[ext_resource type="PackedScene" path="res://assets/models/kaykit/medieval/addons/kaykit_medieval_hexagon_pack/Assets/gltf/decoration/nature/rock_single_C.gltf" id="28_xv54f"]
+[ext_resource type="PackedScene" path="res://assets/models/kaykit/medieval/addons/kaykit_medieval_hexagon_pack/Assets/gltf/decoration/nature/rock_single_B.gltf" id="29_s7i8s"]
+[ext_resource type="ArrayMesh" path="res://assets/models/terrain/modular/modular_terrain_collection/modular_terrain_collection/Hilly_Prop_Stepping_Stones_1.obj" id="30_nmq11"]
+[ext_resource type="ArrayMesh" path="res://assets/models/terrain/modular/modular_terrain_collection/modular_terrain_collection/Hilly_Prop_Stepping_Stones_2.obj" id="31_dup5b"]
+[ext_resource type="ArrayMesh" path="res://assets/models/terrain/modular/modular_terrain_collection/modular_terrain_collection/Hilly_Prop_Stump.obj" id="32_gnufr"]
+[ext_resource type="ArrayMesh" path="res://assets/models/terrain/modular/modular_terrain_collection/modular_terrain_collection/Hilly_Prop_Hollow_Trunk.obj" id="33_ospfw"]
+[ext_resource type="PackedScene" path="res://scenes/arena/human_citadel.tscn" id="34_cujqs"]
+[ext_resource type="Script" path="res://scripts/arena/human_citadel_3d.gd" id="35_a8hfc"]
+[ext_resource type="PackedScene" path="res://scenes/arena/necromancer_heart.tscn" id="36_5hwj5"]
+[ext_resource type="Script" path="res://scripts/arena/necromancer_heart_3d.gd" id="37_pwfjh"]
+[ext_resource type="PackedScene" path="res://scenes/factory/cemetery_zone.tscn" id="38_ujqlm"]
+[ext_resource type="Script" path="res://scripts/factory/cemetery_zone_3d.gd" id="39_f71i7"]
+[ext_resource type="PackedScene" path="res://scenes/factory/soul_well.tscn" id="40_vnfae"]
+[ext_resource type="Script" path="res://scripts/factory/soul_well_3d.gd" id="41_rjhb0"]
+[ext_resource type="PackedScene" path="res://scenes/factory/bone_miner.tscn" id="42_t31uj"]
+[ext_resource type="Script" path="res://scripts/factory/bone_miner_3d.gd" id="43_2y0ui"]
+[ext_resource type="PackedScene" path="res://scenes/factory/soul_pump.tscn" id="44_nj2y2"]
+[ext_resource type="Script" path="res://scripts/factory/soul_pump_3d.gd" id="45_mbh25"]
+[ext_resource type="PackedScene" path="res://scenes/factory/skeleton_assembler.tscn" id="46_xnkua"]
+[ext_resource type="Script" path="res://scripts/factory/skeleton_assembler_3d.gd" id="47_wndod"]
+
+[sub_resource type="Environment" id="Environment_swcr1"]
+background_mode = 1
+background_color = Color(0.06, 0.08, 0.1, 1)
+ambient_light_source = 2
+ambient_light_color = Color(0.24, 0.28, 0.32, 1)
+ambient_light_energy = 0.36
+tonemap_mode = 3
+tonemap_exposure = 0.96
+glow_enabled = true
+glow_intensity = 0.85
+glow_bloom = 0.2
+fog_enabled = true
+fog_light_color = Color(0.14, 0.17, 0.19, 1)
+fog_density = 0.012
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_2538w"]
+albedo_color = Color(0.48, 0.32, 0.18, 1)
+roughness = 0.8
+
+[sub_resource type="BoxMesh" id="BoxMesh_a6rkb"]
+material = SubResource("StandardMaterial3D_2538w")
+size = Vector3(0.96, 0.18, 3.3)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_mebed"]
+albedo_color = Color(0.3, 0.2, 0.12, 1)
+roughness = 0.9
+
+[sub_resource type="BoxMesh" id="BoxMesh_j2q2q"]
+material = SubResource("StandardMaterial3D_mebed")
+size = Vector3(0.94, 0.06, 0.32)
+
+[sub_resource type="BoxMesh" id="BoxMesh_kudyb"]
+material = SubResource("StandardMaterial3D_mebed")
+size = Vector3(0.94, 0.06, 0.32)
+
+[sub_resource type="BoxMesh" id="BoxMesh_yesnt"]
+material = SubResource("StandardMaterial3D_mebed")
+size = Vector3(0.94, 0.06, 0.32)
+
+[sub_resource type="BoxMesh" id="BoxMesh_wcx4y"]
+material = SubResource("StandardMaterial3D_mebed")
+size = Vector3(0.94, 0.06, 0.32)
+
+[sub_resource type="BoxMesh" id="BoxMesh_kbn3o"]
+material = SubResource("StandardMaterial3D_mebed")
+size = Vector3(0.94, 0.06, 0.32)
+
+[sub_resource type="BoxMesh" id="BoxMesh_ook6s"]
+material = SubResource("StandardMaterial3D_mebed")
+size = Vector3(0.94, 0.06, 0.32)
+
+[sub_resource type="BoxMesh" id="BoxMesh_idq7v"]
+material = SubResource("StandardMaterial3D_mebed")
+size = Vector3(0.94, 0.06, 0.32)
+
+[sub_resource type="BoxMesh" id="BoxMesh_jr5bg"]
+material = SubResource("StandardMaterial3D_mebed")
+size = Vector3(0.94, 0.06, 0.32)
+
+[sub_resource type="BoxMesh" id="BoxMesh_go0e5"]
+material = SubResource("StandardMaterial3D_mebed")
+size = Vector3(0.94, 0.06, 0.32)
+
+[sub_resource type="BoxMesh" id="BoxMesh_lgtpe"]
+material = SubResource("StandardMaterial3D_2538w")
+size = Vector3(0.96, 0.18, 3.3)
+
+[sub_resource type="BoxMesh" id="BoxMesh_b6fj5"]
+material = SubResource("StandardMaterial3D_mebed")
+size = Vector3(0.94, 0.06, 0.32)
+
+[sub_resource type="BoxMesh" id="BoxMesh_vtf2j"]
+material = SubResource("StandardMaterial3D_mebed")
+size = Vector3(0.94, 0.06, 0.32)
+
+[sub_resource type="BoxMesh" id="BoxMesh_jeemj"]
+material = SubResource("StandardMaterial3D_mebed")
+size = Vector3(0.94, 0.06, 0.32)
+
+[sub_resource type="BoxMesh" id="BoxMesh_1jmy2"]
+material = SubResource("StandardMaterial3D_mebed")
+size = Vector3(0.94, 0.06, 0.32)
+
+[sub_resource type="BoxMesh" id="BoxMesh_hw8rq"]
+material = SubResource("StandardMaterial3D_mebed")
+size = Vector3(0.94, 0.06, 0.32)
+
+[sub_resource type="BoxMesh" id="BoxMesh_8m0om"]
+material = SubResource("StandardMaterial3D_mebed")
+size = Vector3(0.94, 0.06, 0.32)
+
+[sub_resource type="BoxMesh" id="BoxMesh_vx5w2"]
+material = SubResource("StandardMaterial3D_mebed")
+size = Vector3(0.94, 0.06, 0.32)
+
+[sub_resource type="BoxMesh" id="BoxMesh_ux74t"]
+material = SubResource("StandardMaterial3D_mebed")
+size = Vector3(0.94, 0.06, 0.32)
+
+[sub_resource type="BoxMesh" id="BoxMesh_whrp2"]
+material = SubResource("StandardMaterial3D_mebed")
+size = Vector3(0.94, 0.06, 0.32)
+
+[sub_resource type="BoxMesh" id="BoxMesh_uq5g3"]
+material = SubResource("StandardMaterial3D_mebed")
+size = Vector3(0.12, 0.45, 0.12)
+
+[sub_resource type="BoxMesh" id="BoxMesh_eafp6"]
+material = SubResource("StandardMaterial3D_mebed")
+size = Vector3(0.12, 0.45, 0.12)
+
+[sub_resource type="BoxMesh" id="BoxMesh_0e867"]
+material = SubResource("StandardMaterial3D_mebed")
+size = Vector3(0.12, 0.45, 0.12)
+
+[sub_resource type="BoxMesh" id="BoxMesh_a6gtn"]
+material = SubResource("StandardMaterial3D_mebed")
+size = Vector3(0.12, 0.45, 0.12)
+
+[sub_resource type="BoxMesh" id="BoxMesh_fmudm"]
+material = SubResource("StandardMaterial3D_mebed")
+size = Vector3(0.12, 0.45, 0.12)
+
+[sub_resource type="BoxMesh" id="BoxMesh_gvgcc"]
+material = SubResource("StandardMaterial3D_mebed")
+size = Vector3(0.12, 0.45, 0.12)
+
+[sub_resource type="BoxMesh" id="BoxMesh_xqk3a"]
+material = SubResource("StandardMaterial3D_mebed")
+size = Vector3(0.12, 0.45, 0.12)
+
+[sub_resource type="BoxMesh" id="BoxMesh_r2k70"]
+material = SubResource("StandardMaterial3D_mebed")
+size = Vector3(0.12, 0.45, 0.12)
+
+[sub_resource type="BoxMesh" id="BoxMesh_acpm0"]
+material = SubResource("StandardMaterial3D_mebed")
+size = Vector3(0.12, 0.45, 0.12)
+
+[sub_resource type="BoxMesh" id="BoxMesh_5vw26"]
+material = SubResource("StandardMaterial3D_mebed")
+size = Vector3(0.12, 0.45, 0.12)
+
+[sub_resource type="BoxMesh" id="BoxMesh_80q86"]
+material = SubResource("StandardMaterial3D_2538w")
+size = Vector3(0.1, 0.08, 3.2)
+
+[sub_resource type="BoxMesh" id="BoxMesh_faevg"]
+material = SubResource("StandardMaterial3D_2538w")
+size = Vector3(0.1, 0.08, 3.2)
+
+[sub_resource type="BoxMesh" id="BoxMesh_jeucy"]
+material = SubResource("StandardMaterial3D_mebed")
+size = Vector3(0.16, 0.8, 0.16)
+
+[sub_resource type="BoxMesh" id="BoxMesh_sygdj"]
+material = SubResource("StandardMaterial3D_mebed")
+size = Vector3(0.16, 0.8, 0.16)
+
+[sub_resource type="BoxMesh" id="BoxMesh_6tk21"]
+material = SubResource("StandardMaterial3D_mebed")
+size = Vector3(0.16, 0.8, 0.16)
+
+[sub_resource type="BoxMesh" id="BoxMesh_t2yhf"]
+material = SubResource("StandardMaterial3D_mebed")
+size = Vector3(0.16, 0.8, 0.16)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_paxss"]
+albedo_color = Color(0.24, 0.22, 0.25, 1)
+metallic = 0.7
+roughness = 0.4
+
+[sub_resource type="BoxMesh" id="BoxMesh_41dj7"]
+material = SubResource("StandardMaterial3D_paxss")
+size = Vector3(0.96, 0.14, 0.84)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_csfgg"]
+albedo_color = Color(0.14, 0.14, 0.16, 1)
+roughness = 0.85
+
+[sub_resource type="BoxMesh" id="BoxMesh_b0n8o"]
+material = SubResource("StandardMaterial3D_csfgg")
+size = Vector3(0.92, 0.06, 0.68)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_8mvob"]
+albedo_color = Color(0.38, 0.28, 0.16, 1)
+metallic = 0.8
+roughness = 0.35
+
+[sub_resource type="BoxMesh" id="BoxMesh_frofe"]
+material = SubResource("StandardMaterial3D_8mvob")
+size = Vector3(0.08, 0.18, 0.86)
+
+[sub_resource type="BoxMesh" id="BoxMesh_87vi5"]
+material = SubResource("StandardMaterial3D_8mvob")
+size = Vector3(0.08, 0.18, 0.86)
+
+[sub_resource type="BoxMesh" id="BoxMesh_ks6kp"]
+material = SubResource("StandardMaterial3D_paxss")
+size = Vector3(0.96, 0.14, 0.84)
+
+[sub_resource type="BoxMesh" id="BoxMesh_jg0wx"]
+material = SubResource("StandardMaterial3D_csfgg")
+size = Vector3(0.92, 0.06, 0.68)
+
+[sub_resource type="BoxMesh" id="BoxMesh_xignt"]
+material = SubResource("StandardMaterial3D_8mvob")
+size = Vector3(0.08, 0.18, 0.86)
+
+[sub_resource type="BoxMesh" id="BoxMesh_hm00q"]
+material = SubResource("StandardMaterial3D_8mvob")
+size = Vector3(0.08, 0.18, 0.86)
+
+[sub_resource type="BoxMesh" id="BoxMesh_uhona"]
+material = SubResource("StandardMaterial3D_paxss")
+size = Vector3(0.96, 0.14, 0.84)
+
+[sub_resource type="BoxMesh" id="BoxMesh_83p2p"]
+material = SubResource("StandardMaterial3D_csfgg")
+size = Vector3(0.92, 0.06, 0.68)
+
+[sub_resource type="BoxMesh" id="BoxMesh_0ydby"]
+material = SubResource("StandardMaterial3D_8mvob")
+size = Vector3(0.08, 0.18, 0.86)
+
+[sub_resource type="BoxMesh" id="BoxMesh_2kajm"]
+material = SubResource("StandardMaterial3D_8mvob")
+size = Vector3(0.08, 0.18, 0.86)
+
+[sub_resource type="BoxMesh" id="BoxMesh_163g5"]
+material = SubResource("StandardMaterial3D_8mvob")
+size = Vector3(0.12, 0.38, 0.38)
+
+[sub_resource type="BoxMesh" id="BoxMesh_c5o3n"]
+material = SubResource("StandardMaterial3D_paxss")
+size = Vector3(0.57, 0.24, 0.24)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_dmduo"]
+albedo_color = Color(0, 0.95, 0.9, 1)
+emission_enabled = true
+emission = Color(0, 0.95, 0.9, 1)
+emission_energy_multiplier = 2.2
+
+[sub_resource type="BoxMesh" id="BoxMesh_w1kba"]
+material = SubResource("StandardMaterial3D_dmduo")
+size = Vector3(0.552, 0.18, 0.18)
+
+[sub_resource type="BoxMesh" id="BoxMesh_3fx8b"]
+material = SubResource("StandardMaterial3D_8mvob")
+size = Vector3(0.12, 0.38, 0.38)
+
+[sub_resource type="BoxMesh" id="BoxMesh_usrgs"]
+material = SubResource("StandardMaterial3D_paxss")
+size = Vector3(0.57, 0.24, 0.24)
+
+[sub_resource type="BoxMesh" id="BoxMesh_iim4f"]
+material = SubResource("StandardMaterial3D_dmduo")
+size = Vector3(0.552, 0.18, 0.18)
+
+[sub_resource type="BoxMesh" id="BoxMesh_8e1yt"]
+material = SubResource("StandardMaterial3D_8mvob")
+size = Vector3(0.12, 0.38, 0.38)
+
+[sub_resource type="BoxMesh" id="BoxMesh_jkj76"]
+material = SubResource("StandardMaterial3D_paxss")
+size = Vector3(0.57, 0.24, 0.24)
+
+[sub_resource type="BoxMesh" id="BoxMesh_66a3b"]
+material = SubResource("StandardMaterial3D_dmduo")
+size = Vector3(0.552, 0.18, 0.18)
+
+[sub_resource type="BoxMesh" id="BoxMesh_nglkl"]
+material = SubResource("StandardMaterial3D_8mvob")
+size = Vector3(0.12, 0.38, 0.38)
+
+[sub_resource type="BoxMesh" id="BoxMesh_0jjd6"]
+material = SubResource("StandardMaterial3D_paxss")
+size = Vector3(0.57, 0.24, 0.24)
+
+[sub_resource type="BoxMesh" id="BoxMesh_ssi8m"]
+material = SubResource("StandardMaterial3D_dmduo")
+size = Vector3(0.552, 0.18, 0.18)
+
+[node name="TestArena3D" type="Node3D" unique_id=473175920]
+script = ExtResource("1_j1ips")
+
+[node name="Camera3D" type="Camera3D" parent="." unique_id=416106811]
+transform = Transform3D(1, 0, 0, 0, 0.70710677, 0.70710677, 0, -0.70710677, 0.70710677, 5.5, 22, 31.5)
+projection = 1
+current = true
+size = 23.5
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=317976383]
+transform = Transform3D(0.8660254, -0.35355338, 0.35355338, 0, 0.70710677, 0.70710677, -0.5, -0.6123724, 0.6123724, 0, 0, 0)
+light_color = Color(1, 0.94, 0.86, 1)
+light_energy = 0.92
+shadow_enabled = true
+shadow_bias = 0.04
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=1760529797]
+environment = SubResource("Environment_swcr1")
+
+[node name="BoardRoot" type="Node3D" parent="." unique_id=1326947018]
+
+[node name="TerrainGridMap" type="GridMap" parent="BoardRoot" unique_id=1177031617]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.35, 0)
+mesh_library = ExtResource("2_bni4t")
+cell_size = Vector3(0.5, 0.25, 0.5)
+data = {
+"cells": PackedInt32Array(65530, 65520, 6, 196602, 65520, 1, 65530, 65521, 6, 196602, 65521, 1, 65530, 65522, 6, 196602, 65522, 0, 65530, 65523, 6, 196602, 65523, 0, 65530, 65524, 6, 196602, 65524, 1, 65530, 65525, 6, 196602, 65525, 1, 65530, 65526, 6, 196602, 65526, 0, 65530, 65527, 6, 196602, 65527, 0, 65530, 65528, 6, 196602, 65528, 1, 65530, 65529, 6, 196602, 65529, 1, 65530, 65530, 6, 196602, 65530, 0, 65530, 65531, 6, 196602, 65531, 0, 65530, 65532, 6, 196602, 65532, 1, 65530, 65533, 6, 196602, 65533, 1, 65530, 65534, 6, 196602, 65534, 0, 65530, 65535, 6, 196602, 65535, 0, 65530, 0, 6, 196602, 0, 1, 65530, 1, 6, 196602, 1, 1, 65530, 2, 6, 196602, 2, 0, 65530, 3, 6, 196602, 3, 0, 65530, 4, 6, 196602, 4, 1, 65530, 5, 6, 196602, 5, 1, 65530, 6, 6, 196602, 6, 0, 65530, 7, 6, 196602, 7, 0, 65530, 8, 6, 196602, 8, 1, 65530, 9, 6, 196602, 9, 1, 65530, 10, 6, 196602, 10, 0, 65530, 11, 6, 196602, 11, 0, 65530, 12, 6, 196602, 12, 1, 65530, 13, 6, 196602, 13, 1, 65530, 14, 6, 196602, 14, 0, 65530, 15, 6, 196602, 15, 0, 65530, 16, 6, 196602, 16, 1, 65530, 17, 6, 196602, 17, 1, 65530, 18, 6, 196602, 18, 0, 65530, 19, 6, 196602, 19, 0, 65530, 20, 6, 196602, 20, 1, 65530, 21, 6, 196602, 21, 1, 65530, 22, 6, 196602, 22, 0, 65530, 23, 6, 196602, 23, 0, 65530, 24, 6, 196602, 24, 1, 65530, 25, 6, 196602, 25, 1, 65530, 26, 6, 196602, 26, 0, 65530, 27, 6, 196602, 27, 0, 65530, 28, 6, 196602, 28, 1, 65530, 29, 6, 196602, 29, 1, 65530, 30, 6, 196602, 30, 0, 65530, 31, 6, 196602, 31, 0, 65530, 32, 6, 196602, 32, 1, 65530, 33, 6, 196602, 33, 1, 65530, 34, 6, 196602, 34, 0, 65530, 35, 6, 196602, 35, 0, 65530, 36, 6, 196602, 36, 1, 65530, 37, 6, 196602, 37, 1, 65530, 38, 6, 196602, 38, 0, 65530, 39, 6, 196602, 39, 0, 65530, 40, 6, 196602, 40, 1, 65530, 41, 6, 196602, 41, 1, 65530, 42, 6, 196602, 42, 0, 65530, 43, 6, 196602, 43, 0, 65530, 44, 6, 196602, 44, 1, 65530, 45, 6, 196602, 45, 1, 65530, 46, 6, 196602, 46, 0, 65530, 47, 6, 196602, 47, 0, 65530, 48, 6, 196602, 48, 1, 65530, 49, 6, 196602, 49, 1, 65530, 50, 6, 196602, 50, 0, 65530, 51, 6, 196602, 51, 0, 65530, 52, 6, 196602, 52, 1, 65530, 53, 6, 196602, 53, 1, 65530, 54, 6, 196602, 54, 0, 65530, 55, 6, 196602, 55, 0, 65531, 65520, 6, 196603, 65520, 1, 65531, 65521, 6, 196603, 65521, 1, 65531, 65522, 6, 196603, 65522, 0, 65531, 65523, 6, 196603, 65523, 0, 65531, 65524, 6, 196603, 65524, 1, 65531, 65525, 6, 196603, 65525, 1, 65531, 65526, 6, 196603, 65526, 0, 65531, 65527, 6, 196603, 65527, 0, 65531, 65528, 6, 196603, 65528, 1, 65531, 65529, 6, 196603, 65529, 1, 65531, 65530, 6, 196603, 65530, 0, 65531, 65531, 6, 196603, 65531, 0, 65531, 65532, 6, 196603, 65532, 1, 65531, 65533, 6, 196603, 65533, 1, 65531, 65534, 6, 196603, 65534, 0, 65531, 65535, 6, 196603, 65535, 0, 65531, 0, 6, 196603, 0, 1, 65531, 1, 6, 196603, 1, 1, 65531, 2, 6, 196603, 2, 0, 65531, 3, 6, 196603, 3, 0, 65531, 4, 6, 196603, 4, 1, 65531, 5, 6, 196603, 5, 1, 65531, 6, 6, 196603, 6, 0, 65531, 7, 6, 196603, 7, 0, 65531, 8, 6, 196603, 8, 1, 65531, 9, 6, 196603, 9, 1, 65531, 10, 6, 196603, 10, 0, 65531, 11, 6, 196603, 11, 0, 65531, 12, 6, 196603, 12, 1, 65531, 13, 6, 196603, 13, 1, 65531, 14, 6, 196603, 14, 0, 65531, 15, 6, 196603, 15, 0, 65531, 16, 6, 196603, 16, 1, 65531, 17, 6, 196603, 17, 1, 65531, 18, 6, 196603, 18, 0, 65531, 19, 6, 196603, 19, 0, 65531, 20, 6, 196603, 20, 1, 65531, 21, 6, 196603, 21, 1, 65531, 22, 6, 196603, 22, 0, 65531, 23, 6, 196603, 23, 0, 65531, 24, 6, 196603, 24, 1, 65531, 25, 6, 196603, 25, 1, 65531, 26, 6, 196603, 26, 0, 65531, 27, 6, 196603, 27, 0, 65531, 28, 6, 196603, 28, 1, 65531, 29, 6, 196603, 29, 1, 65531, 30, 6, 196603, 30, 0, 65531, 31, 6, 196603, 31, 0, 65531, 32, 6, 196603, 32, 1, 65531, 33, 6, 196603, 33, 1, 65531, 34, 6, 196603, 34, 0, 65531, 35, 6, 196603, 35, 0, 65531, 36, 6, 196603, 36, 1, 65531, 37, 6, 196603, 37, 1, 65531, 38, 6, 196603, 38, 0, 65531, 39, 6, 196603, 39, 0, 65531, 40, 6, 196603, 40, 1, 65531, 41, 6, 196603, 41, 1, 65531, 42, 6, 196603, 42, 0, 65531, 43, 6, 196603, 43, 0, 65531, 44, 6, 196603, 44, 1, 65531, 45, 6, 196603, 45, 1, 65531, 46, 6, 196603, 46, 0, 65531, 47, 6, 196603, 47, 0, 65531, 48, 6, 196603, 48, 1, 65531, 49, 6, 196603, 49, 1, 65531, 50, 6, 196603, 50, 0, 65531, 51, 6, 196603, 51, 0, 65531, 52, 6, 196603, 52, 1, 65531, 53, 6, 196603, 53, 1, 65531, 54, 6, 196603, 54, 0, 65531, 55, 6, 196603, 55, 0, 65532, 65520, 6, 196604, 65520, 0, 65532, 65521, 6, 196604, 65521, 0, 65532, 65522, 6, 196604, 65522, 1, 65532, 65523, 6, 196604, 65523, 1, 65532, 65524, 6, 196604, 65524, 0, 65532, 65525, 6, 196604, 65525, 0, 65532, 65526, 6, 196604, 65526, 1, 65532, 65527, 6, 196604, 65527, 1, 65532, 65528, 6, 196604, 65528, 0, 65532, 65529, 6, 196604, 65529, 0, 65532, 65530, 6, 196604, 65530, 1, 65532, 65531, 6, 196604, 65531, 1, 65532, 65532, 6, 196604, 65532, 0, 65532, 65533, 6, 196604, 65533, 0, 65532, 65534, 6, 196604, 65534, 1, 65532, 65535, 6, 196604, 65535, 1, 65532, 0, 6, 196604, 0, 0, 65532, 1, 6, 196604, 1, 0, 65532, 2, 6, 196604, 2, 1, 65532, 3, 6, 196604, 3, 1, 65532, 4, 6, 196604, 4, 0, 65532, 5, 6, 196604, 5, 0, 65532, 6, 6, 196604, 6, 1, 65532, 7, 6, 196604, 7, 1, 65532, 8, 6, 196604, 8, 0, 65532, 9, 6, 196604, 9, 0, 65532, 10, 6, 196604, 10, 1, 65532, 11, 6, 196604, 11, 1, 65532, 12, 6, 196604, 12, 0, 65532, 13, 6, 196604, 13, 0, 65532, 14, 6, 196604, 14, 1, 65532, 15, 6, 196604, 15, 1, 65532, 16, 6, 196604, 16, 0, 65532, 17, 6, 196604, 17, 0, 65532, 18, 6, 196604, 18, 1, 65532, 19, 6, 196604, 19, 1, 65532, 20, 6, 196604, 20, 0, 65532, 21, 6, 196604, 21, 0, 65532, 22, 6, 196604, 22, 1, 65532, 23, 6, 196604, 23, 1, 65532, 24, 6, 196604, 24, 0, 65532, 25, 6, 196604, 25, 0, 65532, 26, 6, 196604, 26, 1, 65532, 27, 6, 196604, 27, 1, 65532, 28, 6, 196604, 28, 0, 65532, 29, 6, 196604, 29, 0, 65532, 30, 6, 196604, 30, 1, 65532, 31, 6, 196604, 31, 1, 65532, 32, 6, 196604, 32, 0, 65532, 33, 6, 196604, 33, 0, 65532, 34, 6, 196604, 34, 1, 65532, 35, 6, 196604, 35, 1, 65532, 36, 6, 196604, 36, 0, 65532, 37, 6, 196604, 37, 0, 65532, 38, 6, 196604, 38, 1, 65532, 39, 6, 196604, 39, 1, 65532, 40, 6, 196604, 40, 0, 65532, 41, 6, 196604, 41, 0, 65532, 42, 6, 196604, 42, 1, 65532, 43, 6, 196604, 43, 1, 65532, 44, 6, 196604, 44, 0, 65532, 45, 6, 196604, 45, 0, 65532, 46, 6, 196604, 46, 1, 65532, 47, 6, 196604, 47, 1, 65532, 48, 6, 196604, 48, 0, 65532, 49, 6, 196604, 49, 0, 65532, 50, 6, 196604, 50, 1, 65532, 51, 6, 196604, 51, 1, 65532, 52, 6, 196604, 52, 0, 65532, 53, 6, 196604, 53, 0, 65532, 54, 6, 196604, 54, 1, 65532, 55, 6, 196604, 55, 1, 65533, 65520, 6, 196605, 65520, 0, 65533, 65521, 6, 196605, 65521, 0, 65533, 65522, 6, 196605, 65522, 1, 65533, 65523, 6, 196605, 65523, 1, 65533, 65524, 6, 196605, 65524, 0, 65533, 65525, 6, 196605, 65525, 0, 65533, 65526, 6, 196605, 65526, 1, 65533, 65527, 6, 196605, 65527, 1, 65533, 65528, 6, 196605, 65528, 0, 65533, 65529, 6, 196605, 65529, 0, 65533, 65530, 6, 196605, 65530, 1, 65533, 65531, 6, 196605, 65531, 1, 65533, 65532, 6, 196605, 65532, 0, 65533, 65533, 6, 196605, 65533, 0, 65533, 65534, 6, 196605, 65534, 1, 65533, 65535, 6, 196605, 65535, 1, 65533, 0, 6, 196605, 0, 0, 65533, 1, 6, 196605, 1, 0, 65533, 2, 6, 196605, 2, 1, 65533, 3, 6, 196605, 3, 1, 65533, 4, 6, 196605, 4, 0, 65533, 5, 6, 196605, 5, 0, 65533, 6, 6, 196605, 6, 1, 65533, 7, 6, 196605, 7, 1, 65533, 8, 6, 196605, 8, 0, 65533, 9, 6, 196605, 9, 0, 65533, 10, 6, 196605, 10, 1, 65533, 11, 6, 196605, 11, 1, 65533, 12, 6, 196605, 12, 0, 65533, 13, 6, 196605, 13, 0, 65533, 14, 6, 196605, 14, 1, 65533, 15, 6, 196605, 15, 1, 65533, 16, 6, 196605, 16, 0, 65533, 17, 6, 196605, 17, 0, 65533, 18, 6, 196605, 18, 1, 65533, 19, 6, 196605, 19, 1, 65533, 20, 6, 196605, 20, 0, 65533, 21, 6, 196605, 21, 0, 65533, 22, 6, 196605, 22, 1, 65533, 23, 6, 196605, 23, 1, 65533, 24, 6, 196605, 24, 0, 65533, 25, 6, 196605, 25, 0, 65533, 26, 6, 196605, 26, 1, 65533, 27, 6, 196605, 27, 1, 65533, 28, 6, 196605, 28, 0, 65533, 29, 6, 196605, 29, 0, 65533, 30, 6, 196605, 30, 1, 65533, 31, 6, 196605, 31, 1, 65533, 32, 6, 196605, 32, 0, 65533, 33, 6, 196605, 33, 0, 65533, 34, 6, 196605, 34, 1, 65533, 35, 6, 196605, 35, 1, 65533, 36, 6, 196605, 36, 0, 65533, 37, 6, 196605, 37, 0, 65533, 38, 6, 196605, 38, 1, 65533, 39, 6, 196605, 39, 1, 65533, 40, 6, 196605, 40, 0, 65533, 41, 6, 196605, 41, 0, 65533, 42, 6, 196605, 42, 1, 65533, 43, 6, 196605, 43, 1, 65533, 44, 6, 196605, 44, 0, 65533, 45, 6, 196605, 45, 0, 65533, 46, 6, 196605, 46, 1, 65533, 47, 6, 196605, 47, 1, 65533, 48, 6, 196605, 48, 0, 65533, 49, 6, 196605, 49, 0, 65533, 50, 6, 196605, 50, 1, 65533, 51, 6, 196605, 51, 1, 65533, 52, 6, 196605, 52, 0, 65533, 53, 6, 196605, 53, 0, 65533, 54, 6, 196605, 54, 1, 65533, 55, 6, 196605, 55, 1, 65534, 65520, 6, 196606, 65520, 1, 65534, 65521, 6, 196606, 65521, 1, 65534, 65522, 6, 196606, 65522, 0, 65534, 65523, 6, 196606, 65523, 0, 65534, 65524, 6, 196606, 65524, 1, 65534, 65525, 6, 196606, 65525, 1, 65534, 65526, 6, 196606, 65526, 0, 65534, 65527, 6, 196606, 65527, 0, 65534, 65528, 6, 196606, 65528, 1, 65534, 65529, 6, 196606, 65529, 1, 65534, 65530, 6, 196606, 65530, 0, 65534, 65531, 6, 196606, 65531, 0, 65534, 65532, 6, 196606, 65532, 1, 65534, 65533, 6, 196606, 65533, 1, 65534, 65534, 6, 196606, 65534, 0, 65534, 65535, 6, 196606, 65535, 0, 65534, 0, 6, 196606, 0, 1, 65534, 1, 6, 196606, 1, 1, 65534, 2, 6, 196606, 2, 0, 65534, 3, 6, 196606, 3, 0, 65534, 4, 6, 196606, 4, 1, 65534, 5, 6, 196606, 5, 1, 65534, 6, 6, 196606, 6, 0, 65534, 7, 6, 196606, 7, 0, 65534, 8, 6, 196606, 8, 1, 65534, 9, 6, 196606, 9, 1, 65534, 10, 6, 196606, 10, 0, 65534, 11, 6, 196606, 11, 0, 65534, 12, 6, 196606, 12, 1, 65534, 13, 6, 196606, 13, 1, 65534, 14, 6, 196606, 14, 0, 65534, 15, 6, 196606, 15, 0, 65534, 16, 6, 196606, 16, 1, 65534, 17, 6, 196606, 17, 1, 65534, 18, 6, 196606, 18, 0, 65534, 19, 6, 196606, 19, 0, 65534, 20, 6, 196606, 20, 1, 65534, 21, 6, 196606, 21, 1, 65534, 22, 6, 196606, 22, 0, 65534, 23, 6, 196606, 23, 0, 65534, 24, 6, 196606, 24, 1, 65534, 25, 6, 196606, 25, 1, 65534, 26, 6, 196606, 26, 0, 65534, 27, 6, 196606, 27, 0, 65534, 28, 6, 196606, 28, 1, 65534, 29, 6, 196606, 29, 1, 65534, 30, 6, 196606, 30, 0, 65534, 31, 6, 196606, 31, 0, 65534, 32, 6, 196606, 32, 1, 65534, 33, 6, 196606, 33, 1, 65534, 34, 6, 196606, 34, 0, 65534, 35, 6, 196606, 35, 0, 65534, 36, 6, 196606, 36, 1, 65534, 37, 6, 196606, 37, 1, 65534, 38, 6, 196606, 38, 0, 65534, 39, 6, 196606, 39, 0, 65534, 40, 6, 196606, 40, 1, 65534, 41, 6, 196606, 41, 1, 65534, 42, 6, 196606, 42, 0, 65534, 43, 6, 196606, 43, 0, 65534, 44, 6, 196606, 44, 1, 65534, 45, 6, 196606, 45, 1, 65534, 46, 6, 196606, 46, 0, 65534, 47, 6, 196606, 47, 0, 65534, 48, 6, 196606, 48, 1, 65534, 49, 6, 196606, 49, 1, 65534, 50, 6, 196606, 50, 0, 65534, 51, 6, 196606, 51, 0, 65534, 52, 6, 196606, 52, 1, 65534, 53, 6, 196606, 53, 1, 65534, 54, 6, 196606, 54, 0, 65534, 55, 6, 196606, 55, 0, 65535, 65520, 6, 196607, 65520, 1, 65535, 65521, 6, 196607, 65521, 1, 65535, 65522, 6, 196607, 65522, 0, 65535, 65523, 6, 196607, 65523, 0, 65535, 65524, 6, 196607, 65524, 1, 65535, 65525, 6, 196607, 65525, 1, 65535, 65526, 6, 196607, 65526, 0, 65535, 65527, 6, 196607, 65527, 0, 65535, 65528, 6, 196607, 65528, 1, 65535, 65529, 6, 196607, 65529, 1, 65535, 65530, 6, 196607, 65530, 0, 65535, 65531, 6, 196607, 65531, 0, 65535, 65532, 6, 196607, 65532, 1, 65535, 65533, 6, 196607, 65533, 1, 65535, 65534, 6, 196607, 65534, 0, 65535, 65535, 6, 196607, 65535, 0, 65535, 0, 6, 196607, 0, 1, 65535, 1, 6, 196607, 1, 1, 65535, 2, 6, 196607, 2, 0, 65535, 3, 6, 196607, 3, 0, 65535, 4, 6, 196607, 4, 1, 65535, 5, 6, 196607, 5, 1, 65535, 6, 6, 196607, 6, 0, 65535, 7, 6, 196607, 7, 0, 65535, 8, 6, 196607, 8, 1, 65535, 9, 6, 196607, 9, 1, -1, 10, 5, 131071, 10, 3, -1, 11, 5, 65535, 11, 4, -1, 12, 5, 65535, 12, 4, -1, 13, 5, 65535, 13, 4, -1, 14, 5, 65535, 14, 4, -1, 15, 5, 65535, 15, 4, -1, 16, 5, 131071, 16, 3, 65535, 17, 6, 196607, 17, 1, 65535, 18, 6, 196607, 18, 0, 65535, 19, 6, 196607, 19, 0, 65535, 20, 6, 196607, 20, 1, 65535, 21, 6, 196607, 21, 1, 65535, 22, 6, 196607, 22, 0, 65535, 23, 6, 196607, 23, 0, 65535, 24, 6, 196607, 24, 1, 65535, 25, 6, 196607, 25, 1, 65535, 26, 6, 196607, 26, 0, 65535, 27, 6, 196607, 27, 0, 65535, 28, 6, 196607, 28, 1, 65535, 29, 6, 196607, 29, 1, 65535, 30, 6, 196607, 30, 0, 65535, 31, 6, 196607, 31, 0, 65535, 32, 6, 196607, 32, 1, 65535, 33, 6, 196607, 33, 1, 65535, 34, 6, 196607, 34, 0, 65535, 35, 6, 196607, 35, 0, 65535, 36, 6, 196607, 36, 1, 65535, 37, 6, 196607, 37, 1, 65535, 38, 6, 196607, 38, 0, 65535, 39, 6, 196607, 39, 0, 65535, 40, 6, 196607, 40, 1, 65535, 41, 6, 196607, 41, 1, 65535, 42, 6, 196607, 42, 0, 65535, 43, 6, 196607, 43, 0, 65535, 44, 6, 196607, 44, 1, 65535, 45, 6, 196607, 45, 1, 65535, 46, 6, 196607, 46, 0, 65535, 47, 6, 196607, 47, 0, 65535, 48, 6, 196607, 48, 1, 65535, 49, 6, 196607, 49, 1, 65535, 50, 6, 196607, 50, 0, 65535, 51, 6, 196607, 51, 0, 65535, 52, 6, 196607, 52, 1, 65535, 53, 6, 196607, 53, 1, 65535, 54, 6, 196607, 54, 0, 65535, 55, 6, 196607, 55, 0, 0, 65520, 6, 131072, 65520, 0, 0, 65521, 6, 131072, 65521, 0, 0, 65522, 6, 131072, 65522, 1, 0, 65523, 6, 131072, 65523, 1, 0, 65524, 6, 131072, 65524, 0, 0, 65525, 6, 131072, 65525, 0, 0, 65526, 6, 131072, 65526, 1, 0, 65527, 6, 131072, 65527, 1, 0, 65528, 6, 131072, 65528, 0, 0, 65529, 6, 131072, 65529, 0, 0, 65530, 6, 131072, 65530, 1, 0, 65531, 6, 131072, 65531, 1, 0, 65532, 6, 131072, 65532, 0, 0, 65533, 6, 131072, 65533, 0, 0, 65534, 6, 131072, 65534, 1, 0, 65535, 6, 131072, 65535, 1, 0, 0, 6, 131072, 0, 0, 0, 1, 6, 131072, 1, 0, 0, 2, 6, 131072, 2, 1, 0, 3, 6, 131072, 3, 1, 0, 4, 6, 131072, 4, 0, 0, 5, 6, 131072, 5, 0, 0, 6, 6, 131072, 6, 1, 0, 7, 6, 131072, 7, 1, 0, 8, 6, 131072, 8, 0, 0, 9, 6, 131072, 9, 0, -65536, 10, 5, 65536, 10, 3, -65536, 11, 5, 0, 11, 4, -65536, 12, 5, 0, 12, 4, -65536, 13, 5, 0, 13, 4, -65536, 14, 5, 0, 14, 4, -65536, 15, 5, 0, 15, 4, -65536, 16, 5, 65536, 16, 3, 0, 17, 6, 131072, 17, 0, 0, 18, 6, 131072, 18, 1, 0, 19, 6, 131072, 19, 1, 0, 20, 6, 131072, 20, 0, 0, 21, 6, 131072, 21, 0, 0, 22, 6, 131072, 22, 1, 0, 23, 6, 131072, 23, 1, 0, 24, 6, 131072, 24, 0, 0, 25, 6, 131072, 25, 0, 0, 26, 6, 131072, 26, 1, 0, 27, 6, 131072, 27, 1, 0, 28, 6, 131072, 28, 0, 0, 29, 6, 131072, 29, 0, 0, 30, 6, 131072, 30, 1, 0, 31, 6, 131072, 31, 1, 0, 32, 6, 131072, 32, 0, 0, 33, 6, 131072, 33, 0, 0, 34, 6, 131072, 34, 1, 0, 35, 6, 131072, 35, 1, 0, 36, 6, 131072, 36, 0, 0, 37, 6, 131072, 37, 0, 0, 38, 6, 131072, 38, 1, 0, 39, 6, 131072, 39, 1, 0, 40, 6, 131072, 40, 0, 0, 41, 6, 131072, 41, 0, 0, 42, 6, 131072, 42, 1, 0, 43, 6, 131072, 43, 1, 0, 44, 6, 131072, 44, 0, 0, 45, 6, 131072, 45, 0, 0, 46, 6, 131072, 46, 1, 0, 47, 6, 131072, 47, 1, 0, 48, 6, 131072, 48, 0, 0, 49, 6, 131072, 49, 0, 0, 50, 6, 131072, 50, 1, 0, 51, 6, 131072, 51, 1, 0, 52, 6, 131072, 52, 0, 0, 53, 6, 131072, 53, 0, 0, 54, 6, 131072, 54, 1, 0, 55, 6, 131072, 55, 1, 1, 65520, 6, 131073, 65520, 0, 1, 65521, 6, 131073, 65521, 0, 1, 65522, 6, 131073, 65522, 1, 1, 65523, 6, 131073, 65523, 1, 1, 65524, 6, 131073, 65524, 0, 1, 65525, 6, 131073, 65525, 0, 1, 65526, 6, 131073, 65526, 1, 1, 65527, 6, 131073, 65527, 1, 1, 65528, 6, 131073, 65528, 0, 1, 65529, 6, 131073, 65529, 0, 1, 65530, 6, 131073, 65530, 1, 1, 65531, 6, 131073, 65531, 1, 1, 65532, 6, 131073, 65532, 0, 1, 65533, 6, 131073, 65533, 0, 1, 65534, 6, 131073, 65534, 1, 1, 65535, 6, 131073, 65535, 1, 1, 0, 6, 131073, 0, 0, 1, 1, 6, 131073, 1, 0, 1, 2, 6, 131073, 2, 1, 1, 3, 6, 131073, 3, 1, 1, 4, 6, 131073, 4, 0, 1, 5, 6, 131073, 5, 0, 1, 6, 6, 131073, 6, 1, 1, 7, 6, 131073, 7, 1, 1, 8, 6, 131073, 8, 0, 1, 9, 6, 131073, 9, 0, -65535, 10, 5, 65537, 10, 3, -65535, 11, 5, 65537, 11, 3, -65535, 12, 5, 1, 12, 4, -65535, 13, 5, 1, 13, 4, -65535, 14, 5, 1, 14, 4, -65535, 15, 5, 1, 15, 4, -65535, 16, 5, 1, 16, 4, -65535, 17, 5, 65537, 17, 3, 1, 18, 6, 131073, 18, 1, 1, 19, 6, 131073, 19, 1, 1, 20, 6, 131073, 20, 0, 1, 21, 6, 131073, 21, 0, 1, 22, 6, 131073, 22, 1, 1, 23, 6, 131073, 23, 1, 1, 24, 6, 131073, 24, 0, 1, 25, 6, 131073, 25, 0, 1, 26, 6, 131073, 26, 1, 1, 27, 6, 131073, 27, 1, 1, 28, 6, 131073, 28, 0, 1, 29, 6, 131073, 29, 0, 1, 30, 6, 131073, 30, 1, 1, 31, 6, 131073, 31, 1, 1, 32, 6, 131073, 32, 0, 1, 33, 6, 131073, 33, 0, 1, 34, 6, 131073, 34, 1, 1, 35, 6, 131073, 35, 1, 1, 36, 6, 131073, 36, 0, 1, 37, 6, 131073, 37, 0, 1, 38, 6, 131073, 38, 1, 1, 39, 6, 131073, 39, 1, 1, 40, 6, 131073, 40, 0, 1, 41, 6, 131073, 41, 0, 1, 42, 6, 131073, 42, 1, 1, 43, 6, 131073, 43, 1, 1, 44, 6, 131073, 44, 0, 1, 45, 6, 131073, 45, 0, 1, 46, 6, 131073, 46, 1, 1, 47, 6, 131073, 47, 1, 1, 48, 6, 131073, 48, 0, 1, 49, 6, 131073, 49, 0, 1, 50, 6, 131073, 50, 1, 1, 51, 6, 131073, 51, 1, 1, 52, 6, 131073, 52, 0, 1, 53, 6, 131073, 53, 0, 1, 54, 6, 131073, 54, 1, 1, 55, 6, 131073, 55, 1, 2, 65520, 6, 131074, 65520, 1, 2, 65521, 6, 131074, 65521, 1, 2, 65522, 6, 131074, 65522, 0, 2, 65523, 6, 131074, 65523, 0, 2, 65524, 6, 131074, 65524, 1, 2, 65525, 6, 131074, 65525, 1, 2, 65526, 6, 131074, 65526, 0, 2, 65527, 6, 131074, 65527, 0, 2, 65528, 6, 131074, 65528, 1, 2, 65529, 6, 131074, 65529, 1, 2, 65530, 6, 131074, 65530, 0, 2, 65531, 6, 131074, 65531, 0, 2, 65532, 6, 131074, 65532, 1, 2, 65533, 6, 131074, 65533, 1, 2, 65534, 6, 131074, 65534, 0, 2, 65535, 6, 131074, 65535, 0, 2, 0, 6, 131074, 0, 1, 2, 1, 6, 131074, 1, 1, 2, 2, 6, 131074, 2, 0, 2, 3, 6, 131074, 3, 0, 2, 4, 6, 131074, 4, 1, 2, 5, 6, 131074, 5, 1, 2, 6, 6, 131074, 6, 0, 2, 7, 6, 131074, 7, 0, 2, 8, 6, 131074, 8, 1, 2, 9, 6, 131074, 9, 1, 2, 10, 6, 131074, 10, 0, -65534, 11, 5, 65538, 11, 3, -65534, 12, 5, 2, 12, 4, -65534, 13, 5, 2, 13, 4, -65534, 14, 5, 2, 14, 4, -65534, 15, 5, 2, 15, 4, -65534, 16, 5, 2, 16, 4, -65534, 17, 5, 65538, 17, 3, 2, 18, 6, 131074, 18, 0, 2, 19, 6, 131074, 19, 0, 2, 20, 6, 131074, 20, 1, 2, 21, 6, 131074, 21, 1, 2, 22, 6, 131074, 22, 0, 2, 23, 6, 131074, 23, 0, 2, 24, 6, 131074, 24, 1, 2, 25, 6, 131074, 25, 1, 2, 26, 6, 131074, 26, 0, 2, 27, 6, 131074, 27, 0, 2, 28, 6, 131074, 28, 1, 2, 29, 6, 131074, 29, 1, 2, 30, 6, 131074, 30, 0, 2, 31, 6, 131074, 31, 0, 2, 32, 6, 131074, 32, 1, 2, 33, 6, 131074, 33, 1, 2, 34, 6, 131074, 34, 0, 2, 35, 6, 131074, 35, 0, 2, 36, 6, 131074, 36, 1, 2, 37, 6, 131074, 37, 1, 2, 38, 6, 131074, 38, 0, 2, 39, 6, 131074, 39, 0, 2, 40, 6, 131074, 40, 1, 2, 41, 6, 131074, 41, 1, 2, 42, 6, 131074, 42, 0, 2, 43, 6, 131074, 43, 0, 2, 44, 6, 131074, 44, 1, 2, 45, 6, 131074, 45, 1, 2, 46, 6, 131074, 46, 0, 2, 47, 6, 131074, 47, 0, 2, 48, 6, 131074, 48, 1, 2, 49, 6, 131074, 49, 1, 2, 50, 6, 131074, 50, 0, 2, 51, 6, 131074, 51, 0, 2, 52, 6, 131074, 52, 1, 2, 53, 6, 131074, 53, 1, 2, 54, 6, 131074, 54, 0, 2, 55, 6, 131074, 55, 0, 3, 65520, 6, 131075, 65520, 1, 3, 65521, 6, 131075, 65521, 1, 3, 65522, 6, 131075, 65522, 0, 3, 65523, 6, 131075, 65523, 0, 3, 65524, 6, 131075, 65524, 1, 3, 65525, 6, 131075, 65525, 1, 3, 65526, 6, 131075, 65526, 0, 3, 65527, 6, 131075, 65527, 0, 3, 65528, 6, 131075, 65528, 1, 3, 65529, 6, 131075, 65529, 1, 3, 65530, 6, 131075, 65530, 0, 3, 65531, 6, 131075, 65531, 0, 3, 65532, 6, 131075, 65532, 1, 3, 65533, 6, 131075, 65533, 1, 3, 65534, 6, 131075, 65534, 0, 3, 65535, 6, 131075, 65535, 0, 3, 0, 6, 131075, 0, 1, 3, 1, 6, 131075, 1, 1, 3, 2, 6, 131075, 2, 0, 3, 3, 6, 131075, 3, 0, 3, 4, 6, 131075, 4, 1, 3, 5, 6, 131075, 5, 1, 3, 6, 6, 131075, 6, 0, 3, 7, 6, 131075, 7, 0, 3, 8, 6, 131075, 8, 1, 3, 9, 6, 131075, 9, 1, 3, 10, 6, 131075, 10, 0, -65533, 11, 5, 65539, 11, 3, -65533, 12, 5, 3, 12, 4, -65533, 13, 5, 3, 13, 4, -65533, 14, 5, 3, 14, 4, -65533, 15, 5, 3, 15, 4, -65533, 16, 5, 3, 16, 4, -65533, 17, 5, 65539, 17, 3, 3, 18, 6, 131075, 18, 0, 3, 19, 6, 131075, 19, 0, 3, 20, 6, 131075, 20, 1, 3, 21, 6, 131075, 21, 1, 3, 22, 6, 131075, 22, 0, 3, 23, 6, 131075, 23, 0, 3, 24, 6, 131075, 24, 1, 3, 25, 6, 131075, 25, 1, 3, 26, 6, 131075, 26, 0, 3, 27, 6, 131075, 27, 0, 3, 28, 6, 131075, 28, 1, 3, 29, 6, 131075, 29, 1, 3, 30, 6, 131075, 30, 0, 3, 31, 6, 131075, 31, 0, 3, 32, 6, 131075, 32, 1, 3, 33, 6, 131075, 33, 1, 3, 34, 6, 131075, 34, 0, 3, 35, 6, 131075, 35, 0, 3, 36, 6, 131075, 36, 1, 3, 37, 6, 131075, 37, 1, 3, 38, 6, 131075, 38, 0, 3, 39, 6, 131075, 39, 0, 3, 40, 6, 131075, 40, 1, 3, 41, 6, 131075, 41, 1, 3, 42, 6, 131075, 42, 0, 3, 43, 6, 131075, 43, 0, 3, 44, 6, 131075, 44, 1, 3, 45, 6, 131075, 45, 1, 3, 46, 6, 131075, 46, 0, 3, 47, 6, 131075, 47, 0, 3, 48, 6, 131075, 48, 1, 3, 49, 6, 131075, 49, 1, 3, 50, 6, 131075, 50, 0, 3, 51, 6, 131075, 51, 0, 3, 52, 6, 131075, 52, 1, 3, 53, 6, 131075, 53, 1, 3, 54, 6, 131075, 54, 0, 3, 55, 6, 131075, 55, 0, 4, 65520, 6, 131076, 65520, 0, 4, 65521, 6, 131076, 65521, 0, 4, 65522, 6, 131076, 65522, 1, 4, 65523, 6, 131076, 65523, 1, 4, 65524, 6, 131076, 65524, 0, 4, 65525, 6, 131076, 65525, 0, 4, 65526, 6, 131076, 65526, 1, 4, 65527, 6, 131076, 65527, 1, 4, 65528, 6, 131076, 65528, 0, 4, 65529, 6, 131076, 65529, 0, 4, 65530, 6, 131076, 65530, 1, 4, 65531, 6, 131076, 65531, 1, 4, 65532, 6, 131076, 65532, 0, 4, 65533, 6, 131076, 65533, 0, 4, 65534, 6, 131076, 65534, 1, 4, 65535, 6, 131076, 65535, 1, 4, 0, 6, 131076, 0, 0, 4, 1, 6, 131076, 1, 0, 4, 2, 6, 131076, 2, 1, 4, 3, 6, 131076, 3, 1, 4, 4, 6, 131076, 4, 0, 4, 5, 6, 131076, 5, 0, 4, 6, 6, 131076, 6, 1, 4, 7, 6, 131076, 7, 1, 4, 8, 6, 131076, 8, 0, 4, 9, 6, 131076, 9, 0, 4, 10, 6, 131076, 10, 1, -65532, 11, 5, 65540, 11, 3, -65532, 12, 5, 4, 12, 4, -65532, 13, 5, 4, 13, 4, -65532, 14, 5, 4, 14, 4, -65532, 15, 5, 4, 15, 4, -65532, 16, 5, 4, 16, 4, -65532, 17, 5, 65540, 17, 3, -65532, 18, 5, 65540, 18, 3, 4, 19, 6, 131076, 19, 1, 4, 20, 6, 131076, 20, 0, 4, 21, 6, 131076, 21, 0, 4, 22, 6, 131076, 22, 1, 4, 23, 6, 131076, 23, 1, 4, 24, 6, 131076, 24, 0, 4, 25, 6, 131076, 25, 0, 4, 26, 6, 131076, 26, 1, 4, 27, 6, 131076, 27, 1, 4, 28, 6, 131076, 28, 0, 4, 29, 6, 131076, 29, 0, 4, 30, 6, 131076, 30, 1, 4, 31, 6, 131076, 31, 1, 4, 32, 6, 131076, 32, 0, 4, 33, 6, 131076, 33, 0, 4, 34, 6, 131076, 34, 1, 4, 35, 6, 131076, 35, 1, 4, 36, 6, 131076, 36, 0, 4, 37, 6, 131076, 37, 0, 4, 38, 6, 131076, 38, 1, 4, 39, 6, 131076, 39, 1, 4, 40, 6, 131076, 40, 0, 4, 41, 6, 131076, 41, 0, 4, 42, 6, 131076, 42, 1, 4, 43, 6, 131076, 43, 1, 4, 44, 6, 131076, 44, 0, 4, 45, 6, 131076, 45, 0, 4, 46, 6, 131076, 46, 1, 4, 47, 6, 131076, 47, 1, 4, 48, 6, 131076, 48, 0, 4, 49, 6, 131076, 49, 0, 4, 50, 6, 131076, 50, 1, 4, 51, 6, 131076, 51, 1, 4, 52, 6, 131076, 52, 0, 4, 53, 6, 131076, 53, 0, 4, 54, 6, 131076, 54, 1, 4, 55, 6, 131076, 55, 1, 5, 65520, 6, 131077, 65520, 0, 5, 65521, 6, 131077, 65521, 0, 5, 65522, 6, 131077, 65522, 1, 5, 65523, 6, 131077, 65523, 1, 5, 65524, 6, 131077, 65524, 0, 5, 65525, 6, 131077, 65525, 0, 5, 65526, 6, 131077, 65526, 1, 5, 65527, 6, 131077, 65527, 1, 5, 65528, 6, 131077, 65528, 0, 5, 65529, 6, 131077, 65529, 0, 5, 65530, 6, 131077, 65530, 1, 5, 65531, 6, 131077, 65531, 1, 5, 65532, 6, 131077, 65532, 0, 5, 65533, 6, 131077, 65533, 0, 5, 65534, 6, 131077, 65534, 1, 5, 65535, 6, 131077, 65535, 1, 5, 0, 6, 131077, 0, 0, 5, 1, 6, 131077, 1, 0, 5, 2, 6, 131077, 2, 1, 5, 3, 6, 131077, 3, 1, 5, 4, 6, 131077, 4, 0, 5, 5, 6, 131077, 5, 0, 5, 6, 6, 131077, 6, 1, 5, 7, 6, 131077, 7, 1, 5, 8, 6, 131077, 8, 0, 5, 9, 6, 131077, 9, 0, 5, 10, 6, 131077, 10, 1, -65531, 11, 5, 65541, 11, 3, -65531, 12, 5, 65541, 12, 3, -65531, 13, 5, 5, 13, 4, -65531, 14, 5, 5, 14, 4, -65531, 15, 5, 5, 15, 4, -65531, 16, 5, 5, 16, 4, -65531, 17, 5, 5, 17, 4, -65531, 18, 5, 65541, 18, 3, 5, 19, 6, 131077, 19, 1, 5, 20, 6, 131077, 20, 0, 5, 21, 6, 131077, 21, 0, 5, 22, 6, 131077, 22, 1, 5, 23, 6, 131077, 23, 1, 5, 24, 6, 131077, 24, 0, 5, 25, 6, 131077, 25, 0, 5, 26, 6, 131077, 26, 1, 5, 27, 6, 131077, 27, 1, 5, 28, 6, 131077, 28, 0, 5, 29, 6, 131077, 29, 0, 5, 30, 6, 131077, 30, 1, 5, 31, 6, 131077, 31, 1, 5, 32, 6, 131077, 32, 0, 5, 33, 6, 131077, 33, 0, 5, 34, 6, 131077, 34, 1, 5, 35, 6, 131077, 35, 1, 5, 36, 6, 131077, 36, 0, 5, 37, 6, 131077, 37, 0, 5, 38, 6, 131077, 38, 1, 5, 39, 6, 131077, 39, 1, 5, 40, 6, 131077, 40, 0, 5, 41, 6, 131077, 41, 0, 5, 42, 6, 131077, 42, 1, 5, 43, 6, 131077, 43, 1, 5, 44, 6, 131077, 44, 0, 5, 45, 6, 131077, 45, 0, 5, 46, 6, 131077, 46, 1, 5, 47, 6, 131077, 47, 1, 5, 48, 6, 131077, 48, 0, 5, 49, 6, 131077, 49, 0, 5, 50, 6, 131077, 50, 1, 5, 51, 6, 131077, 51, 1, 5, 52, 6, 131077, 52, 0, 5, 53, 6, 131077, 53, 0, 5, 54, 6, 131077, 54, 1, 5, 55, 6, 131077, 55, 1, 6, 65520, 6, 131078, 65520, 1, 6, 65521, 6, 131078, 65521, 1, 6, 65522, 6, 131078, 65522, 0, 6, 65523, 6, 131078, 65523, 0, 6, 65524, 6, 131078, 65524, 1, 6, 65525, 6, 131078, 65525, 1, 6, 65526, 6, 131078, 65526, 0, 6, 65527, 6, 131078, 65527, 0, 6, 65528, 6, 131078, 65528, 1, 6, 65529, 6, 131078, 65529, 1, 6, 65530, 6, 131078, 65530, 0, 6, 65531, 6, 131078, 65531, 0, 6, 65532, 6, 131078, 65532, 1, 6, 65533, 6, 131078, 65533, 1, 6, 65534, 6, 131078, 65534, 0, 6, 65535, 6, 131078, 65535, 0, 6, 0, 6, 131078, 0, 1, 6, 1, 6, 131078, 1, 1, 6, 2, 6, 131078, 2, 0, 6, 3, 6, 131078, 3, 0, 6, 4, 6, 131078, 4, 1, 6, 5, 6, 131078, 5, 1, 6, 6, 6, 131078, 6, 0, 6, 7, 6, 131078, 7, 0, 6, 8, 6, 131078, 8, 1, 6, 9, 6, 131078, 9, 1, 6, 10, 6, 131078, 10, 0, 6, 11, 6, 131078, 11, 0, -65530, 12, 5, 65542, 12, 3, -65530, 13, 5, 6, 13, 4, -65530, 14, 5, 6, 14, 4, -65530, 15, 5, 6, 15, 4, -65530, 16, 5, 6, 16, 4, -65530, 17, 5, 6, 17, 4, -65530, 18, 5, 65542, 18, 3, 6, 19, 6, 131078, 19, 0, 6, 20, 6, 131078, 20, 1, 6, 21, 6, 131078, 21, 1, 6, 22, 6, 131078, 22, 0, 6, 23, 6, 131078, 23, 0, 6, 24, 6, 131078, 24, 1, 6, 25, 6, 131078, 25, 1, 6, 26, 6, 131078, 26, 0, 6, 27, 6, 131078, 27, 0, 6, 28, 6, 131078, 28, 1, 6, 29, 6, 131078, 29, 1, 6, 30, 6, 131078, 30, 0, 6, 31, 6, 131078, 31, 0, 6, 32, 6, 131078, 32, 1, 6, 33, 6, 131078, 33, 1, 6, 34, 6, 131078, 34, 0, 6, 35, 6, 131078, 35, 0, 6, 36, 6, 131078, 36, 1, 6, 37, 6, 131078, 37, 1, 6, 38, 6, 131078, 38, 0, 6, 39, 6, 131078, 39, 0, 6, 40, 6, 131078, 40, 1, 6, 41, 6, 131078, 41, 1, 6, 42, 6, 131078, 42, 0, 6, 43, 6, 131078, 43, 0, 6, 44, 6, 131078, 44, 1, 6, 45, 6, 131078, 45, 1, 6, 46, 6, 131078, 46, 0, 6, 47, 6, 131078, 47, 0, 6, 48, 6, 131078, 48, 1, 6, 49, 6, 131078, 49, 1, 6, 50, 6, 131078, 50, 0, 6, 51, 6, 131078, 51, 0, 6, 52, 6, 131078, 52, 1, 6, 53, 6, 131078, 53, 1, 6, 54, 6, 131078, 54, 0, 6, 55, 6, 131078, 55, 0, 7, 65520, 6, 131079, 65520, 1, 7, 65521, 6, 131079, 65521, 1, 7, 65522, 6, 131079, 65522, 0, 7, 65523, 6, 131079, 65523, 0, 7, 65524, 6, 131079, 65524, 1, 7, 65525, 6, 131079, 65525, 1, 7, 65526, 6, 131079, 65526, 0, 7, 65527, 6, 131079, 65527, 0, 7, 65528, 6, 131079, 65528, 1, 7, 65529, 6, 131079, 65529, 1, 7, 65530, 6, 131079, 65530, 0, 7, 65531, 6, 131079, 65531, 0, 7, 65532, 6, 131079, 65532, 1, 7, 65533, 6, 131079, 65533, 1, 7, 65534, 6, 131079, 65534, 0, 7, 65535, 6, 131079, 65535, 0, 7, 0, 6, 131079, 0, 1, 7, 1, 6, 131079, 1, 1, 7, 2, 6, 131079, 2, 0, 7, 3, 6, 131079, 3, 0, 7, 4, 6, 131079, 4, 1, 7, 5, 6, 131079, 5, 1, 7, 6, 6, 131079, 6, 0, 7, 7, 6, 131079, 7, 0, 7, 8, 6, 131079, 8, 1, 7, 9, 6, 131079, 9, 1, 7, 10, 6, 131079, 10, 0, 7, 11, 6, 131079, 11, 0, -65529, 12, 5, 65543, 12, 3, -65529, 13, 5, 7, 13, 4, -65529, 14, 5, 7, 14, 4, -65529, 15, 5, 7, 15, 4, -65529, 16, 5, 7, 16, 4, -65529, 17, 5, 7, 17, 4, -65529, 18, 5, 65543, 18, 3, 7, 19, 6, 131079, 19, 0, 7, 20, 6, 131079, 20, 1, 7, 21, 6, 131079, 21, 1, 7, 22, 6, 131079, 22, 0, 7, 23, 6, 131079, 23, 0, 7, 24, 6, 131079, 24, 1, 7, 25, 6, 131079, 25, 1, 7, 26, 6, 131079, 26, 0, 7, 27, 6, 131079, 27, 0, 7, 28, 6, 131079, 28, 1, 7, 29, 6, 131079, 29, 1, 7, 30, 6, 131079, 30, 0, 7, 31, 6, 131079, 31, 0, 7, 32, 6, 131079, 32, 1, 7, 33, 6, 131079, 33, 1, 7, 34, 6, 131079, 34, 0, 7, 35, 6, 131079, 35, 0, 7, 36, 6, 131079, 36, 1, 7, 37, 6, 131079, 37, 1, 7, 38, 6, 131079, 38, 0, 7, 39, 6, 131079, 39, 0, 7, 40, 6, 131079, 40, 1, 7, 41, 6, 131079, 41, 1, 7, 42, 6, 131079, 42, 0, 7, 43, 6, 131079, 43, 0, 7, 44, 6, 131079, 44, 1, 7, 45, 6, 131079, 45, 1, 7, 46, 6, 131079, 46, 0, 7, 47, 6, 131079, 47, 0, 7, 48, 6, 131079, 48, 1, 7, 49, 6, 131079, 49, 1, 7, 50, 6, 131079, 50, 0, 7, 51, 6, 131079, 51, 0, 7, 52, 6, 131079, 52, 1, 7, 53, 6, 131079, 53, 1, 7, 54, 6, 131079, 54, 0, 7, 55, 6, 131079, 55, 0, 8, 65520, 6, 131080, 65520, 0, 8, 65521, 6, 131080, 65521, 0, 8, 65522, 6, 131080, 65522, 1, 8, 65523, 6, 131080, 65523, 1, 8, 65524, 6, 131080, 65524, 0, 8, 65525, 6, 131080, 65525, 0, 8, 65526, 6, 131080, 65526, 1, 8, 65527, 6, 131080, 65527, 1, 8, 65528, 6, 131080, 65528, 0, 8, 65529, 6, 131080, 65529, 0, 8, 65530, 6, 131080, 65530, 1, 8, 65531, 6, 131080, 65531, 1, 8, 65532, 6, 131080, 65532, 0, 8, 65533, 6, 131080, 65533, 0, 8, 65534, 6, 131080, 65534, 1, 8, 65535, 6, 131080, 65535, 1, 8, 0, 6, 131080, 0, 0, 8, 1, 6, 131080, 1, 0, 8, 2, 6, 131080, 2, 1, 8, 3, 6, 131080, 3, 1, 8, 4, 6, 131080, 4, 0, 8, 5, 6, 131080, 5, 0, 8, 6, 6, 131080, 6, 1, 8, 7, 6, 131080, 7, 1, 8, 8, 6, 131080, 8, 0, 8, 9, 6, 131080, 9, 0, 8, 10, 6, 131080, 10, 1, 8, 11, 6, 131080, 11, 1, -65528, 12, 5, 65544, 12, 3, -65528, 13, 5, 8, 13, 4, -65528, 14, 5, 8, 14, 4, -65528, 15, 5, 8, 15, 4, -65528, 16, 5, 8, 16, 4, -65528, 17, 5, 8, 17, 4, -65528, 18, 5, 65544, 18, 3, 8, 19, 6, 131080, 19, 1, 8, 20, 6, 131080, 20, 0, 8, 21, 6, 131080, 21, 0, 8, 22, 6, 131080, 22, 1, 8, 23, 6, 131080, 23, 1, 8, 24, 6, 131080, 24, 0, 8, 25, 6, 131080, 25, 0, 8, 26, 6, 131080, 26, 1, 8, 27, 6, 131080, 27, 1, 8, 28, 6, 131080, 28, 0, 8, 29, 6, 131080, 29, 0, 8, 30, 6, 131080, 30, 1, 8, 31, 6, 131080, 31, 1, 8, 32, 6, 131080, 32, 0, 8, 33, 6, 131080, 33, 0, 8, 34, 6, 131080, 34, 1, 8, 35, 6, 131080, 35, 1, 8, 36, 6, 131080, 36, 0, 8, 37, 6, 131080, 37, 0, 8, 38, 6, 131080, 38, 1, 8, 39, 6, 131080, 39, 1, 8, 40, 6, 131080, 40, 0, 8, 41, 6, 131080, 41, 0, 8, 42, 6, 131080, 42, 1, 8, 43, 6, 131080, 43, 1, 8, 44, 6, 131080, 44, 0, 8, 45, 6, 131080, 45, 0, 8, 46, 6, 131080, 46, 1, 8, 47, 6, 131080, 47, 1, 8, 48, 6, 131080, 48, 0, 8, 49, 6, 131080, 49, 0, 8, 50, 6, 131080, 50, 1, 8, 51, 6, 131080, 51, 1, 8, 52, 6, 131080, 52, 0, 8, 53, 6, 131080, 53, 0, 8, 54, 6, 131080, 54, 1, 8, 55, 6, 131080, 55, 1, 9, 65520, 6, 131081, 65520, 0, 9, 65521, 6, 131081, 65521, 0, 9, 65522, 6, 131081, 65522, 1, 9, 65523, 6, 131081, 65523, 1, 9, 65524, 6, 131081, 65524, 0, 9, 65525, 6, 131081, 65525, 0, 9, 65526, 6, 131081, 65526, 1, 9, 65527, 6, 131081, 65527, 1, 9, 65528, 6, 131081, 65528, 0, 9, 65529, 6, 131081, 65529, 0, 9, 65530, 6, 131081, 65530, 1, 9, 65531, 6, 131081, 65531, 1, 9, 65532, 6, 131081, 65532, 0, 9, 65533, 6, 131081, 65533, 0, 9, 65534, 6, 131081, 65534, 1, 9, 65535, 6, 131081, 65535, 1, 9, 0, 6, 131081, 0, 0, 9, 1, 6, 131081, 1, 0, 9, 2, 6, 131081, 2, 1, 9, 3, 6, 131081, 3, 1, 9, 4, 6, 131081, 4, 0, 9, 5, 6, 131081, 5, 0, 9, 6, 6, 131081, 6, 1, 9, 7, 6, 131081, 7, 1, 9, 8, 6, 131081, 8, 0, 9, 9, 6, 131081, 9, 0, 9, 10, 6, 131081, 10, 1, 9, 11, 6, 131081, 11, 1, -65527, 12, 5, 65545, 12, 3, -65527, 13, 5, 9, 13, 4, -65527, 14, 5, 9, 14, 4, -65527, 15, 5, 9, 15, 4, -65527, 16, 5, 9, 16, 4, -65527, 17, 5, 9, 17, 4, -65527, 18, 5, 65545, 18, 3, 9, 19, 6, 131081, 19, 1, 9, 20, 6, 131081, 20, 0, 9, 21, 6, 131081, 21, 0, 9, 22, 6, 131081, 22, 1, 9, 23, 6, 131081, 23, 1, 9, 24, 6, 131081, 24, 0, 9, 25, 6, 131081, 25, 0, 9, 26, 6, 131081, 26, 1, 9, 27, 6, 131081, 27, 1, 9, 28, 6, 131081, 28, 0, 9, 29, 6, 131081, 29, 0, 9, 30, 6, 131081, 30, 1, 9, 31, 6, 131081, 31, 1, 9, 32, 6, 131081, 32, 0, 9, 33, 6, 131081, 33, 0, 9, 34, 6, 131081, 34, 1, 9, 35, 6, 131081, 35, 1, 9, 36, 6, 131081, 36, 0, 9, 37, 6, 131081, 37, 0, 9, 38, 6, 131081, 38, 1, 9, 39, 6, 131081, 39, 1, 9, 40, 6, 131081, 40, 0, 9, 41, 6, 131081, 41, 0, 9, 42, 6, 131081, 42, 1, 9, 43, 6, 131081, 43, 1, 9, 44, 6, 131081, 44, 0, 9, 45, 6, 131081, 45, 0, 9, 46, 6, 131081, 46, 1, 9, 47, 6, 131081, 47, 1, 9, 48, 6, 131081, 48, 0, 9, 49, 6, 131081, 49, 0, 9, 50, 6, 131081, 50, 1, 9, 51, 6, 131081, 51, 1, 9, 52, 6, 131081, 52, 0, 9, 53, 6, 131081, 53, 0, 9, 54, 6, 131081, 54, 1, 9, 55, 6, 131081, 55, 1, 10, 65520, 6, 131082, 65520, 1, 10, 65521, 6, 131082, 65521, 1, 10, 65522, 6, 131082, 65522, 0, 10, 65523, 6, 131082, 65523, 0, 10, 65524, 6, 131082, 65524, 1, 10, 65525, 6, 131082, 65525, 1, 10, 65526, 6, 131082, 65526, 0, 10, 65527, 6, 131082, 65527, 0, 10, 65528, 6, 131082, 65528, 1, 10, 65529, 6, 131082, 65529, 1, 10, 65530, 6, 131082, 65530, 0, 10, 65531, 6, 131082, 65531, 0, 10, 65532, 6, 131082, 65532, 1, 10, 65533, 6, 131082, 65533, 1, 10, 65534, 6, 131082, 65534, 0, 10, 65535, 6, 131082, 65535, 0, 10, 0, 6, 131082, 0, 1, 10, 1, 6, 131082, 1, 1, 10, 2, 6, 131082, 2, 0, 10, 3, 6, 131082, 3, 0, 10, 4, 6, 131082, 4, 7, 10, 5, 6, 131082, 5, 7, 10, 6, 6, 131082, 6, 7, 10, 7, 6, 131082, 7, 7, 10, 8, 6, 131082, 8, 7, 10, 9, 6, 131082, 9, 7, 10, 10, 6, 131082, 10, 7, 10, 11, 6, 131082, 11, 7, -65526, 12, 5, 65546, 12, 3, -65526, 13, 5, 10, 13, 4, -65526, 14, 5, 10, 14, 4, -65526, 15, 5, 10, 15, 4, -65526, 16, 5, 10, 16, 4, -65526, 17, 5, 10, 17, 4, -65526, 18, 5, 65546, 18, 3, 10, 19, 6, 131082, 19, 0, 10, 20, 6, 131082, 20, 7, 10, 21, 6, 131082, 21, 7, 10, 22, 6, 131082, 22, 7, 10, 23, 6, 131082, 23, 7, 10, 24, 6, 131082, 24, 7, 10, 25, 6, 131082, 25, 7, 10, 26, 6, 131082, 26, 7, 10, 27, 6, 131082, 27, 7, 10, 28, 6, 131082, 28, 7, 10, 29, 6, 131082, 29, 7, 10, 30, 6, 131082, 30, 7, 10, 31, 6, 131082, 31, 7, 10, 32, 6, 131082, 32, 7, 10, 33, 6, 131082, 33, 7, 10, 34, 6, 131082, 34, 7, 10, 35, 6, 131082, 35, 7, 10, 36, 6, 131082, 36, 1, 10, 37, 6, 131082, 37, 1, 10, 38, 6, 131082, 38, 0, 10, 39, 6, 131082, 39, 0, 10, 40, 6, 131082, 40, 1, 10, 41, 6, 131082, 41, 1, 10, 42, 6, 131082, 42, 0, 10, 43, 6, 131082, 43, 0, 10, 44, 6, 131082, 44, 1, 10, 45, 6, 131082, 45, 1, 10, 46, 6, 131082, 46, 0, 10, 47, 6, 131082, 47, 0, 10, 48, 6, 131082, 48, 1, 10, 49, 6, 131082, 49, 1, 10, 50, 6, 131082, 50, 0, 10, 51, 6, 131082, 51, 0, 10, 52, 6, 131082, 52, 1, 10, 53, 6, 131082, 53, 1, 10, 54, 6, 131082, 54, 0, 10, 55, 6, 131082, 55, 0, 11, 65520, 6, 131083, 65520, 1, 11, 65521, 6, 131083, 65521, 1, 11, 65522, 6, 131083, 65522, 0, 11, 65523, 6, 131083, 65523, 0, 11, 65524, 6, 131083, 65524, 1, 11, 65525, 6, 131083, 65525, 1, 11, 65526, 6, 131083, 65526, 0, 11, 65527, 6, 131083, 65527, 0, 11, 65528, 6, 131083, 65528, 1, 11, 65529, 6, 131083, 65529, 1, 11, 65530, 6, 131083, 65530, 0, 11, 65531, 6, 131083, 65531, 0, 11, 65532, 6, 131083, 65532, 1, 11, 65533, 6, 131083, 65533, 1, 11, 65534, 6, 131083, 65534, 0, 11, 65535, 6, 131083, 65535, 0, 11, 0, 6, 131083, 0, 1, 11, 1, 6, 131083, 1, 1, 11, 2, 6, 131083, 2, 0, 11, 3, 6, 131083, 3, 0, 11, 4, 6, 131083, 4, 7, 11, 5, 6, 131083, 5, 7, 11, 6, 6, 131083, 6, 7, 11, 7, 6, 131083, 7, 7, 11, 8, 6, 131083, 8, 7, 11, 9, 6, 131083, 9, 7, 11, 10, 6, 131083, 10, 7, 11, 11, 6, 131083, 11, 7, -65525, 12, 5, 65547, 12, 3, -65525, 13, 5, 11, 13, 4, -65525, 14, 5, 11, 14, 4, -65525, 15, 5, 11, 15, 4, -65525, 16, 5, 11, 16, 4, -65525, 17, 5, 11, 17, 4, -65525, 18, 5, 65547, 18, 3, 11, 19, 6, 131083, 19, 0, 11, 20, 6, 131083, 20, 7, 11, 21, 6, 131083, 21, 7, 11, 22, 6, 131083, 22, 7, 11, 23, 6, 131083, 23, 7, 11, 24, 6, 131083, 24, 7, 11, 25, 6, 131083, 25, 7, 11, 26, 6, 131083, 26, 7, 11, 27, 6, 131083, 27, 7, 11, 28, 6, 131083, 28, 7, 11, 29, 6, 131083, 29, 7, 11, 30, 6, 131083, 30, 7, 11, 31, 6, 131083, 31, 7, 11, 32, 6, 131083, 32, 7, 11, 33, 6, 131083, 33, 7, 11, 34, 6, 131083, 34, 7, 11, 35, 6, 131083, 35, 7, 11, 36, 6, 131083, 36, 1, 11, 37, 6, 131083, 37, 1, 11, 38, 6, 131083, 38, 0, 11, 39, 6, 131083, 39, 0, 11, 40, 6, 131083, 40, 1, 11, 41, 6, 131083, 41, 1, 11, 42, 6, 131083, 42, 0, 11, 43, 6, 131083, 43, 0, 11, 44, 6, 131083, 44, 1, 11, 45, 6, 131083, 45, 1, 11, 46, 6, 131083, 46, 0, 11, 47, 6, 131083, 47, 0, 11, 48, 6, 131083, 48, 1, 11, 49, 6, 131083, 49, 1, 11, 50, 6, 131083, 50, 0, 11, 51, 6, 131083, 51, 0, 11, 52, 6, 131083, 52, 1, 11, 53, 6, 131083, 53, 1, 11, 54, 6, 131083, 54, 0, 11, 55, 6, 131083, 55, 0, 12, 65520, 6, 131084, 65520, 0, 12, 65521, 6, 131084, 65521, 0, 12, 65522, 6, 131084, 65522, 1, 12, 65523, 6, 131084, 65523, 1, 12, 65524, 6, 131084, 65524, 0, 12, 65525, 6, 131084, 65525, 0, 12, 65526, 6, 131084, 65526, 1, 12, 65527, 6, 131084, 65527, 1, 12, 65528, 6, 131084, 65528, 0, 12, 65529, 6, 131084, 65529, 0, 12, 65530, 6, 131084, 65530, 1, 12, 65531, 6, 131084, 65531, 1, 12, 65532, 6, 131084, 65532, 0, 12, 65533, 6, 131084, 65533, 0, 12, 65534, 6, 131084, 65534, 1, 12, 65535, 6, 131084, 65535, 1, 12, 0, 6, 131084, 0, 0, 12, 1, 6, 131084, 1, 0, 12, 2, 6, 131084, 2, 1, 12, 3, 6, 131084, 3, 1, 12, 4, 6, 131084, 4, 7, 12, 5, 6, 131084, 5, 7, 12, 6, 6, 131084, 6, 7, 12, 7, 6, 131084, 7, 7, 12, 8, 6, 131084, 8, 7, 12, 9, 6, 131084, 9, 7, 12, 10, 6, 131084, 10, 7, 12, 11, 6, 131084, 11, 7, -65524, 12, 5, 65548, 12, 3, -65524, 13, 5, 12, 13, 4, -65524, 14, 5, 12, 14, 4, -65524, 15, 5, 12, 15, 4, -65524, 16, 5, 12, 16, 4, -65524, 17, 5, 12, 17, 4, -65524, 18, 5, 65548, 18, 3, 12, 19, 6, 131084, 19, 1, 12, 20, 6, 131084, 20, 7, 12, 21, 6, 131084, 21, 7, 12, 22, 6, 131084, 22, 7, 12, 23, 6, 131084, 23, 7, 12, 24, 6, 131084, 24, 7, 12, 25, 6, 131084, 25, 7, 12, 26, 6, 131084, 26, 7, 12, 27, 6, 131084, 27, 7, 12, 28, 6, 131084, 28, 7, 12, 29, 6, 131084, 29, 7, 12, 30, 6, 131084, 30, 7, 12, 31, 6, 131084, 31, 7, 12, 32, 6, 131084, 32, 7, 12, 33, 6, 131084, 33, 7, 12, 34, 6, 131084, 34, 7, 12, 35, 6, 131084, 35, 7, 12, 36, 6, 131084, 36, 0, 12, 37, 6, 131084, 37, 0, 12, 38, 6, 131084, 38, 1, 12, 39, 6, 131084, 39, 1, 12, 40, 6, 131084, 40, 0, 12, 41, 6, 131084, 41, 0, 12, 42, 6, 131084, 42, 1, 12, 43, 6, 131084, 43, 1, 12, 44, 6, 131084, 44, 0, 12, 45, 6, 131084, 45, 0, 12, 46, 6, 131084, 46, 1, 12, 47, 6, 131084, 47, 1, 12, 48, 6, 131084, 48, 0, 12, 49, 6, 131084, 49, 0, 12, 50, 6, 131084, 50, 1, 12, 51, 6, 131084, 51, 1, 12, 52, 6, 131084, 52, 0, 12, 53, 6, 131084, 53, 0, 12, 54, 6, 131084, 54, 1, 12, 55, 6, 131084, 55, 1, 13, 65520, 6, 131085, 65520, 0, 13, 65521, 6, 131085, 65521, 0, 13, 65522, 6, 131085, 65522, 1, 13, 65523, 6, 131085, 65523, 1, 13, 65524, 6, 131085, 65524, 0, 13, 65525, 6, 131085, 65525, 0, 13, 65526, 6, 131085, 65526, 1, 13, 65527, 6, 131085, 65527, 1, 13, 65528, 6, 131085, 65528, 0, 13, 65529, 6, 131085, 65529, 0, 13, 65530, 6, 131085, 65530, 1, 13, 65531, 6, 131085, 65531, 1, 13, 65532, 6, 131085, 65532, 0, 13, 65533, 6, 131085, 65533, 0, 13, 65534, 6, 131085, 65534, 1, 13, 65535, 6, 131085, 65535, 1, 13, 0, 6, 131085, 0, 0, 13, 1, 6, 131085, 1, 0, 13, 2, 6, 131085, 2, 1, 13, 3, 6, 131085, 3, 1, 13, 4, 6, 131085, 4, 7, 13, 5, 6, 131085, 5, 7, 13, 6, 6, 131085, 6, 7, 13, 7, 6, 131085, 7, 7, 13, 8, 6, 131085, 8, 7, 13, 9, 6, 131085, 9, 7, 13, 10, 6, 131085, 10, 7, 13, 11, 6, 131085, 11, 7, -65523, 12, 5, 65549, 12, 3, -65523, 13, 5, 13, 13, 4, -65523, 14, 5, 13, 14, 4, -65523, 15, 5, 13, 15, 4, -65523, 16, 5, 13, 16, 4, -65523, 17, 5, 13, 17, 4, -65523, 18, 5, 65549, 18, 3, 13, 19, 6, 131085, 19, 1, 13, 20, 6, 131085, 20, 7, 13, 21, 6, 131085, 21, 7, 13, 22, 6, 131085, 22, 7, 13, 23, 6, 131085, 23, 7, 13, 24, 6, 131085, 24, 7, 13, 25, 6, 131085, 25, 7, 13, 26, 6, 131085, 26, 7, 13, 27, 6, 131085, 27, 7, 13, 28, 6, 131085, 28, 7, 13, 29, 6, 131085, 29, 7, 13, 30, 6, 131085, 30, 7, 13, 31, 6, 131085, 31, 7, 13, 32, 6, 131085, 32, 7, 13, 33, 6, 131085, 33, 7, 13, 34, 6, 131085, 34, 7, 13, 35, 6, 131085, 35, 7, 13, 36, 6, 131085, 36, 0, 13, 37, 6, 131085, 37, 0, 13, 38, 6, 131085, 38, 1, 13, 39, 6, 131085, 39, 1, 13, 40, 6, 131085, 40, 0, 13, 41, 6, 131085, 41, 0, 13, 42, 6, 131085, 42, 1, 13, 43, 6, 131085, 43, 1, 13, 44, 6, 131085, 44, 0, 13, 45, 6, 131085, 45, 0, 13, 46, 6, 131085, 46, 1, 13, 47, 6, 131085, 47, 1, 13, 48, 6, 131085, 48, 0, 13, 49, 6, 131085, 49, 0, 13, 50, 6, 131085, 50, 1, 13, 51, 6, 131085, 51, 1, 13, 52, 6, 131085, 52, 0, 13, 53, 6, 131085, 53, 0, 13, 54, 6, 131085, 54, 1, 13, 55, 6, 131085, 55, 1, 14, 65520, 6, 131086, 65520, 1, 14, 65521, 6, 131086, 65521, 1, 14, 65522, 6, 131086, 65522, 0, 14, 65523, 6, 131086, 65523, 0, 14, 65524, 6, 131086, 65524, 1, 14, 65525, 6, 131086, 65525, 1, 14, 65526, 6, 131086, 65526, 0, 14, 65527, 6, 131086, 65527, 0, 14, 65528, 6, 131086, 65528, 1, 14, 65529, 6, 131086, 65529, 1, 14, 65530, 6, 131086, 65530, 0, 14, 65531, 6, 131086, 65531, 0, 14, 65532, 6, 131086, 65532, 1, 14, 65533, 6, 131086, 65533, 1, 14, 65534, 6, 131086, 65534, 0, 14, 65535, 6, 131086, 65535, 0, 14, 0, 6, 131086, 0, 1, 14, 1, 6, 131086, 1, 1, 14, 2, 6, 131086, 2, 0, 14, 3, 6, 131086, 3, 0, 14, 4, 6, 131086, 4, 1, 14, 5, 6, 131086, 5, 1, 14, 6, 6, 131086, 6, 0, 14, 7, 6, 131086, 7, 0, 14, 8, 6, 131086, 8, 1, 14, 9, 6, 131086, 9, 1, 14, 10, 6, 131086, 10, 0, 14, 11, 6, 131086, 11, 0, -65522, 12, 5, 65550, 12, 3, -65522, 13, 5, 14, 13, 4, -65522, 14, 5, 14, 14, 4, -65522, 15, 5, 14, 15, 4, -65522, 16, 5, 14, 16, 4, -65522, 17, 5, 14, 17, 4, -65522, 18, 5, 65550, 18, 3, 14, 19, 6, 131086, 19, 0, 14, 20, 6, 131086, 20, 1, 14, 21, 6, 131086, 21, 1, 14, 22, 6, 131086, 22, 0, 14, 23, 6, 131086, 23, 0, 14, 24, 6, 131086, 24, 1, 14, 25, 6, 131086, 25, 1, 14, 26, 6, 131086, 26, 0, 14, 27, 6, 131086, 27, 0, 14, 28, 6, 131086, 28, 1, 14, 29, 6, 131086, 29, 1, 14, 30, 6, 131086, 30, 0, 14, 31, 6, 131086, 31, 0, 14, 32, 6, 131086, 32, 1, 14, 33, 6, 131086, 33, 1, 14, 34, 6, 131086, 34, 0, 14, 35, 6, 131086, 35, 0, 14, 36, 6, 131086, 36, 1, 14, 37, 6, 131086, 37, 1, 14, 38, 6, 131086, 38, 0, 14, 39, 6, 131086, 39, 0, 14, 40, 6, 131086, 40, 1, 14, 41, 6, 131086, 41, 1, 14, 42, 6, 131086, 42, 0, 14, 43, 6, 131086, 43, 0, 14, 44, 6, 131086, 44, 1, 14, 45, 6, 131086, 45, 1, 14, 46, 6, 131086, 46, 0, 14, 47, 6, 131086, 47, 0, 14, 48, 6, 131086, 48, 1, 14, 49, 6, 131086, 49, 1, 14, 50, 6, 131086, 50, 0, 14, 51, 6, 131086, 51, 0, 14, 52, 6, 131086, 52, 1, 14, 53, 6, 131086, 53, 1, 14, 54, 6, 131086, 54, 0, 14, 55, 6, 131086, 55, 0, 15, 65520, 6, 131087, 65520, 1, 15, 65521, 6, 131087, 65521, 1, 15, 65522, 6, 131087, 65522, 0, 15, 65523, 6, 131087, 65523, 0, 15, 65524, 6, 131087, 65524, 1, 15, 65525, 6, 131087, 65525, 1, 15, 65526, 6, 131087, 65526, 0, 15, 65527, 6, 131087, 65527, 0, 15, 65528, 6, 131087, 65528, 1, 15, 65529, 6, 131087, 65529, 1, 15, 65530, 6, 131087, 65530, 0, 15, 65531, 6, 131087, 65531, 0, 15, 65532, 6, 131087, 65532, 1, 15, 65533, 6, 131087, 65533, 1, 15, 65534, 6, 131087, 65534, 0, 15, 65535, 6, 131087, 65535, 0, 15, 0, 6, 131087, 0, 1, 15, 1, 6, 131087, 1, 1, 15, 2, 6, 131087, 2, 0, 15, 3, 6, 131087, 3, 0, 15, 4, 6, 131087, 4, 1, 15, 5, 6, 131087, 5, 1, 15, 6, 6, 131087, 6, 0, 15, 7, 6, 131087, 7, 0, 15, 8, 6, 131087, 8, 1, 15, 9, 6, 131087, 9, 1, 15, 10, 6, 131087, 10, 0, 15, 11, 6, 131087, 11, 0, -65521, 12, 5, 65551, 12, 3, -65521, 13, 5, 15, 13, 4, -65521, 14, 5, 15, 14, 4, -65521, 15, 5, 15, 15, 4, -65521, 16, 5, 15, 16, 4, -65521, 17, 5, 15, 17, 4, -65521, 18, 5, 65551, 18, 3, 15, 19, 6, 131087, 19, 0, 15, 20, 6, 131087, 20, 1, 15, 21, 6, 131087, 21, 1, 15, 22, 6, 131087, 22, 0, 15, 23, 6, 131087, 23, 0, 15, 24, 6, 131087, 24, 1, 15, 25, 6, 131087, 25, 1, 15, 26, 6, 131087, 26, 0, 15, 27, 6, 131087, 27, 0, 15, 28, 6, 131087, 28, 1, 15, 29, 6, 131087, 29, 1, 15, 30, 6, 131087, 30, 0, 15, 31, 6, 131087, 31, 0, 15, 32, 6, 131087, 32, 1, 15, 33, 6, 131087, 33, 1, 15, 34, 6, 131087, 34, 0, 15, 35, 6, 131087, 35, 0, 15, 36, 6, 131087, 36, 1, 15, 37, 6, 131087, 37, 1, 15, 38, 6, 131087, 38, 0, 15, 39, 6, 131087, 39, 0, 15, 40, 6, 131087, 40, 1, 15, 41, 6, 131087, 41, 1, 15, 42, 6, 131087, 42, 0, 15, 43, 6, 131087, 43, 0, 15, 44, 6, 131087, 44, 1, 15, 45, 6, 131087, 45, 1, 15, 46, 6, 131087, 46, 0, 15, 47, 6, 131087, 47, 0, 15, 48, 6, 131087, 48, 1, 15, 49, 6, 131087, 49, 1, 15, 50, 6, 131087, 50, 0, 15, 51, 6, 131087, 51, 0, 15, 52, 6, 131087, 52, 1, 15, 53, 6, 131087, 53, 1, 15, 54, 6, 131087, 54, 0, 15, 55, 6, 131087, 55, 0, 16, 65520, 6, 131088, 65520, 0, 16, 65521, 6, 131088, 65521, 0, 16, 65522, 6, 131088, 65522, 1, 16, 65523, 6, 131088, 65523, 1, 16, 65524, 6, 131088, 65524, 0, 16, 65525, 6, 131088, 65525, 0, 16, 65526, 6, 131088, 65526, 1, 16, 65527, 6, 131088, 65527, 1, 16, 65528, 6, 131088, 65528, 0, 16, 65529, 6, 131088, 65529, 0, 16, 65530, 6, 131088, 65530, 1, 16, 65531, 6, 131088, 65531, 1, 16, 65532, 6, 131088, 65532, 0, 16, 65533, 6, 131088, 65533, 0, 16, 65534, 6, 131088, 65534, 1, 16, 65535, 6, 131088, 65535, 1, 16, 0, 6, 131088, 0, 0, 16, 1, 6, 131088, 1, 0, 16, 2, 6, 131088, 2, 1, 16, 3, 6, 131088, 3, 1, 16, 4, 6, 131088, 4, 0, 16, 5, 6, 131088, 5, 0, 16, 6, 6, 131088, 6, 1, 16, 7, 6, 131088, 7, 1, 16, 8, 6, 131088, 8, 0, 16, 9, 6, 131088, 9, 0, 16, 10, 6, 131088, 10, 1, 16, 11, 6, 131088, 11, 1, -65520, 12, 5, 65552, 12, 3, -65520, 13, 5, 16, 13, 4, -65520, 14, 5, 16, 14, 4, -65520, 15, 5, 16, 15, 4, -65520, 16, 5, 16, 16, 4, -65520, 17, 5, 16, 17, 4, -65520, 18, 5, 65552, 18, 3, 16, 19, 6, 131088, 19, 1, 16, 20, 6, 131088, 20, 0, 16, 21, 6, 131088, 21, 0, 16, 22, 6, 131088, 22, 1, 16, 23, 6, 131088, 23, 1, 16, 24, 6, 131088, 24, 0, 16, 25, 6, 131088, 25, 0, 16, 26, 6, 131088, 26, 1, 16, 27, 6, 131088, 27, 1, 16, 28, 6, 131088, 28, 0, 16, 29, 6, 131088, 29, 0, 16, 30, 6, 131088, 30, 1, 16, 31, 6, 131088, 31, 1, 16, 32, 6, 131088, 32, 0, 16, 33, 6, 131088, 33, 0, 16, 34, 6, 131088, 34, 1, 16, 35, 6, 131088, 35, 1, 16, 36, 6, 131088, 36, 0, 16, 37, 6, 131088, 37, 0, 16, 38, 6, 131088, 38, 1, 16, 39, 6, 131088, 39, 1, 16, 40, 6, 131088, 40, 0, 16, 41, 6, 131088, 41, 0, 16, 42, 6, 131088, 42, 1, 16, 43, 6, 131088, 43, 1, 16, 44, 6, 131088, 44, 0, 16, 45, 6, 131088, 45, 0, 16, 46, 6, 131088, 46, 1, 16, 47, 6, 131088, 47, 1, 16, 48, 6, 131088, 48, 0, 16, 49, 6, 131088, 49, 0, 16, 50, 6, 131088, 50, 1, 16, 51, 6, 131088, 51, 1, 16, 52, 6, 131088, 52, 0, 16, 53, 6, 131088, 53, 0, 16, 54, 6, 131088, 54, 1, 16, 55, 6, 131088, 55, 1, 17, 65520, 6, 131089, 65520, 0, 17, 65521, 6, 131089, 65521, 0, 17, 65522, 6, 131089, 65522, 1, 17, 65523, 6, 131089, 65523, 1, 17, 65524, 6, 131089, 65524, 0, 17, 65525, 6, 131089, 65525, 0, 17, 65526, 6, 131089, 65526, 1, 17, 65527, 6, 131089, 65527, 1, 17, 65528, 6, 131089, 65528, 0, 17, 65529, 6, 131089, 65529, 0, 17, 65530, 6, 131089, 65530, 1, 17, 65531, 6, 131089, 65531, 1, 17, 65532, 6, 131089, 65532, 0, 17, 65533, 6, 131089, 65533, 0, 17, 65534, 6, 131089, 65534, 1, 17, 65535, 6, 131089, 65535, 1, 17, 0, 6, 131089, 0, 0, 17, 1, 6, 131089, 1, 0, 17, 2, 6, 131089, 2, 1, 17, 3, 6, 131089, 3, 1, 17, 4, 6, 131089, 4, 0, 17, 5, 6, 131089, 5, 0, 17, 6, 6, 131089, 6, 1, 17, 7, 6, 131089, 7, 1, 17, 8, 6, 131089, 8, 0, 17, 9, 6, 131089, 9, 0, 17, 10, 6, 131089, 10, 1, 17, 11, 6, 131089, 11, 1, -65519, 12, 5, 65553, 12, 3, -65519, 13, 5, 17, 13, 4, -65519, 14, 5, 17, 14, 4, -65519, 15, 5, 17, 15, 4, -65519, 16, 5, 17, 16, 4, -65519, 17, 5, 17, 17, 4, -65519, 18, 5, 65553, 18, 3, 17, 19, 6, 131089, 19, 1, 17, 20, 6, 131089, 20, 0, 17, 21, 6, 131089, 21, 0, 17, 22, 6, 131089, 22, 1, 17, 23, 6, 131089, 23, 1, 17, 24, 6, 131089, 24, 0, 17, 25, 6, 131089, 25, 0, 17, 26, 6, 131089, 26, 1, 17, 27, 6, 131089, 27, 1, 17, 28, 6, 131089, 28, 0, 17, 29, 6, 131089, 29, 0, 17, 30, 6, 131089, 30, 1, 17, 31, 6, 131089, 31, 1, 17, 32, 6, 131089, 32, 0, 17, 33, 6, 131089, 33, 0, 17, 34, 6, 131089, 34, 1, 17, 35, 6, 131089, 35, 1, 17, 36, 6, 131089, 36, 0, 17, 37, 6, 131089, 37, 0, 17, 38, 6, 131089, 38, 1, 17, 39, 6, 131089, 39, 1, 17, 40, 6, 131089, 40, 0, 17, 41, 6, 131089, 41, 0, 17, 42, 6, 131089, 42, 1, 17, 43, 6, 131089, 43, 1, 17, 44, 6, 131089, 44, 0, 17, 45, 6, 131089, 45, 0, 17, 46, 6, 131089, 46, 1, 17, 47, 6, 131089, 47, 1, 17, 48, 6, 131089, 48, 0, 17, 49, 6, 131089, 49, 0, 17, 50, 6, 131089, 50, 1, 17, 51, 6, 131089, 51, 1, 17, 52, 6, 131089, 52, 0, 17, 53, 6, 131089, 53, 0, 17, 54, 6, 131089, 54, 1, 17, 55, 6, 131089, 55, 1, 18, 65520, 6, 131090, 65520, 1, 18, 65521, 6, 131090, 65521, 1, 18, 65522, 6, 131090, 65522, 0, 18, 65523, 6, 131090, 65523, 0, 18, 65524, 6, 131090, 65524, 1, 18, 65525, 6, 131090, 65525, 1, 18, 65526, 6, 131090, 65526, 0, 18, 65527, 6, 131090, 65527, 0, 18, 65528, 6, 131090, 65528, 1, 18, 65529, 6, 131090, 65529, 1, 18, 65530, 6, 131090, 65530, 0, 18, 65531, 6, 131090, 65531, 0, 18, 65532, 6, 131090, 65532, 1, 18, 65533, 6, 131090, 65533, 1, 18, 65534, 6, 131090, 65534, 0, 18, 65535, 6, 131090, 65535, 0, 18, 0, 6, 131090, 0, 1, 18, 1, 6, 131090, 1, 1, 18, 2, 6, 131090, 2, 0, 18, 3, 6, 131090, 3, 0, 18, 4, 6, 131090, 4, 1, 18, 5, 6, 131090, 5, 1, 18, 6, 6, 131090, 6, 0, 18, 7, 6, 131090, 7, 0, 18, 8, 6, 131090, 8, 1, 18, 9, 6, 131090, 9, 1, 18, 10, 6, 131090, 10, 0, 18, 11, 6, 131090, 11, 0, -65518, 12, 5, 65554, 12, 3, -65518, 13, 5, 65554, 13, 3, -65518, 14, 5, 18, 14, 4, -65518, 15, 5, 18, 15, 4, -65518, 16, 5, 18, 16, 4, -65518, 17, 5, 18, 17, 4, -65518, 18, 5, 18, 18, 4, -65518, 19, 5, 65554, 19, 3, 18, 20, 6, 131090, 20, 1, 18, 21, 6, 131090, 21, 1, 18, 22, 6, 131090, 22, 0, 18, 23, 6, 131090, 23, 0, 18, 24, 6, 131090, 24, 1, 18, 25, 6, 131090, 25, 1, 18, 26, 6, 131090, 26, 0, 18, 27, 6, 131090, 27, 0, 18, 28, 6, 131090, 28, 1, 18, 29, 6, 131090, 29, 1, 18, 30, 6, 131090, 30, 0, 18, 31, 6, 131090, 31, 0, 18, 32, 6, 131090, 32, 1, 18, 33, 6, 131090, 33, 1, 18, 34, 6, 131090, 34, 0, 18, 35, 6, 131090, 35, 0, 18, 36, 6, 131090, 36, 1, 18, 37, 6, 131090, 37, 1, 18, 38, 6, 131090, 38, 0, 18, 39, 6, 131090, 39, 0, 18, 40, 6, 131090, 40, 1, 18, 41, 6, 131090, 41, 1, 18, 42, 6, 131090, 42, 0, 18, 43, 6, 131090, 43, 0, 18, 44, 6, 131090, 44, 1, 18, 45, 6, 131090, 45, 1, 18, 46, 6, 131090, 46, 0, 18, 47, 6, 131090, 47, 0, 18, 48, 6, 131090, 48, 1, 18, 49, 6, 131090, 49, 1, 18, 50, 6, 131090, 50, 0, 18, 51, 6, 131090, 51, 0, 18, 52, 6, 131090, 52, 1, 18, 53, 6, 131090, 53, 1, 18, 54, 6, 131090, 54, 0, 18, 55, 6, 131090, 55, 0, 19, 65520, 6, 131091, 65520, 1, 19, 65521, 6, 131091, 65521, 1, 19, 65522, 6, 131091, 65522, 0, 19, 65523, 6, 131091, 65523, 0, 19, 65524, 6, 131091, 65524, 1, 19, 65525, 6, 131091, 65525, 1, 19, 65526, 6, 131091, 65526, 0, 19, 65527, 6, 131091, 65527, 0, 19, 65528, 6, 131091, 65528, 1, 19, 65529, 6, 131091, 65529, 1, 19, 65530, 6, 131091, 65530, 0, 19, 65531, 6, 131091, 65531, 0, 19, 65532, 6, 131091, 65532, 1, 19, 65533, 6, 131091, 65533, 1, 19, 65534, 6, 131091, 65534, 0, 19, 65535, 6, 131091, 65535, 0, 19, 0, 6, 131091, 0, 1, 19, 1, 6, 131091, 1, 1, 19, 2, 6, 131091, 2, 0, 19, 3, 6, 131091, 3, 0, 19, 4, 6, 131091, 4, 1, 19, 5, 6, 131091, 5, 1, 19, 6, 6, 131091, 6, 0, 19, 7, 6, 131091, 7, 0, 19, 8, 6, 131091, 8, 1, 19, 9, 6, 131091, 9, 1, 19, 10, 6, 131091, 10, 0, 19, 11, 6, 131091, 11, 0, 19, 12, 6, 131091, 12, 1, -65517, 13, 5, 65555, 13, 3, -65517, 14, 5, 19, 14, 4, -65517, 15, 5, 19, 15, 4, -65517, 16, 5, 19, 16, 4, -65517, 17, 5, 19, 17, 4, -65517, 18, 5, 19, 18, 4, -65517, 19, 5, 65555, 19, 3, 19, 20, 6, 131091, 20, 1, 19, 21, 6, 131091, 21, 1, 19, 22, 6, 131091, 22, 0, 19, 23, 6, 131091, 23, 0, 19, 24, 6, 131091, 24, 1, 19, 25, 6, 131091, 25, 1, 19, 26, 6, 131091, 26, 0, 19, 27, 6, 131091, 27, 0, 19, 28, 6, 131091, 28, 1, 19, 29, 6, 131091, 29, 1, 19, 30, 6, 131091, 30, 0, 19, 31, 6, 131091, 31, 0, 19, 32, 6, 131091, 32, 1, 19, 33, 6, 131091, 33, 1, 19, 34, 6, 131091, 34, 0, 19, 35, 6, 131091, 35, 0, 19, 36, 6, 131091, 36, 1, 19, 37, 6, 131091, 37, 1, 19, 38, 6, 131091, 38, 0, 19, 39, 6, 131091, 39, 0, 19, 40, 6, 131091, 40, 1, 19, 41, 6, 131091, 41, 1, 19, 42, 6, 131091, 42, 0, 19, 43, 6, 131091, 43, 0, 19, 44, 6, 131091, 44, 1, 19, 45, 6, 131091, 45, 1, 19, 46, 6, 131091, 46, 0, 19, 47, 6, 131091, 47, 0, 19, 48, 6, 131091, 48, 1, 19, 49, 6, 131091, 49, 1, 19, 50, 6, 131091, 50, 0, 19, 51, 6, 131091, 51, 0, 19, 52, 6, 131091, 52, 1, 19, 53, 6, 131091, 53, 1, 19, 54, 6, 131091, 54, 0, 19, 55, 6, 131091, 55, 0, 20, 65520, 6, 131092, 65520, 0, 20, 65521, 6, 131092, 65521, 0, 20, 65522, 6, 131092, 65522, 1, 20, 65523, 6, 131092, 65523, 1, 20, 65524, 6, 131092, 65524, 0, 20, 65525, 6, 131092, 65525, 0, 20, 65526, 6, 131092, 65526, 1, 20, 65527, 6, 131092, 65527, 1, 20, 65528, 6, 131092, 65528, 0, 20, 65529, 6, 131092, 65529, 0, 20, 65530, 6, 131092, 65530, 1, 20, 65531, 6, 131092, 65531, 1, 20, 65532, 6, 131092, 65532, 0, 20, 65533, 6, 131092, 65533, 0, 20, 65534, 6, 131092, 65534, 1, 20, 65535, 6, 131092, 65535, 1, 20, 0, 6, 131092, 0, 0, 20, 1, 6, 131092, 1, 0, 20, 2, 6, 131092, 2, 1, 20, 3, 6, 131092, 3, 1, 20, 4, 6, 131092, 4, 0, 20, 5, 6, 131092, 5, 0, 20, 6, 6, 131092, 6, 1, 20, 7, 6, 131092, 7, 1, 20, 8, 6, 131092, 8, 0, 20, 9, 6, 131092, 9, 0, 20, 10, 6, 131092, 10, 1, 20, 11, 6, 131092, 11, 1, 20, 12, 6, 131092, 12, 0, -65516, 13, 5, 65556, 13, 3, -65516, 14, 5, 20, 14, 4, -65516, 15, 5, 20, 15, 4, -65516, 16, 5, 20, 16, 4, -65516, 17, 5, 20, 17, 4, -65516, 18, 5, 20, 18, 4, -65516, 19, 5, 65556, 19, 3, 20, 20, 6, 131092, 20, 0, 20, 21, 6, 131092, 21, 0, 20, 22, 6, 131092, 22, 1, 20, 23, 6, 131092, 23, 1, 20, 24, 6, 131092, 24, 0, 20, 25, 6, 131092, 25, 0, 20, 26, 6, 131092, 26, 1, 20, 27, 6, 131092, 27, 1, 20, 28, 6, 131092, 28, 0, 20, 29, 6, 131092, 29, 0, 20, 30, 6, 131092, 30, 1, 20, 31, 6, 131092, 31, 1, 20, 32, 6, 131092, 32, 0, 20, 33, 6, 131092, 33, 0, 20, 34, 6, 131092, 34, 1, 20, 35, 6, 131092, 35, 1, 20, 36, 6, 131092, 36, 0, 20, 37, 6, 131092, 37, 0, 20, 38, 6, 131092, 38, 1, 20, 39, 6, 131092, 39, 1, 20, 40, 6, 131092, 40, 0, 20, 41, 6, 131092, 41, 0, 20, 42, 6, 131092, 42, 1, 20, 43, 6, 131092, 43, 1, 20, 44, 6, 131092, 44, 0, 20, 45, 6, 131092, 45, 0, 20, 46, 6, 131092, 46, 1, 20, 47, 6, 131092, 47, 1, 20, 48, 6, 131092, 48, 0, 20, 49, 6, 131092, 49, 0, 20, 50, 6, 131092, 50, 1, 20, 51, 6, 131092, 51, 1, 20, 52, 6, 131092, 52, 0, 20, 53, 6, 131092, 53, 0, 20, 54, 6, 131092, 54, 1, 20, 55, 6, 131092, 55, 1, 21, 65520, 6, 131093, 65520, 0, 21, 65521, 6, 131093, 65521, 0, 21, 65522, 6, 131093, 65522, 1, 21, 65523, 6, 131093, 65523, 1, 21, 65524, 6, 131093, 65524, 0, 21, 65525, 6, 131093, 65525, 0, 21, 65526, 6, 131093, 65526, 1, 21, 65527, 6, 131093, 65527, 1, 21, 65528, 6, 131093, 65528, 0, 21, 65529, 6, 131093, 65529, 0, 21, 65530, 6, 131093, 65530, 1, 21, 65531, 6, 131093, 65531, 1, 21, 65532, 6, 131093, 65532, 0, 21, 65533, 6, 131093, 65533, 0, 21, 65534, 6, 131093, 65534, 1, 21, 65535, 6, 131093, 65535, 1, 21, 0, 6, 131093, 0, 0, 21, 1, 6, 131093, 1, 0, 21, 2, 6, 131093, 2, 1, 21, 3, 6, 131093, 3, 1, 21, 4, 6, 131093, 4, 0, 21, 5, 6, 131093, 5, 0, 21, 6, 6, 131093, 6, 1, 21, 7, 6, 131093, 7, 1, 21, 8, 6, 131093, 8, 0, 21, 9, 6, 131093, 9, 0, 21, 10, 6, 131093, 10, 1, 21, 11, 6, 131093, 11, 1, 21, 12, 6, 131093, 12, 0, -65515, 13, 5, 65557, 13, 3, -65515, 14, 5, 21, 14, 4, -65515, 15, 5, 21, 15, 4, -65515, 16, 5, 21, 16, 4, -65515, 17, 5, 21, 17, 4, -65515, 18, 5, 21, 18, 4, -65515, 19, 5, 65557, 19, 3, -65515, 20, 5, 65557, 20, 3, 21, 21, 6, 131093, 21, 0, 21, 22, 6, 131093, 22, 1, 21, 23, 6, 131093, 23, 1, 21, 24, 6, 131093, 24, 0, 21, 25, 6, 131093, 25, 0, 21, 26, 6, 131093, 26, 1, 21, 27, 6, 131093, 27, 1, 21, 28, 6, 131093, 28, 0, 21, 29, 6, 131093, 29, 0, 21, 30, 6, 131093, 30, 1, 21, 31, 6, 131093, 31, 1, 21, 32, 6, 131093, 32, 0, 21, 33, 6, 131093, 33, 0, 21, 34, 6, 131093, 34, 1, 21, 35, 6, 131093, 35, 1, 21, 36, 6, 131093, 36, 0, 21, 37, 6, 131093, 37, 0, 21, 38, 6, 131093, 38, 1, 21, 39, 6, 131093, 39, 1, 21, 40, 6, 131093, 40, 0, 21, 41, 6, 131093, 41, 0, 21, 42, 6, 131093, 42, 1, 21, 43, 6, 131093, 43, 1, 21, 44, 6, 131093, 44, 0, 21, 45, 6, 131093, 45, 0, 21, 46, 6, 131093, 46, 1, 21, 47, 6, 131093, 47, 1, 21, 48, 6, 131093, 48, 0, 21, 49, 6, 131093, 49, 0, 21, 50, 6, 131093, 50, 1, 21, 51, 6, 131093, 51, 1, 21, 52, 6, 131093, 52, 0, 21, 53, 6, 131093, 53, 0, 21, 54, 6, 131093, 54, 1, 21, 55, 6, 131093, 55, 1, 22, 65520, 6, 131094, 65520, 1, 22, 65521, 6, 131094, 65521, 1, 22, 65522, 6, 131094, 65522, 0, 22, 65523, 6, 131094, 65523, 0, 22, 65524, 6, 131094, 65524, 1, 22, 65525, 6, 131094, 65525, 1, 22, 65526, 6, 131094, 65526, 0, 22, 65527, 6, 131094, 65527, 0, 22, 65528, 6, 131094, 65528, 1, 22, 65529, 6, 131094, 65529, 1, 22, 65530, 6, 131094, 65530, 0, 22, 65531, 6, 131094, 65531, 0, 22, 65532, 6, 131094, 65532, 1, 22, 65533, 6, 131094, 65533, 1, 22, 65534, 6, 131094, 65534, 0, 22, 65535, 6, 131094, 65535, 0, 22, 0, 6, 131094, 0, 1, 22, 1, 6, 131094, 1, 1, 22, 2, 6, 131094, 2, 0, 22, 3, 6, 131094, 3, 0, 22, 4, 6, 131094, 4, 1, 22, 5, 6, 131094, 5, 1, 22, 6, 6, 131094, 6, 0, 22, 7, 6, 131094, 7, 0, 22, 8, 6, 131094, 8, 1, 22, 9, 6, 131094, 9, 1, 22, 10, 6, 131094, 10, 0, 22, 11, 6, 131094, 11, 0, 22, 12, 6, 131094, 12, 1, -65514, 13, 5, 65558, 13, 3, -65514, 14, 5, 65558, 14, 3, -65514, 15, 5, 22, 15, 4, -65514, 16, 5, 22, 16, 4, -65514, 17, 5, 22, 17, 4, -65514, 18, 5, 22, 18, 4, -65514, 19, 5, 22, 19, 4, -65514, 20, 5, 65558, 20, 3, 22, 21, 6, 131094, 21, 1, 22, 22, 6, 131094, 22, 0, 22, 23, 6, 131094, 23, 0, 22, 24, 6, 131094, 24, 1, 22, 25, 6, 131094, 25, 1, 22, 26, 6, 131094, 26, 0, 22, 27, 6, 131094, 27, 0, 22, 28, 6, 131094, 28, 1, 22, 29, 6, 131094, 29, 1, 22, 30, 6, 131094, 30, 0, 22, 31, 6, 131094, 31, 0, 22, 32, 6, 131094, 32, 1, 22, 33, 6, 131094, 33, 1, 22, 34, 6, 131094, 34, 0, 22, 35, 6, 131094, 35, 0, 22, 36, 6, 131094, 36, 1, 22, 37, 6, 131094, 37, 1, 22, 38, 6, 131094, 38, 0, 22, 39, 6, 131094, 39, 0, 22, 40, 6, 131094, 40, 1, 22, 41, 6, 131094, 41, 1, 22, 42, 6, 131094, 42, 0, 22, 43, 6, 131094, 43, 0, 22, 44, 6, 131094, 44, 1, 22, 45, 6, 131094, 45, 1, 22, 46, 6, 131094, 46, 0, 22, 47, 6, 131094, 47, 0, 22, 48, 6, 131094, 48, 1, 22, 49, 6, 131094, 49, 1, 22, 50, 6, 131094, 50, 0, 22, 51, 6, 131094, 51, 0, 22, 52, 6, 131094, 52, 1, 22, 53, 6, 131094, 53, 1, 22, 54, 6, 131094, 54, 0, 22, 55, 6, 131094, 55, 0, 23, 65520, 6, 131095, 65520, 1, 23, 65521, 6, 131095, 65521, 1, 23, 65522, 6, 131095, 65522, 0, 23, 65523, 6, 131095, 65523, 0, 23, 65524, 6, 131095, 65524, 1, 23, 65525, 6, 131095, 65525, 1, 23, 65526, 6, 131095, 65526, 0, 23, 65527, 6, 131095, 65527, 0, 23, 65528, 6, 131095, 65528, 1, 23, 65529, 6, 131095, 65529, 1, 23, 65530, 6, 131095, 65530, 0, 23, 65531, 6, 131095, 65531, 0, 23, 65532, 6, 131095, 65532, 1, 23, 65533, 6, 131095, 65533, 1, 23, 65534, 6, 131095, 65534, 0, 23, 65535, 6, 131095, 65535, 0, 23, 0, 6, 131095, 0, 1, 23, 1, 6, 131095, 1, 1, 23, 2, 6, 131095, 2, 0, 23, 3, 6, 131095, 3, 0, 23, 4, 6, 131095, 4, 1, 23, 5, 6, 131095, 5, 1, 23, 6, 6, 131095, 6, 0, 23, 7, 6, 131095, 7, 0, 23, 8, 6, 131095, 8, 1, 23, 9, 6, 131095, 9, 1, 23, 10, 6, 131095, 10, 0, 23, 11, 6, 131095, 11, 0, 23, 12, 6, 131095, 12, 1, 23, 13, 6, 131095, 13, 1, -65513, 14, 5, 65559, 14, 3, -65513, 15, 5, 23, 15, 4, -65513, 16, 5, 23, 16, 4, -65513, 17, 5, 23, 17, 4, -65513, 18, 5, 23, 18, 4, -65513, 19, 5, 23, 19, 4, -65513, 20, 5, 65559, 20, 3, 23, 21, 6, 131095, 21, 1, 23, 22, 6, 131095, 22, 0, 23, 23, 6, 131095, 23, 0, 23, 24, 6, 131095, 24, 1, 23, 25, 6, 131095, 25, 1, 23, 26, 6, 131095, 26, 0, 23, 27, 6, 131095, 27, 0, 23, 28, 6, 131095, 28, 1, 23, 29, 6, 131095, 29, 1, 23, 30, 6, 131095, 30, 0, 23, 31, 6, 131095, 31, 0, 23, 32, 6, 131095, 32, 1, 23, 33, 6, 131095, 33, 1, 23, 34, 6, 131095, 34, 0, 23, 35, 6, 131095, 35, 0, 23, 36, 6, 131095, 36, 1, 23, 37, 6, 131095, 37, 1, 23, 38, 6, 131095, 38, 0, 23, 39, 6, 131095, 39, 0, 23, 40, 6, 131095, 40, 1, 23, 41, 6, 131095, 41, 1, 23, 42, 6, 131095, 42, 0, 23, 43, 6, 131095, 43, 0, 23, 44, 6, 131095, 44, 1, 23, 45, 6, 131095, 45, 1, 23, 46, 6, 131095, 46, 0, 23, 47, 6, 131095, 47, 0, 23, 48, 6, 131095, 48, 1, 23, 49, 6, 131095, 49, 1, 23, 50, 6, 131095, 50, 0, 23, 51, 6, 131095, 51, 0, 23, 52, 6, 131095, 52, 1, 23, 53, 6, 131095, 53, 1, 23, 54, 6, 131095, 54, 0, 23, 55, 6, 131095, 55, 0, 24, 65520, 6, 131096, 65520, 0, 24, 65521, 6, 131096, 65521, 0, 24, 65522, 6, 131096, 65522, 1, 24, 65523, 6, 131096, 65523, 1, 24, 65524, 6, 131096, 65524, 0, 24, 65525, 6, 131096, 65525, 0, 24, 65526, 6, 131096, 65526, 1, 24, 65527, 6, 131096, 65527, 1, 24, 65528, 6, 131096, 65528, 0, 24, 65529, 6, 131096, 65529, 0, 24, 65530, 6, 131096, 65530, 1, 24, 65531, 6, 131096, 65531, 1, 24, 65532, 6, 131096, 65532, 0, 24, 65533, 6, 131096, 65533, 0, 24, 65534, 6, 131096, 65534, 1, 24, 65535, 6, 131096, 65535, 1, 24, 0, 6, 131096, 0, 0, 24, 1, 6, 131096, 1, 0, 24, 2, 6, 131096, 2, 1, 24, 3, 6, 131096, 3, 1, 24, 4, 6, 131096, 4, 0, 24, 5, 6, 131096, 5, 0, 24, 6, 6, 131096, 6, 1, 24, 7, 6, 131096, 7, 1, 24, 8, 6, 131096, 8, 0, 24, 9, 6, 131096, 9, 0, 24, 10, 6, 131096, 10, 1, 24, 11, 6, 131096, 11, 1, 24, 12, 6, 131096, 12, 0, 24, 13, 6, 131096, 13, 0, 24, 14, 6, 131096, 14, 1, 24, 15, 6, 131096, 15, 1, 24, 16, 6, 131096, 16, 0, 24, 17, 6, 131096, 17, 0, 24, 18, 6, 131096, 18, 1, 24, 19, 6, 131096, 19, 1, 24, 20, 6, 131096, 20, 0, 24, 21, 6, 131096, 21, 0, 24, 22, 6, 131096, 22, 1, 24, 23, 6, 131096, 23, 1, 24, 24, 6, 131096, 24, 0, 24, 25, 6, 131096, 25, 0, 24, 26, 6, 131096, 26, 1, 24, 27, 6, 131096, 27, 1, 24, 28, 6, 131096, 28, 0, 24, 29, 6, 131096, 29, 0, 24, 30, 6, 131096, 30, 1, 24, 31, 6, 131096, 31, 1, 24, 32, 6, 131096, 32, 0, 24, 33, 6, 131096, 33, 0, 24, 34, 6, 131096, 34, 1, 24, 35, 6, 131096, 35, 1, 24, 36, 6, 131096, 36, 0, 24, 37, 6, 131096, 37, 0, 24, 38, 6, 131096, 38, 1, 24, 39, 6, 131096, 39, 1, 24, 40, 6, 131096, 40, 0, 24, 41, 6, 131096, 41, 0, 24, 42, 6, 131096, 42, 1, 24, 43, 6, 131096, 43, 1, 24, 44, 6, 131096, 44, 0, 24, 45, 6, 131096, 45, 0, 24, 46, 6, 131096, 46, 1, 24, 47, 6, 131096, 47, 1, 24, 48, 6, 131096, 48, 0, 24, 49, 6, 131096, 49, 0, 24, 50, 6, 131096, 50, 1, 24, 51, 6, 131096, 51, 1, 24, 52, 6, 131096, 52, 0, 24, 53, 6, 131096, 53, 0, 24, 54, 6, 131096, 54, 1, 24, 55, 6, 131096, 55, 1, 25, 65520, 6, 131097, 65520, 0, 25, 65521, 6, 131097, 65521, 0, 25, 65522, 6, 131097, 65522, 1, 25, 65523, 6, 131097, 65523, 1, 25, 65524, 6, 131097, 65524, 0, 25, 65525, 6, 131097, 65525, 0, 25, 65526, 6, 131097, 65526, 1, 25, 65527, 6, 131097, 65527, 1, 25, 65528, 6, 131097, 65528, 0, 25, 65529, 6, 131097, 65529, 0, 25, 65530, 6, 131097, 65530, 1, 25, 65531, 6, 131097, 65531, 1, 25, 65532, 6, 131097, 65532, 0, 25, 65533, 6, 131097, 65533, 0, 25, 65534, 6, 131097, 65534, 1, 25, 65535, 6, 131097, 65535, 1, 25, 0, 6, 131097, 0, 0, 25, 1, 6, 131097, 1, 0, 25, 2, 6, 131097, 2, 1, 25, 3, 6, 131097, 3, 1, 25, 4, 6, 131097, 4, 0, 25, 5, 6, 131097, 5, 0, 25, 6, 6, 131097, 6, 1, 25, 7, 6, 131097, 7, 1, 25, 8, 6, 131097, 8, 0, 25, 9, 6, 131097, 9, 0, 25, 10, 6, 131097, 10, 1, 25, 11, 6, 131097, 11, 1, 25, 12, 6, 131097, 12, 0, 25, 13, 6, 131097, 13, 0, 25, 14, 6, 131097, 14, 1, 25, 15, 6, 131097, 15, 1, 25, 16, 6, 131097, 16, 0, 25, 17, 6, 131097, 17, 0, 25, 18, 6, 131097, 18, 1, 25, 19, 6, 131097, 19, 1, 25, 20, 6, 131097, 20, 0, 25, 21, 6, 131097, 21, 0, 25, 22, 6, 131097, 22, 1, 25, 23, 6, 131097, 23, 1, 25, 24, 6, 131097, 24, 0, 25, 25, 6, 131097, 25, 0, 25, 26, 6, 131097, 26, 1, 25, 27, 6, 131097, 27, 1, 25, 28, 6, 131097, 28, 0, 25, 29, 6, 131097, 29, 0, 25, 30, 6, 131097, 30, 1, 25, 31, 6, 131097, 31, 1, 25, 32, 6, 131097, 32, 0, 25, 33, 6, 131097, 33, 0, 25, 34, 6, 131097, 34, 1, 25, 35, 6, 131097, 35, 1, 25, 36, 6, 131097, 36, 0, 25, 37, 6, 131097, 37, 0, 25, 38, 6, 131097, 38, 1, 25, 39, 6, 131097, 39, 1, 25, 40, 6, 131097, 40, 0, 25, 41, 6, 131097, 41, 0, 25, 42, 6, 131097, 42, 1, 25, 43, 6, 131097, 43, 1, 25, 44, 6, 131097, 44, 0, 25, 45, 6, 131097, 45, 0, 25, 46, 6, 131097, 46, 1, 25, 47, 6, 131097, 47, 1, 25, 48, 6, 131097, 48, 0, 25, 49, 6, 131097, 49, 0, 25, 50, 6, 131097, 50, 1, 25, 51, 6, 131097, 51, 1, 25, 52, 6, 131097, 52, 0, 25, 53, 6, 131097, 53, 0, 25, 54, 6, 131097, 54, 1, 25, 55, 6, 131097, 55, 1, 26, 65520, 6, 131098, 65520, 1, 26, 65521, 6, 131098, 65521, 1, 26, 65522, 6, 131098, 65522, 0, 26, 65523, 6, 131098, 65523, 0, 26, 65524, 6, 131098, 65524, 1, 26, 65525, 6, 131098, 65525, 1, 26, 65526, 6, 131098, 65526, 0, 26, 65527, 6, 131098, 65527, 0, 26, 65528, 6, 131098, 65528, 1, 26, 65529, 6, 131098, 65529, 1, 26, 65530, 6, 131098, 65530, 0, 26, 65531, 6, 131098, 65531, 0, 26, 65532, 6, 131098, 65532, 1, 26, 65533, 6, 131098, 65533, 1, 26, 65534, 6, 131098, 65534, 0, 26, 65535, 6, 131098, 65535, 0, 26, 0, 6, 131098, 0, 1, 26, 1, 6, 131098, 1, 1, 26, 2, 6, 131098, 2, 0, 26, 3, 6, 131098, 3, 0, 26, 4, 6, 131098, 4, 1, 26, 5, 6, 131098, 5, 1, 26, 6, 6, 131098, 6, 0, 26, 7, 6, 131098, 7, 0, 26, 8, 6, 131098, 8, 1, 26, 9, 6, 131098, 9, 1, 26, 10, 6, 131098, 10, 0, 26, 11, 6, 131098, 11, 0, 26, 12, 6, 131098, 12, 1, 26, 13, 6, 131098, 13, 1, 26, 14, 6, 131098, 14, 0, 26, 15, 6, 131098, 15, 0, 26, 16, 6, 131098, 16, 1, 26, 17, 6, 131098, 17, 1, 26, 18, 6, 131098, 18, 0, 26, 19, 6, 131098, 19, 0, 26, 20, 6, 131098, 20, 1, 26, 21, 6, 131098, 21, 1, 26, 22, 6, 131098, 22, 0, 26, 23, 6, 131098, 23, 0, 26, 24, 6, 131098, 24, 1, 26, 25, 6, 131098, 25, 1, 26, 26, 6, 131098, 26, 0, 26, 27, 6, 131098, 27, 0, 26, 28, 6, 131098, 28, 1, 26, 29, 6, 131098, 29, 1, 26, 30, 6, 131098, 30, 0, 26, 31, 6, 131098, 31, 0, 26, 32, 6, 131098, 32, 1, 26, 33, 6, 131098, 33, 1, 26, 34, 6, 131098, 34, 0, 26, 35, 6, 131098, 35, 0, 26, 36, 6, 131098, 36, 1, 26, 37, 6, 131098, 37, 1, 26, 38, 6, 131098, 38, 0, 26, 39, 6, 131098, 39, 0, 26, 40, 6, 131098, 40, 1, 26, 41, 6, 131098, 41, 1, 26, 42, 6, 131098, 42, 0, 26, 43, 6, 131098, 43, 0, 26, 44, 6, 131098, 44, 1, 26, 45, 6, 131098, 45, 1, 26, 46, 6, 131098, 46, 0, 26, 47, 6, 131098, 47, 0, 26, 48, 6, 131098, 48, 1, 26, 49, 6, 131098, 49, 1, 26, 50, 6, 131098, 50, 0, 26, 51, 6, 131098, 51, 0, 26, 52, 6, 131098, 52, 1, 26, 53, 6, 131098, 53, 1, 26, 54, 6, 131098, 54, 0, 26, 55, 6, 131098, 55, 0, 27, 65520, 6, 131099, 65520, 1, 27, 65521, 6, 131099, 65521, 1, 27, 65522, 6, 131099, 65522, 0, 27, 65523, 6, 131099, 65523, 0, 27, 65524, 6, 131099, 65524, 1, 27, 65525, 6, 131099, 65525, 1, 27, 65526, 6, 131099, 65526, 0, 27, 65527, 6, 131099, 65527, 0, 27, 65528, 6, 131099, 65528, 1, 27, 65529, 6, 131099, 65529, 1, 27, 65530, 6, 131099, 65530, 0, 27, 65531, 6, 131099, 65531, 0, 27, 65532, 6, 131099, 65532, 1, 27, 65533, 6, 131099, 65533, 1, 27, 65534, 6, 131099, 65534, 0, 27, 65535, 6, 131099, 65535, 0, 27, 0, 6, 131099, 0, 1, 27, 1, 6, 131099, 1, 1, 27, 2, 6, 131099, 2, 0, 27, 3, 6, 131099, 3, 0, 27, 4, 6, 131099, 4, 1, 27, 5, 6, 131099, 5, 1, 27, 6, 6, 131099, 6, 0, 27, 7, 6, 131099, 7, 0, 27, 8, 6, 131099, 8, 1, 27, 9, 6, 131099, 9, 1, 27, 10, 6, 131099, 10, 0, 27, 11, 6, 131099, 11, 0, 27, 12, 6, 131099, 12, 1, 27, 13, 6, 131099, 13, 1, 27, 14, 6, 131099, 14, 0, 27, 15, 6, 131099, 15, 0, 27, 16, 6, 131099, 16, 1, 27, 17, 6, 131099, 17, 1, 27, 18, 6, 131099, 18, 0, 27, 19, 6, 131099, 19, 0, 27, 20, 6, 131099, 20, 1, 27, 21, 6, 131099, 21, 1, 27, 22, 6, 131099, 22, 0, 27, 23, 6, 131099, 23, 0, 27, 24, 6, 131099, 24, 1, 27, 25, 6, 131099, 25, 1, 27, 26, 6, 131099, 26, 0, 27, 27, 6, 131099, 27, 0, 27, 28, 6, 131099, 28, 1, 27, 29, 6, 131099, 29, 1, 27, 30, 6, 131099, 30, 0, 27, 31, 6, 131099, 31, 0, 27, 32, 6, 131099, 32, 1, 27, 33, 6, 131099, 33, 1, 27, 34, 6, 131099, 34, 0, 27, 35, 6, 131099, 35, 0, 27, 36, 6, 131099, 36, 1, 27, 37, 6, 131099, 37, 1, 27, 38, 6, 131099, 38, 0, 27, 39, 6, 131099, 39, 0, 27, 40, 6, 131099, 40, 1, 27, 41, 6, 131099, 41, 1, 27, 42, 6, 131099, 42, 0, 27, 43, 6, 131099, 43, 0, 27, 44, 6, 131099, 44, 1, 27, 45, 6, 131099, 45, 1, 27, 46, 6, 131099, 46, 0, 27, 47, 6, 131099, 47, 0, 27, 48, 6, 131099, 48, 1, 27, 49, 6, 131099, 49, 1, 27, 50, 6, 131099, 50, 0, 27, 51, 6, 131099, 51, 0, 27, 52, 6, 131099, 52, 1, 27, 53, 6, 131099, 53, 1, 27, 54, 6, 131099, 54, 0, 27, 55, 6, 131099, 55, 0, 28, 65520, 6, 131100, 65520, 0, 28, 65521, 6, 131100, 65521, 0, 28, 65522, 6, 131100, 65522, 1, 28, 65523, 6, 131100, 65523, 1, 28, 65524, 6, 131100, 65524, 0, 28, 65525, 6, 131100, 65525, 0, 28, 65526, 6, 131100, 65526, 1, 28, 65527, 6, 131100, 65527, 1, 28, 65528, 6, 131100, 65528, 0, 28, 65529, 6, 131100, 65529, 0, 28, 65530, 6, 131100, 65530, 1, 28, 65531, 6, 131100, 65531, 1, 28, 65532, 6, 131100, 65532, 0, 28, 65533, 6, 131100, 65533, 0, 28, 65534, 6, 131100, 65534, 1, 28, 65535, 6, 131100, 65535, 1, 28, 0, 6, 131100, 0, 0, 28, 1, 6, 131100, 1, 0, 28, 2, 6, 131100, 2, 1, 28, 3, 6, 131100, 3, 1, 28, 4, 6, 131100, 4, 0, 28, 5, 6, 131100, 5, 0, 28, 6, 6, 131100, 6, 1, 28, 7, 6, 131100, 7, 1, 28, 8, 6, 131100, 8, 0, 28, 9, 6, 131100, 9, 0, 28, 10, 6, 131100, 10, 1, 28, 11, 6, 131100, 11, 1, 28, 12, 6, 131100, 12, 0, 28, 13, 6, 131100, 13, 0, 28, 14, 6, 131100, 14, 1, 28, 15, 6, 131100, 15, 1, 28, 16, 6, 131100, 16, 0, 28, 17, 6, 131100, 17, 0, 28, 18, 6, 131100, 18, 1, 28, 19, 6, 131100, 19, 1, 28, 20, 6, 131100, 20, 0, 28, 21, 6, 131100, 21, 0, 28, 22, 6, 131100, 22, 1, 28, 23, 6, 131100, 23, 1, 28, 24, 6, 131100, 24, 0, 28, 25, 6, 131100, 25, 0, 28, 26, 6, 131100, 26, 1, 28, 27, 6, 131100, 27, 1, 28, 28, 6, 131100, 28, 0, 28, 29, 6, 131100, 29, 0, 28, 30, 6, 131100, 30, 1, 28, 31, 6, 131100, 31, 1, 28, 32, 6, 131100, 32, 0, 28, 33, 6, 131100, 33, 0, 28, 34, 6, 131100, 34, 1, 28, 35, 6, 131100, 35, 1, 28, 36, 6, 131100, 36, 0, 28, 37, 6, 131100, 37, 0, 28, 38, 6, 131100, 38, 1, 28, 39, 6, 131100, 39, 1, 28, 40, 6, 131100, 40, 0, 28, 41, 6, 131100, 41, 0, 28, 42, 6, 131100, 42, 1, 28, 43, 6, 131100, 43, 1, 28, 44, 6, 131100, 44, 0, 28, 45, 6, 131100, 45, 0, 28, 46, 6, 131100, 46, 1, 28, 47, 6, 131100, 47, 1, 28, 48, 6, 131100, 48, 0, 28, 49, 6, 131100, 49, 0, 28, 50, 6, 131100, 50, 1, 28, 51, 6, 131100, 51, 1, 28, 52, 6, 131100, 52, 0, 28, 53, 6, 131100, 53, 0, 28, 54, 6, 131100, 54, 1, 28, 55, 6, 131100, 55, 1, 29, 65520, 6, 131101, 65520, 0, 29, 65521, 6, 131101, 65521, 0, 29, 65522, 6, 131101, 65522, 1, 29, 65523, 6, 131101, 65523, 1, 29, 65524, 6, 131101, 65524, 0, 29, 65525, 6, 131101, 65525, 0, 29, 65526, 6, 131101, 65526, 1, 29, 65527, 6, 131101, 65527, 1, 29, 65528, 6, 131101, 65528, 0, 29, 65529, 6, 131101, 65529, 0, 29, 65530, 6, 131101, 65530, 1, 29, 65531, 6, 131101, 65531, 1, 29, 65532, 6, 131101, 65532, 0, 29, 65533, 6, 131101, 65533, 0, 29, 65534, 6, 131101, 65534, 1, 29, 65535, 6, 131101, 65535, 1, 29, 0, 6, 131101, 0, 0, 29, 1, 6, 131101, 1, 0, 29, 2, 6, 131101, 2, 1, 29, 3, 6, 131101, 3, 1, 29, 4, 6, 131101, 4, 0, 29, 5, 6, 131101, 5, 0, 29, 6, 6, 131101, 6, 1, 29, 7, 6, 131101, 7, 1, 29, 8, 6, 131101, 8, 0, 29, 9, 6, 131101, 9, 0, 29, 10, 6, 131101, 10, 1, 29, 11, 6, 131101, 11, 1, 29, 12, 6, 131101, 12, 0, 29, 13, 6, 131101, 13, 0, 29, 14, 6, 131101, 14, 1, 29, 15, 6, 131101, 15, 1, 29, 16, 6, 131101, 16, 0, 29, 17, 6, 131101, 17, 0, 29, 18, 6, 131101, 18, 1, 29, 19, 6, 131101, 19, 1, 29, 20, 6, 131101, 20, 0, 29, 21, 6, 131101, 21, 0, 29, 22, 6, 131101, 22, 1, 29, 23, 6, 131101, 23, 1, 29, 24, 6, 131101, 24, 0, 29, 25, 6, 131101, 25, 0, 29, 26, 6, 131101, 26, 1, 29, 27, 6, 131101, 27, 1, 29, 28, 6, 131101, 28, 0, 29, 29, 6, 131101, 29, 0, 29, 30, 6, 131101, 30, 1, 29, 31, 6, 131101, 31, 1, 29, 32, 6, 131101, 32, 0, 29, 33, 6, 131101, 33, 0, 29, 34, 6, 131101, 34, 1, 29, 35, 6, 131101, 35, 1, 29, 36, 6, 131101, 36, 0, 29, 37, 6, 131101, 37, 0, 29, 38, 6, 131101, 38, 1, 29, 39, 6, 131101, 39, 1, 29, 40, 6, 131101, 40, 0, 29, 41, 6, 131101, 41, 0, 29, 42, 6, 131101, 42, 1, 29, 43, 6, 131101, 43, 1, 29, 44, 6, 131101, 44, 0, 29, 45, 6, 131101, 45, 0, 29, 46, 6, 131101, 46, 1, 29, 47, 6, 131101, 47, 1, 29, 48, 6, 131101, 48, 0, 29, 49, 6, 131101, 49, 0, 29, 50, 6, 131101, 50, 1, 29, 51, 6, 131101, 51, 1, 29, 52, 6, 131101, 52, 0, 29, 53, 6, 131101, 53, 0, 29, 54, 6, 131101, 54, 1, 29, 55, 6, 131101, 55, 1)
+}
+
+[node name="NorthMountains" type="Node3D" parent="BoardRoot" unique_id=344379104]
+
+[node name="Mountain_2" type="MeshInstance3D" parent="BoardRoot/NorthMountains" unique_id=248647438]
+transform = Transform3D(1.4, 0, 0, 0, 1.4, 0, 0, 0, 1.4, 5.5, 0.4, -5.2)
+mesh = ExtResource("3_nvwjr")
+
+[node name="Mountain_1" type="MeshInstance3D" parent="BoardRoot/NorthMountains" unique_id=857945902]
+transform = Transform3D(1.0239401, 0, 0.71697056, 0, 1.25, 0, -0.71697056, 0, 1.0239401, 0.5, 0.4, -4.2)
+mesh = ExtResource("4_mphdf")
+
+[node name="Mountain_3" type="MeshInstance3D" parent="BoardRoot/NorthMountains" unique_id=732827497]
+transform = Transform3D(1.1328847, 0, -0.52827287, 0, 1.25, 0, 0.52827287, 0, 1.1328847, 10.5, 0.4, -4.2)
+mesh = ExtResource("5_jcfnw")
+
+[node name="Mountain_4_L" type="MeshInstance3D" parent="BoardRoot/NorthMountains" unique_id=377164915]
+transform = Transform3D(0.59999996, 0, 1.0392306, 0, 1.2, 0, -1.0392306, 0, 0.59999996, -3.2, 0.4, -3)
+mesh = ExtResource("6_6eaxj")
+
+[node name="Mountain_4_R" type="MeshInstance3D" parent="BoardRoot/NorthMountains" unique_id=1282998874]
+transform = Transform3D(0.7713452, 0, -0.91925335, 0, 1.2, 0, 0.91925335, 0, 0.7713452, 14.2, 0.4, -3)
+mesh = ExtResource("6_6eaxj")
+
+[node name="Hilly_Prop_Tree_Pine_1" type="MeshInstance3D" parent="BoardRoot/NorthMountains" unique_id=601006179]
+transform = Transform3D(1.0806465, 0, 0.39332312, 0, 1.15, 0, -0.39332312, 0, 1.0806465, 3.2, 0.4, -0.7)
+mesh = ExtResource("7_wlkae")
+
+[node name="Hilly_Prop_Tree_Pine_2" type="MeshInstance3D" parent="BoardRoot/NorthMountains" unique_id=1656192020]
+transform = Transform3D(0.90106726, 0, -0.6309341, 0, 1.1, 0, 0.6309341, 0, 0.90106726, 7.8, 0.4, -0.7)
+mesh = ExtResource("8_o70w0")
+
+[node name="Hilly_Prop_Tree_Pine_3" type="MeshInstance3D" parent="BoardRoot/NorthMountains" unique_id=1716151028]
+transform = Transform3D(0.84852815, 0, 0.84852815, 0, 1.2, 0, -0.84852815, 0, 0.84852815, -0.6, 0.4, -0.8)
+mesh = ExtResource("9_juoe4")
+
+[node name="Pine_NE" type="MeshInstance3D" parent="BoardRoot/NorthMountains" unique_id=1603618540]
+transform = Transform3D(1.159111, 0, -0.31058288, 0, 1.2, 0, 0.31058288, 0, 1.159111, 11.5, 0.4, -0.8)
+mesh = ExtResource("7_wlkae")
+
+[node name="Hilly_Prop_Tree_Cedar_1" type="MeshInstance3D" parent="BoardRoot/NorthMountains" unique_id=1524360994]
+transform = Transform3D(1.0340481, 0, 0.18233058, 0, 1.05, 0, -0.18233058, 0, 1.0340481, 2, 0.4, -0.4)
+mesh = ExtResource("10_wgvlg")
+
+[node name="Hilly_Prop_Tree_Cedar_2" type="MeshInstance3D" parent="BoardRoot/NorthMountains" unique_id=954538262]
+transform = Transform3D(0.8043466, 0, -0.67492694, 0, 1.05, 0, 0.67492694, 0, 0.8043466, 9, 0.4, -0.4)
+mesh = ExtResource("11_b0ltj")
+
+[node name="Cliff_Prop_Rock_1" type="MeshInstance3D" parent="BoardRoot/NorthMountains" unique_id=1175901243]
+transform = Transform3D(0.8693332, 0, 0.23293713, 0, 0.9, 0, -0.23293713, 0, 0.8693332, 3.6, 0.4, -0.8)
+mesh = ExtResource("12_45cw2")
+
+[node name="Cliff_Prop_Rock_2" type="MeshInstance3D" parent="BoardRoot/NorthMountains" unique_id=86801417]
+transform = Transform3D(0.7361216, 0, -0.425, 0, 0.85, 0, 0.425, 0, 0.7361216, 7.4, 0.4, -0.8)
+mesh = ExtResource("13_cdnpe")
+
+[node name="CanyonAndMine" type="Node3D" parent="BoardRoot" unique_id=1080779089]
+
+[node name="Cliff_Terrain_Side_Top" type="MeshInstance3D" parent="BoardRoot/CanyonAndMine" unique_id=279921624]
+transform = Transform3D(-4.8082526e-08, 0, 1.1, 0, 1.1, 0, -1.1, 0, -4.8082526e-08, -0.8, 0.6, 3.5)
+mesh = ExtResource("14_khcav")
+
+[node name="Cliff_Prop_Rock_1" type="MeshInstance3D" parent="BoardRoot/CanyonAndMine" unique_id=733373088]
+transform = Transform3D(0.84852815, 0, 0.84852815, 0, 1.2, 0, -0.84852815, 0, 0.84852815, -0.5, 0.5, 4.8)
+mesh = ExtResource("12_45cw2")
+
+[node name="Cliff_Prop_Rock_2" type="MeshInstance3D" parent="BoardRoot/CanyonAndMine" unique_id=979310601]
+transform = Transform3D(1.0336618, 0, -0.37622213, 0, 1.1, 0, 0.37622213, 0, 1.0336618, -0.7, 0.5, 2.2)
+mesh = ExtResource("13_cdnpe")
+
+[node name="Cliff_Terrain_Waterfall_Top" type="MeshInstance3D" parent="BoardRoot/CanyonAndMine" unique_id=8016212]
+transform = Transform3D(-4.8082526e-08, 0, 1.1, 0, 1.1, 0, -1.1, 0, -4.8082526e-08, -0.3, -0.08, 7)
+mesh = ExtResource("15_hdf37")
+
+[node name="Hilly_Prop_Rock_1" type="MeshInstance3D" parent="BoardRoot/CanyonAndMine" unique_id=218822600]
+transform = Transform3D(0.649519, 0, 0.375, 0, 0.75, 0, -0.375, 0, 0.649519, 0.3, 0.16, 6.7)
+mesh = ExtResource("16_3ceap")
+
+[node name="Quarry_Cliff_Top" type="MeshInstance3D" parent="BoardRoot/CanyonAndMine" unique_id=1977035231]
+transform = Transform3D(-4.8082526e-08, 0, 1.1, 0, 1.1, 0, -1.1, 0, -4.8082526e-08, -0.6, 0.6, 13.2)
+mesh = ExtResource("14_khcav")
+
+[node name="Quarry_Cliff_Mid" type="MeshInstance3D" parent="BoardRoot/CanyonAndMine" unique_id=661855189]
+transform = Transform3D(-4.8082526e-08, 0, 1.1, 0, 1.1, 0, -1.1, 0, -4.8082526e-08, -0.6, 0.6, 15.8)
+mesh = ExtResource("17_kgquu")
+
+[node name="Cave_Prop_Entrance_1" type="MeshInstance3D" parent="BoardRoot/CanyonAndMine" unique_id=1413011429]
+transform = Transform3D(0.8601096, 0, 0.6022552, 0, 1.05, 0, -0.6022552, 0, 0.8601096, 0.2, 0.4, 13.8)
+mesh = ExtResource("18_0hiv2")
+
+[node name="Cave_Prop_Minecart_1" type="MeshInstance3D" parent="BoardRoot/CanyonAndMine" unique_id=1217103124]
+transform = Transform3D(0.7277422, 0, 0.6106482, 0, 0.95, 0, -0.6106482, 0, 0.7277422, 0.8, 0.4, 14.8)
+mesh = ExtResource("19_3n1py")
+
+[node name="Cave_Prop_Support_Wall_Pillar_1" type="MeshInstance3D" parent="BoardRoot/CanyonAndMine" unique_id=978581391]
+transform = Transform3D(0.9659258, 0, 0.25881904, 0, 1, 0, -0.25881904, 0, 0.9659258, -0.1, 0.4, 14.6)
+mesh = ExtResource("20_kfjq7")
+
+[node name="Quarry_Rock" type="MeshInstance3D" parent="BoardRoot/CanyonAndMine" unique_id=476462320]
+transform = Transform3D(0.7250462, 0, 0.33809462, 0, 0.8, 0, -0.33809462, 0, 0.7250462, 0.1, 0.4, 15.5)
+mesh = ExtResource("12_45cw2")
+
+[node name="EastRidge" type="Node3D" parent="BoardRoot" unique_id=1611574510]
+
+[node name="Hilly_Prop_Tree_Oak_1" type="MeshInstance3D" parent="BoardRoot/EastRidge" unique_id=80726687]
+transform = Transform3D(1.159111, 0, 0.31058288, 0, 1.2, 0, -0.31058288, 0, 1.159111, 12, 0.6, 3.2)
+mesh = ExtResource("21_n1hmg")
+
+[node name="Hilly_Prop_Tree_Oak_2" type="MeshInstance3D" parent="BoardRoot/EastRidge" unique_id=521190268]
+transform = Transform3D(0.8043466, 0, -0.67492694, 0, 1.05, 0, 0.67492694, 0, 0.8043466, 11.6, 0.5, 5)
+mesh = ExtResource("22_tdyrw")
+
+[node name="Hilly_Prop_Bush_1" type="MeshInstance3D" parent="BoardRoot/EastRidge" unique_id=57111182]
+transform = Transform3D(0.95, 0, 0, 0, 0.95, 0, 0, 0, 0.95, 11.5, 0.4, 4.2)
+mesh = ExtResource("23_wbuhk")
+
+[node name="Hilly_Prop_Rock_2" type="MeshInstance3D" parent="BoardRoot/EastRidge" unique_id=2080074243]
+transform = Transform3D(0.82103693, 0, -0.2199962, 0, 0.85, 0, 0.2199962, 0, 0.82103693, 11.2, 0.16, 8.5)
+mesh = ExtResource("24_b2ggk")
+
+[node name="Hilly_Prop_Tree_Cedar_1" type="MeshInstance3D" parent="BoardRoot/EastRidge" unique_id=70475566]
+transform = Transform3D(1.0422539, 0, 0.486011, 0, 1.15, 0, -0.486011, 0, 1.0422539, 12.2, 0.4, 8.8)
+mesh = ExtResource("10_wgvlg")
+
+[node name="Hilly_Prop_Tree_Oak_3" type="MeshInstance3D" parent="BoardRoot/EastRidge" unique_id=1331045127]
+transform = Transform3D(1.0392305, 0, 0.6, 0, 1.2, 0, -0.6, 0, 1.0392305, 12.6, 0.6, 14)
+mesh = ExtResource("25_dehvb")
+
+[node name="Hilly_Prop_Tree_Pine_2" type="MeshInstance3D" parent="BoardRoot/EastRidge" unique_id=1940704854]
+transform = Transform3D(1.0806465, 0, -0.39332312, 0, 1.15, 0, 0.39332312, 0, 1.0806465, 12.8, 0.6, 16.2)
+mesh = ExtResource("8_o70w0")
+
+[node name="Hilly_Prop_Bush_2" type="MeshInstance3D" parent="BoardRoot/EastRidge" unique_id=1217295863]
+transform = Transform3D(0.9355673, 0, 0.16496576, 0, 0.95, 0, -0.16496576, 0, 0.9355673, 11.5, 0.4, 16)
+mesh = ExtResource("26_7qhwi")
+
+[node name="RiverAndBridge" type="Node3D" parent="BoardRoot" unique_id=1654419309]
+
+[node name="BridgeBeam_5" type="MeshInstance3D" parent="BoardRoot/RiverAndBridge" unique_id=1633745402]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 0.45000002, 7.8)
+mesh = SubResource("BoxMesh_a6rkb")
+
+[node name="BridgePlank_5_0" type="MeshInstance3D" parent="BoardRoot/RiverAndBridge" unique_id=1919792469]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 0.56, 6.4)
+mesh = SubResource("BoxMesh_j2q2q")
+
+[node name="BridgePlank_5_1" type="MeshInstance3D" parent="BoardRoot/RiverAndBridge" unique_id=510969711]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 0.56, 6.75)
+mesh = SubResource("BoxMesh_kudyb")
+
+[node name="BridgePlank_5_2" type="MeshInstance3D" parent="BoardRoot/RiverAndBridge" unique_id=352813960]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 0.56, 7.1000004)
+mesh = SubResource("BoxMesh_yesnt")
+
+[node name="BridgePlank_5_3" type="MeshInstance3D" parent="BoardRoot/RiverAndBridge" unique_id=2124500841]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 0.56, 7.4500003)
+mesh = SubResource("BoxMesh_wcx4y")
+
+[node name="BridgePlank_5_4" type="MeshInstance3D" parent="BoardRoot/RiverAndBridge" unique_id=1908356094]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 0.56, 7.8)
+mesh = SubResource("BoxMesh_kbn3o")
+
+[node name="BridgePlank_5_5" type="MeshInstance3D" parent="BoardRoot/RiverAndBridge" unique_id=1046709323]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 0.56, 8.150001)
+mesh = SubResource("BoxMesh_ook6s")
+
+[node name="BridgePlank_5_6" type="MeshInstance3D" parent="BoardRoot/RiverAndBridge" unique_id=1614669480]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 0.56, 8.5)
+mesh = SubResource("BoxMesh_idq7v")
+
+[node name="BridgePlank_5_7" type="MeshInstance3D" parent="BoardRoot/RiverAndBridge" unique_id=660777099]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 0.56, 8.85)
+mesh = SubResource("BoxMesh_jr5bg")
+
+[node name="BridgePlank_5_8" type="MeshInstance3D" parent="BoardRoot/RiverAndBridge" unique_id=2055065471]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 0.56, 9.2)
+mesh = SubResource("BoxMesh_go0e5")
+
+[node name="BridgeBeam_6" type="MeshInstance3D" parent="BoardRoot/RiverAndBridge" unique_id=1680233957]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0.45000002, 7.8)
+mesh = SubResource("BoxMesh_lgtpe")
+
+[node name="BridgePlank_6_0" type="MeshInstance3D" parent="BoardRoot/RiverAndBridge" unique_id=946552693]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0.56, 6.4)
+mesh = SubResource("BoxMesh_b6fj5")
+
+[node name="BridgePlank_6_1" type="MeshInstance3D" parent="BoardRoot/RiverAndBridge" unique_id=1375395485]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0.56, 6.75)
+mesh = SubResource("BoxMesh_vtf2j")
+
+[node name="BridgePlank_6_2" type="MeshInstance3D" parent="BoardRoot/RiverAndBridge" unique_id=389434510]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0.56, 7.1000004)
+mesh = SubResource("BoxMesh_jeemj")
+
+[node name="BridgePlank_6_3" type="MeshInstance3D" parent="BoardRoot/RiverAndBridge" unique_id=1067962459]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0.56, 7.4500003)
+mesh = SubResource("BoxMesh_1jmy2")
+
+[node name="BridgePlank_6_4" type="MeshInstance3D" parent="BoardRoot/RiverAndBridge" unique_id=121415797]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0.56, 7.8)
+mesh = SubResource("BoxMesh_hw8rq")
+
+[node name="BridgePlank_6_5" type="MeshInstance3D" parent="BoardRoot/RiverAndBridge" unique_id=1295955684]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0.56, 8.150001)
+mesh = SubResource("BoxMesh_8m0om")
+
+[node name="BridgePlank_6_6" type="MeshInstance3D" parent="BoardRoot/RiverAndBridge" unique_id=1597812496]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0.56, 8.5)
+mesh = SubResource("BoxMesh_vx5w2")
+
+[node name="BridgePlank_6_7" type="MeshInstance3D" parent="BoardRoot/RiverAndBridge" unique_id=2127074473]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0.56, 8.85)
+mesh = SubResource("BoxMesh_ux74t")
+
+[node name="BridgePlank_6_8" type="MeshInstance3D" parent="BoardRoot/RiverAndBridge" unique_id=254020045]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0.56, 9.2)
+mesh = SubResource("BoxMesh_whrp2")
+
+[node name="Post_L_0" type="MeshInstance3D" parent="BoardRoot/RiverAndBridge" unique_id=1935095957]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.55, 0.68, 6.4)
+mesh = SubResource("BoxMesh_uq5g3")
+
+[node name="Post_R_0" type="MeshInstance3D" parent="BoardRoot/RiverAndBridge" unique_id=1012724079]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.45, 0.68, 6.4)
+mesh = SubResource("BoxMesh_eafp6")
+
+[node name="Post_L_1" type="MeshInstance3D" parent="BoardRoot/RiverAndBridge" unique_id=1313115907]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.55, 0.68, 7.1000004)
+mesh = SubResource("BoxMesh_0e867")
+
+[node name="Post_R_1" type="MeshInstance3D" parent="BoardRoot/RiverAndBridge" unique_id=541267377]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.45, 0.68, 7.1000004)
+mesh = SubResource("BoxMesh_a6gtn")
+
+[node name="Post_L_2" type="MeshInstance3D" parent="BoardRoot/RiverAndBridge" unique_id=269850927]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.55, 0.68, 7.8)
+mesh = SubResource("BoxMesh_fmudm")
+
+[node name="Post_R_2" type="MeshInstance3D" parent="BoardRoot/RiverAndBridge" unique_id=714796135]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.45, 0.68, 7.8)
+mesh = SubResource("BoxMesh_gvgcc")
+
+[node name="Post_L_3" type="MeshInstance3D" parent="BoardRoot/RiverAndBridge" unique_id=1138160188]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.55, 0.68, 8.5)
+mesh = SubResource("BoxMesh_xqk3a")
+
+[node name="Post_R_3" type="MeshInstance3D" parent="BoardRoot/RiverAndBridge" unique_id=988619642]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.45, 0.68, 8.5)
+mesh = SubResource("BoxMesh_r2k70")
+
+[node name="Post_L_4" type="MeshInstance3D" parent="BoardRoot/RiverAndBridge" unique_id=1522965453]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.55, 0.68, 9.2)
+mesh = SubResource("BoxMesh_acpm0")
+
+[node name="Post_R_4" type="MeshInstance3D" parent="BoardRoot/RiverAndBridge" unique_id=827685983]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.45, 0.68, 9.2)
+mesh = SubResource("BoxMesh_5vw26")
+
+[node name="Railing_L" type="MeshInstance3D" parent="BoardRoot/RiverAndBridge" unique_id=619302806]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.55, 0.85, 7.8)
+mesh = SubResource("BoxMesh_80q86")
+
+[node name="Railing_R" type="MeshInstance3D" parent="BoardRoot/RiverAndBridge" unique_id=1012146446]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.45, 0.85, 7.8)
+mesh = SubResource("BoxMesh_faevg")
+
+[node name="BridgePillar_0" type="MeshInstance3D" parent="BoardRoot/RiverAndBridge" unique_id=1380606579]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.6, -0.05, 6.8)
+mesh = SubResource("BoxMesh_jeucy")
+
+[node name="BridgePillar_1" type="MeshInstance3D" parent="BoardRoot/RiverAndBridge" unique_id=624630511]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.6, -0.05, 8.8)
+mesh = SubResource("BoxMesh_sygdj")
+
+[node name="BridgePillar_2" type="MeshInstance3D" parent="BoardRoot/RiverAndBridge" unique_id=1199348194]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.4, -0.05, 6.8)
+mesh = SubResource("BoxMesh_6tk21")
+
+[node name="BridgePillar_3" type="MeshInstance3D" parent="BoardRoot/RiverAndBridge" unique_id=2040116366]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.4, -0.05, 8.8)
+mesh = SubResource("BoxMesh_t2yhf")
+
+[node name="Waterlily_1" type="Node3D" parent="BoardRoot/RiverAndBridge" unique_id=1313568755 instance=ExtResource("27_prcur")]
+transform = Transform3D(0.4078385, 0, 0.19017822, 0, 0.45, 0, -0.19017822, 0, 0.4078385, 3.2, -0.04, 7.2)
+
+[node name="Waterlily_2" type="Node3D" parent="BoardRoot/RiverAndBridge" unique_id=667787192 instance=ExtResource("27_prcur")]
+transform = Transform3D(0.34471998, 0, -0.2892544, 0, 0.45, 0, 0.2892544, 0, 0.34471998, 8.5, -0.04, 8.2)
+
+[node name="RiverRock_C" type="Node3D" parent="BoardRoot/RiverAndBridge" unique_id=281686468 instance=ExtResource("28_xv54f")]
+transform = Transform3D(0.49497473, 0, 0.49497473, 0, 0.7, 0, -0.49497473, 0, 0.49497473, 2.2, 0.21, 6.8)
+
+[node name="RiverRock_B" type="Node3D" parent="BoardRoot/RiverAndBridge" unique_id=1560975978 instance=ExtResource("29_s7i8s")]
+transform = Transform3D(0.65532166, 0, -0.45886117, 0, 0.8, 0, 0.45886117, 0, 0.65532166, 9.2, 0.21, 9.4)
+
+[node name="Hilly_Prop_Stepping_Stones_1" type="MeshInstance3D" parent="BoardRoot/RiverAndBridge" unique_id=694176695]
+transform = Transform3D(0.815677, 0, 0.38035643, 0, 0.9, 0, -0.38035643, 0, 0.815677, 4.2, 0.18, 8.4)
+mesh = ExtResource("30_nmq11")
+
+[node name="Hilly_Prop_Stepping_Stones_2" type="MeshInstance3D" parent="BoardRoot/RiverAndBridge" unique_id=433158961]
+transform = Transform3D(0.7794228, 0, -0.45, 0, 0.9, 0, 0.45, 0, 0.7794228, 6.8, 0.18, 7.3)
+mesh = ExtResource("31_dup5b")
+
+[node name="SouthForest" type="Node3D" parent="BoardRoot" unique_id=282919433]
+
+[node name="Hilly_Prop_Stump" type="MeshInstance3D" parent="BoardRoot/SouthForest" unique_id=1712408293]
+transform = Transform3D(1.1817694, 0, 0.20837782, 0, 1.2, 0, -0.20837782, 0, 1.1817694, 2, 0.4, 23.2)
+mesh = ExtResource("32_gnufr")
+
+[node name="Hilly_Prop_Hollow_Trunk" type="MeshInstance3D" parent="BoardRoot/SouthForest" unique_id=1060307567]
+transform = Transform3D(1.0392305, 0, 0.6, 0, 1.2, 0, -0.6, 0, 1.0392305, 9, 0.4, 23.2)
+mesh = ExtResource("33_ospfw")
+
+[node name="Pine_S1" type="MeshInstance3D" parent="BoardRoot/SouthForest" unique_id=904437055]
+transform = Transform3D(0.91925335, 0, 0.77134514, 0, 1.2, 0, -0.77134514, 0, 0.91925335, 0.5, 0.4, 23.8)
+mesh = ExtResource("7_wlkae")
+
+[node name="Pine_S2" type="MeshInstance3D" parent="BoardRoot/SouthForest" unique_id=876796534]
+transform = Transform3D(1.1782, 0, -0.5494037, 0, 1.3, 0, 0.5494037, 0, 1.1782, 3.8, 0.4, 24.2)
+mesh = ExtResource("9_juoe4")
+
+[node name="Pine_S3" type="MeshInstance3D" parent="BoardRoot/SouthForest" unique_id=1744280585]
+transform = Transform3D(1.0239401, 0, 0.71697056, 0, 1.25, 0, -0.71697056, 0, 1.0239401, 7.2, 0.4, 24.2)
+mesh = ExtResource("8_o70w0")
+
+[node name="Pine_S4" type="MeshInstance3D" parent="BoardRoot/SouthForest" unique_id=902832489]
+transform = Transform3D(1.159111, 0, -0.31058288, 0, 1.2, 0, 0.31058288, 0, 1.159111, 10.5, 0.4, 23.8)
+mesh = ExtResource("7_wlkae")
+
+[node name="Pine_S5" type="MeshInstance3D" parent="BoardRoot/SouthForest" unique_id=1415633401]
+transform = Transform3D(1.3522961, 0, 0.36234665, 0, 1.4, 0, -0.36234665, 0, 1.3522961, -0.8, 0.4, 26.5)
+mesh = ExtResource("9_juoe4")
+
+[node name="Pine_S6" type="MeshInstance3D" parent="BoardRoot/SouthForest" unique_id=925798029]
+transform = Transform3D(1.5, 0, 0, 0, 1.5, 0, 0, 0, 1.5, 5.5, 0.4, 27)
+mesh = ExtResource("7_wlkae")
+
+[node name="Pine_S7" type="MeshInstance3D" parent="BoardRoot/SouthForest" unique_id=1616668449]
+transform = Transform3D(1.2124355, 0, -0.7, 0, 1.4, 0, 0.7, 0, 1.2124355, 11.8, 0.4, 26.5)
+mesh = ExtResource("8_o70w0")
+
+[node name="FactoryLogistics" type="Node3D" parent="BoardRoot" unique_id=1195576627]
+
+[node name="ConveyorFrame_2" type="MeshInstance3D" parent="BoardRoot/FactoryLogistics" unique_id=560687658]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0.47, 15)
+mesh = SubResource("BoxMesh_41dj7")
+
+[node name="ConveyorBelt_2" type="MeshInstance3D" parent="BoardRoot/FactoryLogistics" unique_id=290665586]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0.54, 15)
+mesh = SubResource("BoxMesh_b0n8o")
+
+[node name="ConveyorRailL_2" type="MeshInstance3D" parent="BoardRoot/FactoryLogistics" unique_id=77073598]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.56, 0.5, 15)
+mesh = SubResource("BoxMesh_frofe")
+
+[node name="ConveyorRailR_2" type="MeshInstance3D" parent="BoardRoot/FactoryLogistics" unique_id=859345537]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.44, 0.5, 15)
+mesh = SubResource("BoxMesh_87vi5")
+
+[node name="ConveyorFrame_3" type="MeshInstance3D" parent="BoardRoot/FactoryLogistics" unique_id=136352330]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0.47, 15)
+mesh = SubResource("BoxMesh_ks6kp")
+
+[node name="ConveyorBelt_3" type="MeshInstance3D" parent="BoardRoot/FactoryLogistics" unique_id=144086158]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0.54, 15)
+mesh = SubResource("BoxMesh_jg0wx")
+
+[node name="ConveyorRailL_3" type="MeshInstance3D" parent="BoardRoot/FactoryLogistics" unique_id=1671948717]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.56, 0.5, 15)
+mesh = SubResource("BoxMesh_xignt")
+
+[node name="ConveyorRailR_3" type="MeshInstance3D" parent="BoardRoot/FactoryLogistics" unique_id=488695202]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.44, 0.5, 15)
+mesh = SubResource("BoxMesh_hm00q")
+
+[node name="ConveyorFrame_4" type="MeshInstance3D" parent="BoardRoot/FactoryLogistics" unique_id=943224291]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0.47, 15)
+mesh = SubResource("BoxMesh_uhona")
+
+[node name="ConveyorBelt_4" type="MeshInstance3D" parent="BoardRoot/FactoryLogistics" unique_id=319639812]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0.54, 15)
+mesh = SubResource("BoxMesh_83p2p")
+
+[node name="ConveyorRailL_4" type="MeshInstance3D" parent="BoardRoot/FactoryLogistics" unique_id=1110497614]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.56, 0.5, 15)
+mesh = SubResource("BoxMesh_0ydby")
+
+[node name="ConveyorRailR_4" type="MeshInstance3D" parent="BoardRoot/FactoryLogistics" unique_id=261444140]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.44, 0.5, 15)
+mesh = SubResource("BoxMesh_2kajm")
+
+[node name="PipeRing_0" type="MeshInstance3D" parent="BoardRoot/FactoryLogistics" unique_id=1806630656]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.5, 0.62, 15)
+mesh = SubResource("BoxMesh_163g5")
+
+[node name="PipeGlass_0" type="MeshInstance3D" parent="BoardRoot/FactoryLogistics" unique_id=553388428]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.8, 0.62, 15)
+mesh = SubResource("BoxMesh_c5o3n")
+
+[node name="PipeCore_0" type="MeshInstance3D" parent="BoardRoot/FactoryLogistics" unique_id=519375812]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.8, 0.62, 15)
+mesh = SubResource("BoxMesh_w1kba")
+
+[node name="PipeRing_1" type="MeshInstance3D" parent="BoardRoot/FactoryLogistics" unique_id=914045582]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.1, 0.62, 15)
+mesh = SubResource("BoxMesh_3fx8b")
+
+[node name="PipeGlass_1" type="MeshInstance3D" parent="BoardRoot/FactoryLogistics" unique_id=863090725]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.4, 0.62, 15)
+mesh = SubResource("BoxMesh_usrgs")
+
+[node name="PipeCore_1" type="MeshInstance3D" parent="BoardRoot/FactoryLogistics" unique_id=1092799774]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.4, 0.62, 15)
+mesh = SubResource("BoxMesh_iim4f")
+
+[node name="PipeRing_2" type="MeshInstance3D" parent="BoardRoot/FactoryLogistics" unique_id=920401293]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.7, 0.62, 15)
+mesh = SubResource("BoxMesh_8e1yt")
+
+[node name="PipeGlass_2" type="MeshInstance3D" parent="BoardRoot/FactoryLogistics" unique_id=1672110491]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7, 0.62, 15)
+mesh = SubResource("BoxMesh_jkj76")
+
+[node name="PipeCore_2" type="MeshInstance3D" parent="BoardRoot/FactoryLogistics" unique_id=820615114]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7, 0.62, 15)
+mesh = SubResource("BoxMesh_66a3b")
+
+[node name="PipeRing_3" type="MeshInstance3D" parent="BoardRoot/FactoryLogistics" unique_id=2126584579]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.3, 0.62, 15)
+mesh = SubResource("BoxMesh_nglkl")
+
+[node name="PipeGlass_3" type="MeshInstance3D" parent="BoardRoot/FactoryLogistics" unique_id=1030949908]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.6, 0.62, 15)
+mesh = SubResource("BoxMesh_0jjd6")
+
+[node name="PipeCore_3" type="MeshInstance3D" parent="BoardRoot/FactoryLogistics" unique_id=1278493125]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.6, 0.62, 15)
+mesh = SubResource("BoxMesh_ssi8m")
+
+[node name="Entities" type="Node3D" parent="BoardRoot" unique_id=1518693865]
+
+[node name="HumanCitadel" type="Node3D" parent="BoardRoot/Entities" unique_id=1626656554 instance=ExtResource("34_cujqs")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.5, 0.4, 1)
+script = ExtResource("35_a8hfc")
+
+[node name="NecromancerHeart" type="Node3D" parent="BoardRoot/Entities" unique_id=1952841582 instance=ExtResource("36_5hwj5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.5, 0.4, 18.2)
+script = ExtResource("37_pwfjh")
+
+[node name="CemeteryZone" type="Node3D" parent="BoardRoot/Entities" unique_id=1978571380 instance=ExtResource("38_ujqlm")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0.4, 13.8)
+script = ExtResource("39_f71i7")
+
+[node name="SoulWell" type="Node3D" parent="BoardRoot/Entities" unique_id=829599428 instance=ExtResource("40_vnfae")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 0.4, 13.8)
+script = ExtResource("41_rjhb0")
+
+[node name="BoneMiner" type="Node3D" parent="BoardRoot/Entities" unique_id=147369234 instance=ExtResource("42_t31uj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0.4, 14.5)
+script = ExtResource("43_2y0ui")
+
+[node name="SoulPump" type="Node3D" parent="BoardRoot/Entities" unique_id=347329292 instance=ExtResource("44_nj2y2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0.4, 14.2)
+script = ExtResource("45_mbh25")
+
+[node name="SkeletonAssembler" type="Node3D" parent="BoardRoot/Entities" unique_id=1709487012 instance=ExtResource("46_xnkua")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.8, 0.4, 14.2)
+script = ExtResource("47_wndod")

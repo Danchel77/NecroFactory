@@ -1,0 +1,17 @@
+# Godot 4 specific ignores
+.godot/
+
+# Sensitive environment credentials
+.env
+
+# Virtual environment and temp files
+.venv/
+temp/
+
+# Large archive files & debug artifacts
+*.zip
+.dsh-vision-router/
+debug_screen*.png
+debug_screen*.png.import
+debug_stage*.png
+debug_stage*.png.import
